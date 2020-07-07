@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sayak Khatua
-subtitle: Senior Research Associate, [International Initiative for Impact Evaluation(3ie)](https://www.3ieimpact.org) Evaluation
+subtitle: Senior Research Associate, International Initiative for Impact Evaluation(3ie)
 
 ---
 
@@ -9,7 +9,7 @@ I lead 3ie’s [Research Transparency initiative](https://www.3ieimpact.org/our-
 
 I can be reached at sayakkhatua@yahoo.in
 
-### I am currently working on the following projects
+### I am currently working on the following projects at [3ie](https://www.3ieimpact.org)
 - Using big data for evaluating development outcomes: a systematic
 map
 - Promoting lartrine use in rural India: a synthesis of findings
