@@ -20,13 +20,12 @@ description: Personal website of Sayak Khatua
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
   Research: "research"
   CV: "/cv/Sayak_Khatua_CV.pdf"
   Resources:
-    - Data links: ""
-    - Notes: ""
-  Travelogue: ""
+    - Data links: "/404.html"
+    - Notes: "/404.html"
+  Travelogue: "/404.html"
   Personal: "personal"
 
 # Image to show in the navigation bar - image must be a square (width = height)
