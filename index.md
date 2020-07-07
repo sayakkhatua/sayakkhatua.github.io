@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sayak Khatua
-subtitle: New Delhi, India
+subtitle: Senior Research Associate, International Initiative for Impact Evaluation
 
 ---
 
