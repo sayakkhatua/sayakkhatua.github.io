@@ -1,16 +1,18 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: 
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Hi
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I currently work as a Senior Research Associate at The International Initiative for Impact Evaluation(3ie) where I lead the institution’s [Research Transparency initiative](https://www.3ieimpact.org/our-expertise/research-transparency) and specialize in data curation, management, and computational reproducibility ([Push Button Replications](https://www.3ieimpact.org/our-expertise/replication/push-button-replication)).
 
-What else do you need?
 
-### my history
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+### What I am currently working on the following projects
+- Using big data for evaluating development outcomes: a systematic
+map
+- Promoting lartrine use in rural India: a synthesis of findings
+
+

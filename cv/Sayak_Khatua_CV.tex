@@ -1,0 +1,470 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Simple LaTeX CV Template %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%a%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% NOTE: If you find that it says                                     %%
+%%                                                                    %%
+%%                           1 of ??                                  %%
+%%                                                                    %%
+%% at the bottom of your first page, this means that the AUX file     %%
+%% was not available when you ran LaTeX on this source. Simply RERUN  %%
+%% LaTeX to get the ``??'' replaced with the number of the last page  %%
+%% of the document. The AUX file will be generated on the first run   %%
+%% of LaTeX and used on the second run to fill in all of the          %%
+%% references.                                                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't like 10pt? Try 11pt or 12pt
+\documentclass[10pt]{article}
+
+% The automated optical recognition software used to digitize resume
+% information works best with fonts that do not have serifs. This
+% command uses a sans serif font throughout. Uncomment both lines (or at
+% least the second) to restore a Roman font (i.e., a font with serifs).
+\usepackage{times}
+\renewcommand{\familydefault}{\sfdefault}
+
+% This is a helpful package that puts math inside length specifications
+\usepackage{calc}
+\usepackage{comment}
+\usepackage{fontawesome}
+%\usepackage{fontspec}
+\usepackage[autostyle]{csquotes}
+
+% Simpler bibsection for CV sections
+% (thanks to natbib for inspiration)
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em} %1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newenvironment{bibsection}%
+        {\begin{enumerate}{}{%
+%        {\begin{list}{}{%
+       \setlength{\leftmargin}{\bibhang}%
+       \setlength{\itemindent}{-\leftmargin}%
+       \setlength{\itemsep}{\bibsep}%
+       \setlength{\parsep}{\z@}%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{enumerate}\vspace{-.6\baselineskip}}
+%        {\end{list}\vspace{-.6\baselineskip}}
+\makeatother
+
+% Layout: Puts the section titles on left side of page
+\reversemarginpar
+
+%
+%         PAPER SIZE, PAGE NUMBER, AND DOCUMENT LAYOUT NOTES:
+%
+% The next \usepackage line changes the layout for CV style section
+% headings as marginal notes. It also sets up the paper size as either
+% letter or A4. By default, letter was used. If A4 paper is desired,
+% comment out the letterpaper lines and uncomment the a4paper lines.
+%
+% As you can see, the margin widths and section title widths can be
+% easily adjusted.
+%
+% ALSO: Notice that the includefoot option can be commented OUT in order
+% to put the PAGE NUMBER *IN* the bottom margin. This will make the
+% effective text area larger.
+%
+% IF YOU WISH TO REMOVE THE ``of LASTPAGE'' next to each page number,
+% see the note about the +LP and -LP lines below. Comment out the +LP
+% and uncomment the -LP.
+%
+% IF YOU WISH TO REMOVE PAGE NUMBERS, be sure that the includefoot line
+% is uncommented and ALSO uncomment the \pagestyle{empty} a few lines
+% below.
+%
+
+%% Use these lines for letter-sized paper
+%%\usepackage[paper=letterpaper,
+%            %includefoot, % Uncomment to put page number above margin
+%            marginparwidth=1.2in,     % Length of section titles
+   %         marginparsep=.05in,       % Space between titles and text
+      %      margin=1in,               % 1 inch margins
+         %   includemp]{geometry}
+
+%% Use these lines for A4-sized paper
+\usepackage[paper=a4paper,
+            %includefoot, % Uncomment to put page number above margin
+            marginparwidth=30.5mm,    % Length of section titles
+            marginparsep=1mm,       % Space between titles and text
+            margin=18mm,              % 25mm margins
+            includemp]{geometry}
+
+%% More layout: Get rid of indenting throughout entire document
+\setlength{\parindent}{0in}
+
+\usepackage[shortlabels]{enumitem}
+
+%% Reference the last page in the page number
+%
+% NOTE: comment the +LP line and uncomment the -LP line to have page
+%       numbers without the ``of ##'' last page reference)
+%
+% NOTE: uncomment the \pagestyle{empty} line to get rid of all page
+%       numbers (make sure includefoot is commented out above)
+%
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\pagestyle{empty}      % Uncomment this to get rid of page numbers
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift}%
+       \parbox{4in}{\, \hfill %
+                    \arabic{page} of \protect\pageref*{LastPage} % +LP
+%                    \arabic{page}                               % -LP
+                    \hfill \,}}
+
+% Finally, give us PDF bookmarks
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\makeheading}[2][]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+             {\large \bfseries #2 \hfill #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+
+% The section headings
+%
+% Usage: \section{section name}
+\renewcommand{\section}[1]{\pagebreak[3]%
+    \hyphenpenalty=10000%
+    \vspace{1.3\baselineskip}%
+    \phantomsection\addcontentsline{toc}{section}{#1}%
+    \noindent\llap{\scshape\smash{\parbox[t]{\marginparwidth}{\raggedright #1}}}%
+    \vspace{-\baselineskip}\par}
+
+% An itemize-style list with lots of space between items
+\newenvironment{outerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*]}{\end{itemize}%
+         \vspace{-.6\baselineskip}}
+
+% An environment IDENTICAL to outerlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{lonelist}[1][\enskip\textbullet]%
+        {\begin{list}{#1}{%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+
+% An itemize-style list with little space between items
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt]}
+        {\end{itemize}}
+
+% An environment IDENTICAL to innerlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{loneinnerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt]}
+        {\end{itemize}\vspace{-.6\baselineskip}}
+
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[3]}
+\newcommand{\halfblankline}{\quad\vspace{-0.5\baselineskip}\pagebreak[3]}
+
+% Uses hyperref to link DOI
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+% For \url{SOME_URL}, links SOME_URL to the url SOME_URL
+\providecommand*\url[1]{\href{#1}{#1}}
+% Same as above, but pretty-prints SOME_URL in teletype fixed-width font
+\renewcommand*\url[1]{\href{#1}{\texttt{#1}}}
+
+% For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
+\providecommand*\email[1]{\href{mailto:#1}{#1}}
+% Same as above, but pretty-prints ADDRESS in teletype fixed-width font
+%\renewcommand*\email[1]{\href{mailto:#1}{\texttt{#1}}}
+
+%\providecommand\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+%\providecommand\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    \TeX}}
+\providecommand\BibTeX{{B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    \TeX}}
+\providecommand\Matlab{\textsc{Matlab}}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+\headheight 5pt
+\headsep 10pt
+\rhead{\today}
+\makeheading{Sayak Khatua}
+
+\section{Contact Information}
+
+% NOTE: Mind where the & separators and \\ breaks are in the following
+%       table.
+%
+% ALSO: \rcollength is the width of the right column of the table
+%       (adjust it to your liking; default is 1.85in).
+%
+\newlength{\rcollength}\setlength{\rcollength}{2in}%
+%
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
+%\href{http://www.cse.osu.edu/}%
+%     {Department of Computer Science and Engineering} & \\
+%\href{http://www.osu.edu/}{The Ohio State University}
+ \faPhone\hspace{} +91 84201 23843 & Third Floor, E 56, \\
+\faEnvelope\hspace{} {sayakkhatua@yahoo.in} & E Block, Saket, \\
+\faLinkedin\hspace{} \url{http://bit.ly/2neoyYm} & New Delhi, Delhi 110017 \\
+\faGithub\hspace{} \url{https://github.com/sayakkhatua} & India
+\end{tabular}
+
+%\section{Objective}
+
+%Insert text here if you want to
+%\begin{innerlist}
+%\item More information and auxiliary documents can be found at\\\url{http://www.tedpavlic.com/facjobsearch/}
+%\end{innerlist}
+
+%\section{Summary}
+ %A motivated, adaptable and responsible graduate seeking an entry-position in a dynamic organization which will help me utilize my skills to the fullest.
+
+
+
+
+
+% Add a little space to nudge next ``Conference Publications'' marginpar
+% down to make room for tall ``Submitted Journal Publications''
+% marginpar. If there are enough submitted journal publications, this
+% space will not be needed (and should be removed).
+
+%\vspace{0.05in}
+
+\section{Research Experience}
+
+\textbf{International Initiative for Impact Evaluation(3ie)}\\
+\textbf{Senior Research Associate}\hfill {January 2020- Present}\\
+\textbf{Research Associate}\hfill {March 2018- December 2019}
+\vspace{.1in}
+
+\begin{innerlist}
+\item Lead 3ie's Research Transparency Initiative
+\item Manage Registry for International Development Impact Evaluations (RIDIE) and 3ie's Public Data repository on Harvard Dataverse
+\item Supervise reproductions and verification of Impact Evaluation data (Computational reproducibility)
+\item Advise research personnel (including 3ie grantees) on improving the quality and reproducibility of Impact evaluation data and analysis code
+\item Advise technical staff at 3ie on curation, management and quantitative analysis of Impact evaluation data
+\item Provide research personnel training and direct support for data curation and analysis
+\item Provide research support to 3ie's Thematic Window on Sanitation (Latrine Use) and creation of Evidence Gap Maps(EGMs)
+
+
+\end{innerlist}
+\vspace{.1in}
+
+\textbf{Outline India}\\
+\textbf{Research Associate} \hfill {July 2017-February 2018}
+\vspace{.1in}
+
+\begin{innerlist}
+\item Served as a Project Lead, devised research methodologies and study designs 
+\item Led data analysis and management and developed data quality protocols
+\item Supervised primary data collection and conducted quality checks on data
+\item Designed robust and statistically sound methodologies for research 
+\item Built project/field reports and proposals 
+\item Assisted in qualitative/quantitative survey tool drafting 
+\end{innerlist}
+\vspace{.1in}
+
+\textbf{Department of Economics, Portland State University}\\ 
+\textbf{Research Assistant} \hfill {January 2014-July 2015}
+\vspace{.1in}
+
+\begin{innerlist}
+\item Analyzed US crime data to understand the effects of federal funding to curb crime since 1960
+\item Curated and analyzed National Sample Survey consumer expenditure data on India since 1980 using Stata
+\item Employed forecasting techniques to predict future wage rates to evaluate the effects of automation on skilled and unskilled labor in developing and underdeveloped countries using ILO and OECD data
+\end{innerlist}
+\vspace{.1in}
+
+
+\textbf{Nottingham School of Economics, University of Nottingham Malaysia}\\
+\textbf{Research Assistant}       \hfill {March 2013-August 2013}     
+\vspace{.1in}
+\begin{innerlist}
+\item Supervised collection of primary data for the study {\enquote{The long term effects of Development Induced Displacement in Falta SEZ, West Bengal}}
+\item Trained survey team of 20 on quantitative techniques, led focused group discussions and facilitated in drafting of project reports
+\item Supervised daily operations of a team of 20 surveyors
+\item Devised and implemented data quality protocols
+
+\end{innerlist}
+\vspace{.1in}
+
+\section{Teaching Experience}
+
+\textbf{Department of Economics, University of Illinois at Chicago}\\
+\textbf{Teaching Assistant} \hfill {August 2015-May 2017}
+\vspace{.1in}
+
+\textbf{Department of Economics, Portland State University}\\
+\textbf{Teaching Assistant} \hfill {September 2013-June 2015}
+\vspace{.1in}
+
+\textbf{Courses Taught:} Undergraduate Micro and Macro economics, Intermediate econometrics, Graduate Econometrics, Labour economics
+
+
+\section{Education}
+
+%\href{http://www.umn.edu}
+{\textbf{Portland State University}},
+Portland, OR
+\begin{outerlist}
+
+	\item[] MS,
+%        \href{http://www.sph.umn.edu/biostatistics/}
+             {Economics}, June 2015\\
+    Relevant Coursework:  \emph{Applied Advance Micro/Macro economic theory, Labor Economics and Industrial Relations, Advanced Econometrics}	
+    
+ 
+\end{outerlist}
+\vspace{.1in}
+
+{\textbf{University of Calcutta}},
+Kolkata, India
+\begin{outerlist}
+	
+	 \item[] MSc.,
+	%        \href{http://www.sph.umn.edu/biostatistics/}
+	{Economics},  July 2013\\
+ Specialisation: \emph{Labor Economics, Advanced Econometric Theory, Game Theory}
+      
+
+	\item[] BSc.,
+       % \href{http://www.cset.mnsu.edu/mathstat/}
+             {Economics}, May 2011\\
+Major: \emph{Economics} Minor: \emph{Political Science and Mathematics}	
+
+\end{outerlist}
+\vspace{.1in}
+
+
+
+\section{Publications}
+\begin{innerlist}
+\item \textbf{Khatua S.}, Sarma V. (2019) {\enquote{Short-Term Versus Long-Term Effects of Forced Displacement}}. In: Yoshino N., Paul S. (eds) Land Acquisition in Asia. Palgrave Macmillan, Singapore.
+\end{innerlist}
+
+\section{Working papers}
+\begin{innerlist}
+\item \textbf{Khatua, S}, et.al. 2020. {\enquote{Using big data for evaluating development outcomes: a systematic map.}} (Joint work with colleagues at 3ie)
+\item Lane, C, \textbf{Khatua, S}. 2020. {\enquote{Promoting lartrine use in rural India: a synthesis of findings}}
+\item Goel, Neeta, \textbf{Sayak Khatua}, and Marie Gaarder. 2019. {\enquote{Making Data Reusable: Lessons Learned from Replications of Impact Evaluations.}} OSF Preprints. July 10. \\doi:10.31219/osf.io/4jvq2. [Revise \& resubmit, PLOS One]
+\item \textbf{Khatua, S.}, DasChaudhury, R. 2013.\enquote{In Search of Quality: A study on Elementary Education in Rural India}. OSF Preprints. July 10. doi:10.31219/osf.io/wyfap [Unpublished manuscript]
+\end{innerlist}
+
+\section{Other publications}
+\begin{innerlist}
+\item \textbf{Khatua, S.}(2018).\href{http://www.3ieimpact.org/blogs/whats-deal-push-button-replications}{\enquote{What's the deal with Push Button Replication?}}. Evidence Matters.
+\item Apoorva, P.V., Krishnan, A., \textbf{Khatua, S.} (2017) \href{http://bit.ly/2z1X6BI}{\enquote{Swachch Bharat Mission: Need clarity on actual impact}.}  DNA India.
+\end{innerlist}
+
+\section{Work in progress}
+\begin{innerlist}
+\item Transparency and Openness of Impact Evaluations in International Development: An Audit of 3ie-Funded Research(Joint work with Sean Grant)
+\item Understanding intra-household gender discrimination using machine learning: Evidence from India
+%\item The Rise of the Right Wing: Evidence from Indian elections since 1980s
+\end{innerlist}
+
+\section{Invited Talks}
+\begin{innerlist}
+\item Speaker, \href{https://www.worldbank.org/en/events/2019/09/10/transparency-reproducibility-credibility}{Transparency, Reproducibility, and Credibility: A Research Symposium}, World Bank Headquarters, Washington D.C. (September, 2019)
+\item Trainer, Session on Research Transparency in ICAR short course series at ICAR-IIHR, Bangalore (November, 2018)
+\item Presenter and Panelist, \enquote{Gender Transformative Evaluation: methods and approach}, at Evalfest (February, 2018), hosted by the Evaluation Community of India.
+\item \enquote{Modelling Migration}, Presented at the Departmental Brown Bag, Department of Economics, Portland State University (2014)
+\end{innerlist}
+
+
+\section{Academic Honors}
+\begin{innerlist}
+\item Graduate Assistanship(for PhD), Department of Economics, University of Illinois at Chicago (2015-2017)
+\item Faculty Award, Portland State University (2015)
+\item International Graduate Assistantship(for Master's), Department of Economics Portland State University (2013-2015)
+\end{innerlist}
+
+\section{Research Interests} Policy Analysis, Migration, Inequality, Open Science, Replication Research
+
+\section{Core Skills} Quantitative Research, Data Analysis, Replication, Research Transparency, Statistical Modeling, Economic Data, Teaching, Econometric Techniques, Project Management, 
+	Programming and Coding 
+
+\section{Trainings} 
+\begin{innerlist}
+\item Project Management for Development Professionals (PMD Pro) Level 1, 2018 [Certified]
+\item Research Transparency and Reproducibility Training (RT2), 2019
+
+\section{Tools} \textit{Statistical}: STATA, R, SAS, SPSS\\
+					\textit{Others}: \LaTeX, Epi Info, ArcGIS, GeoDa, SurveyCTO, GitHub
+
+\section{Languages} English, Bengali, Hindi
+
+
+
+
+%\section{References}
+
+%John Gallup
+%\begin{innerlist}
+%\item[] Associate Professor of Economics \hfill {Phone: 503-725-3929}\\
+%Department of Economics \hfill{E-mail: jlgallup@pdx.edu}\\
+%Portland State University
+%\end{innerlist}
+
+\halfblankline
+
+%Rabindranath Mukhopadhyay
+%\begin{innerlist}
+%\item[] Associate Professor \\
+%Department of Economics \hfill{E-mail: mukhopadhyayr@gmail.com}\\
+%University of Calcutta
+%\end{innerlist}
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------%
+% The following is copyright and licensing information for
+% redistribution of this LaTeX source code; it also includes a liability
+% statement. If this source code is not being redistributed to others,
+% it may be omitted. It has no effect on the function of the above code.
+%----------------------------------------------------------------------%
+% Copyright (c) 2007, 2008, 2009, 2010, 2011 by Theodore P. Pavlic
+%
+% Unless otherwise expressly stated, this work is licensed under the
+% Creative Commons Attribution-Noncommercial 3.0 United States License. To
+% view a copy of this license, visit
+% http://creativecommons.org/licenses/by-nc/3.0/us/ or send a letter to
+% Creative Commons, 171 Second Street, Suite 300, San Francisco,
+% California, 94105, USA.
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+% OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+% MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+% IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+% CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+% TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+% SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+%----------------------------------------------------------------------%
+	
