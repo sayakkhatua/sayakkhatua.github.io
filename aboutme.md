@@ -1,10 +1,8 @@
 ---
 layout: page
 title: About me
- 
+subtitle: Sayak Khatua
 ---
-
-Hi
 
 I currently work as a Senior Research Associate at The International Initiative for Impact Evaluation(3ie) where I lead the institution’s [Research Transparency initiative](https://www.3ieimpact.org/our-expertise/research-transparency) and specialize in data curation, management, and computational reproducibility ([Push Button Replications](https://www.3ieimpact.org/our-expertise/replication/push-button-replication)).
 
