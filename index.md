@@ -13,5 +13,3 @@ I can be reached at sayakkhatua@yahoo.in
 - Using big data for evaluating development outcomes: a systematic
 map
 - Promoting lartrine use in rural India: a synthesis of findings
-
-
