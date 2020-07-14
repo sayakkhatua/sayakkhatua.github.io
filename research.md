@@ -10,7 +10,7 @@ Khatua S., Sarma V. (2019) “Short-Term Versus Long-Term Effects of Forced Disp
 
 ### Working Papers
 
-"Using big data for evaluating development outcomes: a systematic map", 2020 (co-author with other colleagues at 3ie)
+"Using big data for evaluating development outcomes: a systematic map", 2020 (co-author with other colleagues at 3ie) [Map visualization](https://gapmaps.3ieimpact.org/evidence-maps/big-data-systematic-map) ![Alternate Visualization](/img/big_data_map.png)
 
 "Promoting lartrine use in rural India: a synthesis of findings", 2020 (co-author with Charlotte Lane)
 
