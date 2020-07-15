@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research
-subtitle: I am interested in Development Economics, Labor, Health, Migration, Replication research
+subtitle: I am interested in Development Economics, Policy Analysis, Health, Migration, Replication research
 
 ---
 
@@ -12,7 +12,10 @@ Khatua S., Sarma V. (2019) “Short-Term Versus Long-Term Effects of Forced Disp
 
 "Using big data for evaluating development outcomes: a systematic map", 2020 (co-author with other colleagues at 3ie) [Click here for Map visualization](https://gapmaps.3ieimpact.org/evidence-maps/big-data-systematic-map) 
 
-Alternative visualization
+**Abstract**
+The paper is based on a systematic mapping of the studies that use big data  to measure and evaluate development outcomes. In this paper we discuss methodological, ethical and practical constraints relating to the use of big data. The systematic map includes impact evaluations (IEs) that use big data to evaluate development outcomes, systematic reviews of big data IEs and other measurement studies that innovatively use big data to measure and validate any development outcomes. This study also explores the sectoral and geographical spread of big data's use in international development.  This map includes studies written in English and published between 2005 and 2019, regardless of the target country's income level or population's status. We provide detailed breakdowns in the map for different country income classifications, fragile contexts, and population characteristics. From the initial list of 17,393 studies, we arrived at a final list of 437 studies which included 48 impact evaluations, 381 measurement studies and 8 systematic reviews.
+
+Visualization showing connection between big data and development outcomes
 ![](/img/big_data_map.png)
 
 "Promoting lartrine use in rural India: a synthesis of findings", 2020 (co-author with Charlotte Lane)
@@ -33,6 +36,9 @@ This study investigates the quality of education attained by students in rural a
 ### Work in progress
 
 Transparency and Openness of Impact Evaluations in International Development: An Audit of 3ie-Funded Research (Joint work with [Sean Grant](https://fsph.iupui.edu/about/directory/grant-sean.html))
+
+**Abstract**
+In this paper we plan to investigate the degree to which 3ie-funded impact evaluations report use of open science practices—and among those that do, the degree of transparency of these reported practices. It will begin with a survey on the use of open science practices among all 3ie-funded impact evaluations, followed by in-depth audits on the transparency of open science practices implemented by research teams of 3ie-funded impact evaluations. Given the recent 3ie policy mandating pre-analysis plan (PAPs), the first in-depth audit will focus on the transparency of information reported in PAPs of 3ie-funded impact evaluations. Dependent on interest and resources, this PAP audit will be followed by more in-depth audits of study registrations and final reports.
 
 Understanding intra-household gender discrimination using machine learning: Evidence from India (Joint work with [Ratul DasChaudhury](https://sites.google.com/view/ratul-das-chaudhury/my-homepage?authuser=0))
 

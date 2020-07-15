@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.10)  30 JUN 2020 23:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.10)  15 JUL 2020 23:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -450,7 +450,7 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 <to be read again> 
                    \relax 
 l.234 \faGithub\hspace{}
-                         \url{https://github.com/sayakkhatua} & India
+                         \url{https://sayakkhatua.github.io} & India
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -459,7 +459,7 @@ look up `weird error' in the index to The TeXbook.)
 <to be read again> 
                    \relax 
 l.234 \faGithub\hspace{}
-                         \url{https://github.com/sayakkhatua} & India
+                         \url{https://sayakkhatua.github.io} & India
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -498,43 +498,43 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
 [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (13.63599pt too wide) in paragraph at lines 367--368
+Overfull \hbox (13.63599pt too wide) in paragraph at lines 365--366
 []\OT1/phv/b/n/10 Khatua S.\OT1/phv/m/n/10 , Sarma V. (2019) \  Short-Term Ver-
 sus Long-Term Ef-fects of Forced Dis-place-ment".
  []
 
 
-Overfull \hbox (4.83527pt too wide) in paragraph at lines 372--373
-[]\OT1/phv/b/n/10 Khatua, S\OT1/phv/m/n/10 , et.al. 2020. \  Us-ing big data fo
-r eval-u-at-ing de-vel-op-ment out-comes: a sys-tem-atic
- []
-
-
-Overfull \hbox (11.67845pt too wide) in paragraph at lines 375--376
+Overfull \hbox (11.67845pt too wide) in paragraph at lines 373--374
 []\OT1/phv/b/n/10 Khatua, S.\OT1/phv/m/n/10 , DasChaud-hury, R. 2013.\  In Sear
 ch of Qual-ity: A study on El-e-men-tary Ed-u-ca-tion
  []
 
 
-Overfull \hbox (8.8022pt too wide) in paragraph at lines 375--376
+Overfull \hbox (8.8022pt too wide) in paragraph at lines 373--374
 \OT1/phv/m/n/10 in Ru-ral In-dia". OSF Preprints. July 10. doi:10.31219/osf.io/
 wyfap [Un-pub-lished manuscript] 
  []
 
 
-Overfull \hbox (13.66728pt too wide) in paragraph at lines 396--397
+Overfull \hbox (18.45918pt too wide) in paragraph at lines 391--392
+[]\OT1/phv/m/n/10 Speaker and Pan-elist, [][]Trans-parency, Re-pro-ducibil-ity,
+ and Cred-i-bil-ity: A Re-search Sym-po-sium[][],
+ []
+
+
+Overfull \hbox (13.66728pt too wide) in paragraph at lines 394--395
 []\OT1/phv/m/n/10 \  Mod-elling Mi-gra-tion", Pre-sented at the De-part-men-tal
  Brown Bag, De-part-ment of Eco-nomics,
  []
 
 
-Overfull \hbox (6.14575pt too wide) in paragraph at lines 402--403
+Overfull \hbox (6.14575pt too wide) in paragraph at lines 400--401
 []\OT1/phv/m/n/10 Graduate As-sis-tan-ship(for PhD), De-part-ment of Eco-nomics
 , Uni-ver-sity of Illi-nois at Chicago
  []
 
 
-Overfull \hbox (14.47153pt too wide) in paragraph at lines 409--411
+Overfull \hbox (14.47153pt too wide) in paragraph at lines 407--409
 []\OT1/phv/m/n/10 Quantitative Re-search, Data Anal-y-sis, Repli-ca-tion, Re-se
 arch Trans-parency, Sta-tis-ti-cal Mod-el-ing,
  []
@@ -542,32 +542,14 @@ arch Trans-parency, Sta-tis-ti-cal Mod-el-ing,
 [2] 
 AED: lastpage setting LastPage
 [3]
-
-! LaTeX Error: \begin{itemize} on input line 414 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.443 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 443.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 443.
-(./Sayak_Khatua_CV.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 443.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 443.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 442.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 442.
+ (./Sayak_Khatua_CV.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 442.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 442.
 Package rerunfilecheck Info: File `Sayak_Khatua_CV.out' has not changed.
 (rerunfilecheck)             Checksum: B9C5867842BF455399EE43797A199268;758.
- )
-(\end occurred inside a group at level 2)
-
-### semi simple group (level 2) entered at line 414 (\begingroup)
-### semi simple group (level 1) entered at line 413 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
  8333 strings out of 492995
  122531 string characters out of 6132703
@@ -575,16 +557,16 @@ Here is how much of TeX's memory you used:
  11797 multiletter control sequences out of 15000+600000
  15563 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,8n,43p,804b,528s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
-}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo
-.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/fontawesome/FontAwe
-some.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Sayak_Khatua_CV.pdf (3 pages, 63843 bytes).
+ 28i,8n,43p,804b,510s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
+exlive/2017/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}</usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on Sayak_Khatua_CV.pdf (3 pages, 63652 bytes).
 PDF statistics:
  119 PDF objects out of 1000 (max. 8388607)
  106 compressed objects within 2 object streams
