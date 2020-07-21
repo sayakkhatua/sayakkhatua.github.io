@@ -6,27 +6,19 @@ subtitle: I am interested in Development Economics, Policy Analysis, Health, Mig
 ---
 
 # Publications
-Khatua S., Sarma V. (2019) “Short-Term Versus Long-Term Effects of Forced Displacement”. In: Yoshino N., Paul S. (eds) Land Acquisition in Asia. Palgrave Macmillan, Singapore. <br> [Link here](https://link.springer.com/chapter/10.1007/978-981-13-6455-6_3)
+Khatua S., Sarma V. (2019) “Short-Term Versus Long-Term Effects of Forced Displacement”. In: Yoshino N., Paul S. (eds) Land Acquisition in Asia. Palgrave Macmillan, Singapore. [Link here](https://link.springer.com/chapter/10.1007/978-981-13-6455-6_3)
 
 # Working Papers
 
-Using big data for evaluating development outcomes: a systematic map.
-<p>
-	"
-	with colleagues at 3ie
-	" 
-</p>
-[Click here for Map visualization](https://gapmaps.3ieimpact.org/evidence-maps/big-data-systematic-map)
+"Using big data for evaluating development outcomes: a systematic map."<br>with colleagues at 3ie <br>[Click here for Map visualization](https://gapmaps.3ieimpact.org/evidence-maps/big-data-systematic-map)
 
 <details>
 <summary>Abstract</summary>
 The paper is based on a systematic mapping of the studies that use big data  to measure and evaluate development outcomes. In this paper we discuss methodological, ethical and practical constraints relating to the use of big data. The systematic map includes impact evaluations (IEs) that use big data to evaluate development outcomes, systematic reviews of big data IEs and other measurement studies that innovatively use big data to measure and validate any development outcomes. This study also explores the sectoral and geographical spread of big data's use in international development.  This map includes studies written in English and published between 2005 and 2019, regardless of the target country's income level or population's status. We provide detailed breakdowns in the map for different country income classifications, fragile contexts, and population characteristics. From the initial list of 17,393 studies, we arrived at a final list of 437 studies which included 48 impact evaluations, 381 measurement studies and 8 systematic reviews.
 </details>
 
-Visualization showing connection between big data and development outcomes
-![](/img/big_data_map.png)
 
-"Promoting lartrine use in rural India: a synthesis of findings".<br>with Charlotte Lane
+"Promoting lartrine use in rural India: a synthesis of findings."<br>with Charlotte Lane
 
 <details>
 <summary>Abstract</summary>
@@ -40,8 +32,8 @@ In 2014, the Indian government launched the Swachh Bharat Mission (SBM) to endop
 The study aims to check the reusability of impact evaluation data by verifying the results presented in published 3ie reports. In order to verify results, we conduct push button replications on the original data and code submitted by the authors. We use the push button replication protocol developed at 3ie to determine the level of comparability of the replication results to the original findings. Our sample includes closed 3ie-funded impact evaluations commissioned between 2008 and 2018. Of the 74 studies in our sample, we successfully reproduced results from 38 studies (51%). 24 (32%) studies were categorized as incomplete and 12 (16%) studies were categorized as having major differences. The cumulative replication rate in 2018 increased to 51%, as compared to the below-40% replication rate in previous years. Overall, on average, it took about 3 hours to complete the replication of a single impact evaluation. Evidence from impact evaluations are credible when it is verifiable. Our findings suggest that greater attention is needed to ensure the reliability and reusability of evidence. We recommend push button replications as a tested method to ascertain the credibility of findings.
 </details>
 
-“In Search of Quality: A study on Elementary Education in Rural India”.<br> 
-with [Ratul DasChaudhury](https://sites.google.com/view/ratul-das-chaudhury/my-homepage?authuser=0) <br>[Preprint](https://osf.io/wyfap/)
+“In Search of Quality: A study on Elementary Education in Rural India”. 
+<br>with [Ratul DasChaudhury](https://sites.google.com/view/ratul-das-chaudhury/my-homepage?authuser=0) <br>[Preprint](https://osf.io/wyfap/)
 
 
 <details>
@@ -51,7 +43,7 @@ This study investigates the quality of education attained by students in rural a
 
 ## Work in progress
 
-Transparency and Openness of Impact Evaluations in International Development: An Audit of 3ie-Funded Research<br>with [Sean Grant](https://fsph.iupui.edu/about/directory/grant-sean.html)
+Transparency and Openness of Impact Evaluations in International Development: An Audit of 3ie-Funded Research <br>with [Sean Grant](https://fsph.iupui.edu/about/directory/grant-sean.html)
 
 <details>
 <summary>Abstract</summary>

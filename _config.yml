@@ -23,7 +23,7 @@ navbar-links:
   Research: "research"
   CV: "/cv/Sayak_Khatua_CV.pdf"
   Resources:
-    - Visualizations: "/404.html"
+    - Visualizations: "visual"
     - Data links: "/404.html"
     - Notes: "/404.html"
   #Travelogue: "/404.html"
