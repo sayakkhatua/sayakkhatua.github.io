@@ -1,5 +1,5 @@
 ---
-layout: research
+layout: page
 title: Research
 subtitle: I am interested in Development Economics, Policy Analysis, Health, Migration, Replication research
 
