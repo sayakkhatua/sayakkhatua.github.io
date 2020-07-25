@@ -20,8 +20,11 @@ description: Personal website of Sayak Khatua
 
 # List of links in the navigation bar
 navbar-links:
-  Research: "research"
-  CV: "/cv/Sayak_Khatua_CV.pdf"
+  Research: 
+    - Research Statement: "/cv/Sayak_Khatua_Research Statement.pdf"
+    - In-progress: "in_progress"
+    - Other work: "other_work"
+  Publication: "publication"
   Resources:
     - Visualizations: "visual"
     - Data links: "/404.html"
