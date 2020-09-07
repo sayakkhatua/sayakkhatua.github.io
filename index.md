@@ -13,7 +13,7 @@ Please find my latest CV [here](/cv/Sayak_Khatua_CV.pdf)
 
 I can be reached at skhatua[at]3ieimpact[dot]org or sayakkhatua[at]yahoo[dot]in
 
-### I am currently working on the following projects at [3ie](https://www.3ieimpact.org)
-- Using big data for evaluating development outcomes: a systematic
-map
-- Promoting lartrine use in rural India: a synthesis of findings
+### What I am currently doing at [3ie](https://www.3ieimpact.org)
+- Manage 4 3ie impact evaluation grants across Nepal, Pakistan and Uganda
+- Create online training materials for impact evaluation hands-on training in Stata
+
