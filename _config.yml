@@ -21,7 +21,7 @@ description: Personal website of Sayak Khatua
 # List of links in the navigation bar
 navbar-links:
   Research: 
-    - Research Statement: "/cv/Sayak_Khatua_Research Statement.pdf"
+  #Research Statement: "/cv/Sayak_Khatua_Research Statement.pdf"
     - In-progress: "in_progress"
     - Other work: "other_work"
   Publication: "publication"
