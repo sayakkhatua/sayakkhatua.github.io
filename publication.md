@@ -5,12 +5,12 @@ subtitle: List of published and working papers
 
 ---
 
-# Publications
+# Book Chapter
 Khatua S., Sarma V. (2019) “Short-Term Versus Long-Term Effects of Forced Displacement”. In: Yoshino N., Paul S. (eds) Land Acquisition in Asia. Palgrave Macmillan, Singapore. [Link here](https://link.springer.com/chapter/10.1007/978-981-13-6455-6_3)
 
 # Working Papers
 
-"Using big data for evaluating development outcomes: a systematic map."(2020) ***Manuscript in preparation*** <br>with colleagues at 3ie <br>[Click here for Map visualization](https://gapmaps.3ieimpact.org/evidence-maps/big-data-systematic-map)
+"Using big data for evaluating development outcomes: a systematic map."(Forthcoming, 2020)  <br> with colleagues at 3ie <br>[<u>Click here for Map visualization<u>](https://gapmaps.3ieimpact.org/evidence-maps/big-data-systematic-map)
 
 <details>
 <summary>Abstract</summary>
@@ -18,14 +18,14 @@ The paper is based on a systematic mapping of the studies that use big data  to 
 </details>
 
 
-"Promoting lartrine use in rural India: a synthesis of findings."(2020) ***Manuscript in preparation*** <br>with Charlotte Lane
+"The use of behavioural-science informed interventions to promote latrine use in rural India: a synthesis of findings"(2020) <br>with Charlotte Lane and Bethany Caruso <br> [Preprint](https://osf.io/preprints/metaarxiv/g7cmd/)
 
 <details>
 <summary>Abstract</summary>
 In 2014, the Indian government launched the Swachh Bharat Mission (SBM) to endopen defecation, an historically common practice that has persisted in the country despite household latrine ownership. The majorityof SBM resources were targeted to latrine construction across the country,enabling access to sanitation but not necessarily guaranteeing use. In 2016,the International Initiative for Impact Evaluation (3ie) funded fourcluster-randomized trials to assess the impact of behavioural-science informedinterventions in rural Bihar, Karnataka, Odisha, and Gujarat on latrine useamong those with household latrines. Each intervention was specifically designed to to target the behavioralbarriers and facilitators to latrine use in each location. The aim of thismeta-synthesis is to determine if these behavioural science informedinterventions successfully increased latrine use in rural India. All four trials used an agreed upon set of measures to assess self-reported latrine use,the primary outcome, and household-level observed latrine use. The use ofsimilar measurements enables comparison. For each intervention, we calculate difference-in-differences to estimate the effects of the interventions, independentof the impact of the Swachh Bharat Mission. We then conducted an individual-participant, meta-difference-in-difference tosynthesize these estimates. Self-reported latrine use increased across all sites over the course of the intervention;although, this was non-significant in Gujarat (Bihar=0.962, Karnataka=1.207, Odisha=0.660, Meta-effect=0.793). The meta-effect estimate of the differencein increase between the intervention and control sites shows that interventionsites had larger increases in self-reported latrine use than control sites aswell (Meta-effect=0.329). However, indicators of household-level observedlatrine use did not find an effect. Through the use of an individual-level, meta-difference-in-difference, we show suggestiveevidence that behavioural-science informed interventions may increase latrineuse among those with latrine access beyond the effect of the SBM alone. As the Mission enters its next phase , it may be more effective to focus on the behaviouraldrivers of latrine use and non-use, particularly for maintaining latrine usebehaviors and changing the behavior of those who have yet to start using, inaddition to addressing barriers.
 </details>
 
-"Making Data Reusable: Lessons Learned from Replications of Impact Evaluations.”(2019) ***Revise & resubmit, PLOS One***<br>with Neeta Goel and Marie Gaarder <br> [Preprint](https://osf.io/4jvq2/) [Data and code](https://doi.org/10.7910/DVN/FPNITS)
+"Making Data Reusable: Lessons Learned from Replications of Impact Evaluations.”(2019) <br>with Neeta Goel and Marie Gaarder <br> [Preprint](https://osf.io/4jvq2/) [Data and code](https://doi.org/10.7910/DVN/FPNITS)
 
 <details>
 <summary>Abstract</summary>
