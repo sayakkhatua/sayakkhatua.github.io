@@ -1,16 +1,16 @@
 ---
 layout: page
 title: Publication
-subtitle: List of published and working papers
+subtitle: List of published work
 
 ---
 
-# Book Chapter
+# Book Chapters
 Khatua S., Sarma V. (2019) “Short-Term Versus Long-Term Effects of Forced Displacement”. In: Yoshino N., Paul S. (eds) Land Acquisition in Asia. Palgrave Macmillan, Singapore. [Link here](https://link.springer.com/chapter/10.1007/978-981-13-6455-6_3)
 
 # Working Papers
 
-"Using big data for evaluating development outcomes: a systematic map."(Forthcoming, 2020)  <br> with colleagues at 3ie <br>[<u>Click here for Map visualization<u>](https://gapmaps.3ieimpact.org/evidence-maps/big-data-systematic-map)
+"Using big data for evaluating development outcomes: a systematic map."(Forthcoming, 2020)  <br> with colleagues at 3ie <br>[Click here for Map visualization](https://gapmaps.3ieimpact.org/evidence-maps/big-data-systematic-map)
 
 <details>
 <summary>Abstract</summary>
@@ -18,7 +18,7 @@ The paper is based on a systematic mapping of the studies that use big data  to 
 </details>
 
 
-"The use of behavioural-science informed interventions to promote latrine use in rural India: a synthesis of findings"(2020) <br>with Charlotte Lane and Bethany Caruso <br> [Preprint](https://osf.io/preprints/metaarxiv/g7cmd/)
+"The use of behavioural-science informed interventions to promote latrine use in rural India: a synthesis of findings."(2020) <br>with Charlotte Lane and Bethany Caruso <br> [Preprint](https://osf.io/preprints/metaarxiv/g7cmd/)
 
 <details>
 <summary>Abstract</summary>
