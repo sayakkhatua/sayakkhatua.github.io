@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.10)  21 OCT 2020 23:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.10)  21 OCT 2020 23:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -528,19 +528,19 @@ Overfull \hbox (18.45918pt too wide) in paragraph at lines 391--392
  []
 
 
-Overfull \hbox (13.66728pt too wide) in paragraph at lines 394--395
+Overfull \hbox (13.66728pt too wide) in paragraph at lines 395--396
 []\OT1/phv/m/n/10 \  Mod-elling Mi-gra-tion", Pre-sented at the De-part-men-tal
  Brown Bag, De-part-ment of Eco-nomics,
  []
 
 
-Overfull \hbox (6.14575pt too wide) in paragraph at lines 400--401
+Overfull \hbox (6.14575pt too wide) in paragraph at lines 401--402
 []\OT1/phv/m/n/10 Graduate As-sis-tan-ship(for PhD), De-part-ment of Eco-nomics
 , Uni-ver-sity of Illi-nois at Chicago
  []
 
 
-Overfull \hbox (14.47153pt too wide) in paragraph at lines 407--409
+Overfull \hbox (14.47153pt too wide) in paragraph at lines 408--410
 []\OT1/phv/m/n/10 Quantitative Re-search, Data Anal-y-sis, Repli-ca-tion, Re-se
 arch Trans-parency, Sta-tis-ti-cal Mod-el-ing,
  []
@@ -548,11 +548,11 @@ arch Trans-parency, Sta-tis-ti-cal Mod-el-ing,
 [2] 
 AED: lastpage setting LastPage
 [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 436.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 436.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 437.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 437.
  (./Sayak_Khatua_CV.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 436.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 436.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 437.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 437.
 Package rerunfilecheck Info: File `Sayak_Khatua_CV.out' has not changed.
 (rerunfilecheck)             Checksum: E314A0FDC22E3D631BA6A99093C6E9A1;759.
  ) 
@@ -572,7 +572,7 @@ local/texlive/2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Sayak_Khatua_CV.pdf (3 pages, 63574 bytes).
+Output written on Sayak_Khatua_CV.pdf (3 pages, 63603 bytes).
 PDF statistics:
  119 PDF objects out of 1000 (max. 8388607)
  106 compressed objects within 2 object streams
