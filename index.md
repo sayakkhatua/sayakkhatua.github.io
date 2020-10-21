@@ -11,7 +11,7 @@ I am interested in Development Economics, Policy Analysis, Health, Migration, Re
 
 Please find my latest CV [here](/cv/Sayak_Khatua_CV.pdf)
 
-I can be reached at skhatua[at]3ieimpact[dot]org or sayakkhatua[at]yahoo[dot]in
+I can be reached at skhatua[at]3ieimpact[dot]org or sayakkhatua[at]icloud[dot]com
 
 ### What I am currently doing at [3ie](https://www.3ieimpact.org)
 - Managing 4 3ie impact evaluation grants across Nepal, Pakistan and Uganda

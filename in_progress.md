@@ -19,8 +19,7 @@ Power in practice <br>with Robert Reed, Alex Tian, Tom Coupe, Ben Wood
 Statistical power is the probability of obtaining a significant estimate, conditional on the true size of the underlying effect. Research funders commonly ask for ex-ante power calculations to determine whether the sample size of the proposed research is sufficient to demonstrate an effect. However, ex-ante power calculations often involve subjective judgments. The purpose of our study is to present a simple estimator of power that can be used after a study is completed. We first provide Monte Carlo evidence of the reliability of this estimator. We then apply it to a set of studies that were funded by 3ie (International Initiative for Impact Evaluation). We compare our ex post calculations of power with the ex-ante calculations that were submitted to the funder. Finally, we discuss how ex post power calculations can be useful in a number of settings, including current debates in the “replication crisis”.	
 </details>
 
-
-Co-authorship network analysis in Impact evaluation research <br>with Malvya Chintakindi and [Ratul DasChaudhury](https://sites.google.com/view/ratul-das-chaudhury/my-homepage?authuser=0)
+The Great (research) Divide <br>with Malvya Chintakindi and [Ratul DasChaudhury](https://sites.google.com/view/ratul-das-chaudhury/my-homepage?authuser=0)
 
 
 
