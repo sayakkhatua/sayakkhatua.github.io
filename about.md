@@ -5,7 +5,7 @@ subtitle:
 
 ---
 
-![](/img/Khatua_photograph.png)
+![](/img/Khatua_photograph.JPG)
 
 I am a well-rounded international development professional, economist and an avid evaluator with extensive experience in managing impact evaluations, building capacity towards handling large sets of mixed methods data and verifying computational reproducibility of conducted evaluations. I am also skilled in several tools (statistical and others) such as STATA, R, SAS, SPSS, LATEX, Epi Info, ArcGIS, GeoDa, SurveyCTO, GitHub and so on. I have played a key role in leading 3ie’s Research Transparency Initiative, managing 3ie’s Registry for International Development Impact Evaluations (RIDIE) and 3ie’s Public Data repository on Harvard Dataverse. I have supervised production and verification of impact evaluation data and advised research personnel on improving the quality, reproducibility and management of such data and analysis code. I am an innovative researcher and an experienced teacher. Sayak embodies all of the above and beyond in his various roles at 3ie. 
 
