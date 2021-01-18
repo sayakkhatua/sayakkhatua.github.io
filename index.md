@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sayak Khatua
-subtitle: Senior Research Associate, International Initiative for Impact Evaluation(3ie)
+subtitle: Evaluation Specialist, International Initiative for Impact Evaluation(3ie)
 
 ---
 
