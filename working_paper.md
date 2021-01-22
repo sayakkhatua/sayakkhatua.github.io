@@ -1,16 +1,11 @@
 ---
 layout: page
-title: Publication
-subtitle: List of published work
+title: Research
+subtitle: Working Papers
 
 ---
 
-# Book Chapters
-Khatua S., Sarma V. (2019) “Short-Term Versus Long-Term Effects of Forced Displacement”. In: Yoshino N., Paul S. (eds) Land Acquisition in Asia. Palgrave Macmillan, Singapore. [Link here](https://link.springer.com/chapter/10.1007/978-981-13-6455-6_3)
-
-# Working Papers
-
-"Using big data for evaluating development outcomes: a systematic map."(Forthcoming CEDIL Working Paper Series, 2020)  <br> with colleagues at 3ie <br>[Click here for Map visualization](https://gapmaps.3ieimpact.org/evidence-maps/big-data-systematic-map)
+"Using big data for evaluating development outcomes: a systematic map."(CEDIL Methods Working Paper Series, December 2020)  <br> with colleagues at 3ie and Flowminder <br>[Click here for Map visualization](https://gapmaps.3ieimpact.org/evidence-maps/big-data-systematic-map) [Paper](https://cedilprogramme.org/wp-content/uploads/2020/12/Big-data-for-evaluating-development-outcomes_CEDIL-Programme_December-2020.docx.pdf)
 
 <details>
 <summary>Abstract</summary>
@@ -41,8 +36,3 @@ The study aims to check the reusability of impact evaluation data by verifying t
 This study investigates the quality of education attained by students in rural areas of different states in India. The government of India has focused on fulfillment of the Millennium Development Goals, children should be able to attain at least primary education, neglecting learning achievement. We examine quality of education by computing an index, Learning Achievement Index (LAI) based on data from Annual Status of Education Report(ASER). We compute two more indices based on quality of infrastructure provided and quality of teachers and ranked the states accordingly. We look for the impact of expenditure by the Indian Government in quality provisions on the Learning Achievement Index(LAI). The results show certain positive and negative impacts, most importantly showing that mother’s education has a significant impact on the child’s learning achievement. Some of the results support our expectations and we explain why some of our hypothesis was invalidated by the LAI based analysis.
 </details>
 
-# Other publications
-
-Khatua, S.(2018).[“What’s the deal with Push Button Replication?”](https://www.3ieimpact.org/blogs/whats-deal-push-button-replications). Evidence Matters.
-
-Apoorva, P.V., Krishnan, A., Khatua, S. (2017). [“Swachch Bharat Mission: Need clarity on actual impact”](https://www.dnaindia.com/analysis/column-swachh-bharat-mission-need-clarity-on-actual-impact-2550433). DNA India.

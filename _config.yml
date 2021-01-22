@@ -22,10 +22,10 @@ description: Personal website of Sayak Khatua
 navbar-links:
   About: "about"
   Research: 
-  #Research Statement: "/cv/Sayak_Khatua_Research Statement.pdf"
+    - Working Papers: "working_paper"
+    - Book Chapters: "book"
     - In-progress: "in_progress"
     - Other work: "other_work"
-  Publication: "publication"
   Resources:
     - Visualizations: "visual"
     - Data links: "/404.html"
