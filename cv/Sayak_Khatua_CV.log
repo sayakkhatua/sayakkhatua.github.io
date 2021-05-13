@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.10)  21 MAR 2021 20:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.10)  13 MAY 2021 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -473,29 +473,28 @@ Overfull \hbox (18.0pt too wide) in paragraph at lines 227--236
  []
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 260.
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 265.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 261.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 264.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 265.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 264.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 268.
 
-Overfull \hbox (2.43602pt too wide) in paragraph at lines 269--270
-[]\OT1/phv/m/n/10 Advise re-search per-son-nel (in-clud-ing 3ie grantees) on im
--prov-ing the qual-ity, re-pro-ducibil-ity
+Overfull \hbox (12.30559pt too wide) in paragraph at lines 304--305
+[]\OT1/phv/m/n/10 Build ca-pac-ity on im-prov-ing the qual-ity, re-pro-ducibil-
+ity and man-age-ment of Im-pact Eval-u-a-tion 
  []
 
 [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 342.
-
-Overfull \hbox (19.45975pt too wide) in paragraph at lines 368--369
-[]\OT1/phv/b/n/10 Khatua, S.\OT1/phv/m/n/10 , Sarma, V. (2019) \  Short-Term Ve
-r-sus Long-Term Ef-fects of Forced Dis-place-ment".
+Overfull \hbox (2.04564pt too wide) in paragraph at lines 355--356
+\OT1/phv/m/n/10 Displacement". In: Yoshino N., Paul S. (eds) Land Ac-qui-si-tio
+n in Asia. Pal-grave Macmil-lan,
  []
 
 Missing character: There is no â in font phvr7t!
@@ -505,43 +504,37 @@ Missing character: There is no â in font phvr7t!
 Missing character: There is no € in font phvr7t!
 Missing character: There is no ‹ in font phvr7t!
 
-Overfull \hbox (11.67845pt too wide) in paragraph at lines 376--377
+Overfull \hbox (11.67845pt too wide) in paragraph at lines 363--364
 []\OT1/phv/b/n/10 Khatua, S.\OT1/phv/m/n/10 , DasChaud-hury, R. 2013.\  In Sear
 ch of Qual-ity: A study on El-e-men-tary Ed-u-ca-tion
  []
 
 
-Overfull \hbox (8.8022pt too wide) in paragraph at lines 376--377
+Overfull \hbox (8.8022pt too wide) in paragraph at lines 363--364
 \OT1/phv/m/n/10 in Ru-ral In-dia". OSF Preprints. July 10. doi:10.31219/osf.io/
 wyfap [Un-pub-lished manuscript] 
  []
 
 
-Overfull \hbox (7.12512pt too wide) in paragraph at lines 381--382
+Overfull \hbox (7.12512pt too wide) in paragraph at lines 368--369
 []\OT1/phv/b/n/10 Khatua, S.\OT1/phv/m/n/10 (2018).[][]\  What's the deal with 
 Push But-ton Repli-ca-tion?"[][]. Ev-i-dence Mat-ters.[Blog] 
  []
 
 
-Overfull \hbox (24.76898pt too wide) in paragraph at lines 395--396
-[]\OT1/phv/m/n/10 Presenter and Pan-elist, [][]Trans-parency, Re-pro-ducibil-it
-y, and Cred-i-bil-ity: A Re-search Sym-po-sium[][],
+Overfull \hbox (31.4289pt too wide) in paragraph at lines 383--384
+[]\OT1/phv/m/n/10 Presenter and Pan-elist, \  Trans-parency, Re-pro-ducibil-ity
+, and Cred-i-bil-ity: A Re-search Sym-po-sium",
  []
 
 
-Overfull \hbox (13.66728pt too wide) in paragraph at lines 399--400
+Overfull \hbox (13.66728pt too wide) in paragraph at lines 387--388
 []\OT1/phv/m/n/10 \  Mod-elling Mi-gra-tion", Pre-sented at the De-part-men-tal
  Brown Bag, De-part-ment of Eco-nomics,
  []
 
-
-Overfull \hbox (6.14575pt too wide) in paragraph at lines 405--406
-[]\OT1/phv/m/n/10 Graduate As-sis-tan-ship(for PhD), De-part-ment of Eco-nomics
-, Uni-ver-sity of Illi-nois at Chicago
- []
-
 [2]
-Overfull \hbox (14.47153pt too wide) in paragraph at lines 412--414
+Overfull \hbox (14.47153pt too wide) in paragraph at lines 400--402
 []\OT1/phv/m/n/10 Quantitative Re-search, Data Anal-y-sis, Repli-ca-tion, Re-se
 arch Trans-parency, Sta-tis-ti-cal Mod-el-ing,
  []
@@ -549,22 +542,22 @@ arch Trans-parency, Sta-tis-ti-cal Mod-el-ing,
 
 AED: lastpage setting LastPage
 [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 441.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 441.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 429.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 429.
  (./Sayak_Khatua_CV.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 441.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 441.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 429.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 429.
 Package rerunfilecheck Info: File `Sayak_Khatua_CV.out' has not changed.
-(rerunfilecheck)             Checksum: E314A0FDC22E3D631BA6A99093C6E9A1;759.
+(rerunfilecheck)             Checksum: E2323CC7AA9B0B21B9727E1C16D9FE14;824.
  ) 
 Here is how much of TeX's memory you used:
- 8333 strings out of 492995
- 122531 string characters out of 6132703
+ 8335 strings out of 492995
+ 122555 string characters out of 6132703
  231419 words of memory out of 5000000
- 11797 multiletter control sequences out of 15000+600000
+ 11798 multiletter control sequences out of 15000+600000
  15563 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,8n,43p,804b,510s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,8n,43p,804b,366s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2017/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}</usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr
@@ -573,10 +566,10 @@ local/texlive/2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Sayak_Khatua_CV.pdf (3 pages, 64526 bytes).
+Output written on Sayak_Khatua_CV.pdf (3 pages, 64153 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 124 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
