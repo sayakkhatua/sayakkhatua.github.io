@@ -13,7 +13,7 @@ The paper is based on a systematic mapping of the studies that use big data  to 
 </details>
 
 
-"The use of behavioural-science informed interventions to promote latrine use in rural India: a synthesis of findings."(2020)[Under review, World Development] <br>with Charlotte Lane and Bethany Caruso <br> [Preprint](https://osf.io/preprints/metaarxiv/g7cmd/)
+"The use of behavioural-science informed interventions to promote latrine use in rural India: a synthesis of findings."(2020)[Under review, World Development] <br>with Charlotte Lane and Bethany Caruso <br> [Preprint](https://osf.io/preprints/metaarxiv/g7cmd/) [Data and code](https://doi.org/10.7910/DVN/IDJ8FJ)
 
 <details>
 <summary>Abstract</summary>

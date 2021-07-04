@@ -8,5 +8,4 @@ subtitle:
 ## Using big data to measure and evaluate development outcomes
 ![](/img/big_data_map.png)
 
-Visualization showing connection between big data and development outcomes.
-Tableau files [here](/visual_data/Design_source_outcome_sankey.twbx)
+Visualization showing connection between study types, big data sources and development outcomes. Access Tableau files [here](/visual_data/Design_source_outcome_sankey.twbx)
