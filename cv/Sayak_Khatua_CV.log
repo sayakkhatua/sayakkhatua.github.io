@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.10)  10 JUN 2021 11:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.10)  4 JUL 2021 20:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -458,12 +458,6 @@ Overfull \hbox (2.04564pt too wide) in paragraph at lines 359--360
 n in Asia. Pal-grave Macmil-lan,
  []
 
-Missing character: There is no â in font phvr7t!
-Missing character: There is no € in font phvr7t!
-Missing character: There is no ‹ in font phvr7t!
-Missing character: There is no â in font phvr7t!
-Missing character: There is no € in font phvr7t!
-Missing character: There is no ‹ in font phvr7t!
 
 Overfull \hbox (10.56847pt too wide) in paragraph at lines 368--369
 []\OT1/phv/b/n/10 Khatua, S.\OT1/phv/m/n/10 , DasChaud-hury, R. 2013.`In Search
@@ -483,9 +477,9 @@ Push But-ton Repli-ca-tion?"[][]. Ev-i-dence Mat-ters.[Blog]
  []
 
 
-Overfull \hbox (31.4289pt too wide) in paragraph at lines 388--389
-[]\OT1/phv/m/n/10 Presenter and Pan-elist, \  Trans-parency, Re-pro-ducibil-ity
-, and Cred-i-bil-ity: A Re-search Sym-po-sium",
+Overfull \hbox (24.76898pt too wide) in paragraph at lines 388--389
+[]\OT1/phv/m/n/10 Presenter and Pan-elist, Trans-parency, Re-pro-ducibil-ity, a
+nd Cred-i-bil-ity: A Re-search Sym-po-sium,
  []
 
 
@@ -497,11 +491,11 @@ Overfull \hbox (13.66728pt too wide) in paragraph at lines 392--393
 [2] 
 AED: lastpage setting LastPage
 [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 436.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 436.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 438.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 438.
  (./Sayak_Khatua_CV.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 436.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 436.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 438.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 438.
 Package rerunfilecheck Info: File `Sayak_Khatua_CV.out' has not changed.
 (rerunfilecheck)             Checksum: 10E824353E7E1515C301B804427F5275;705.
  ) 
@@ -521,10 +515,10 @@ local/texlive/2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Sayak_Khatua_CV.pdf (3 pages, 61371 bytes).
+Output written on Sayak_Khatua_CV.pdf (3 pages, 60986 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
+ 111 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
  18 named destinations out of 1000 (max. 500000)
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

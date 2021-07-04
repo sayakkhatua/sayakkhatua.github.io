@@ -7,7 +7,17 @@ subtitle: Evaluation Specialist, International Initiative for Impact Evaluation(
 
 I lead 3ie’s [Transparency, Reproducibility, and Ethics(TRE)](https://www.3ieimpact.org/our-expertise/research-transparency) portfolio and manage [Registry of International Development Impact Evaluation (RIDIE)](https://ridie.3ieimpact.org), and [3ie's Harvard Dataverse](https://ridie.3ieimpact.org). I specialize in data curation, management, and computational reproducibility ([Push Button Replications](https://www.3ieimpact.org/our-expertise/replication/push-button-replication)).
 
-I am interested in Development Economics, Policy Analysis, Migration, Replication research, Meta-research and Evidence synthesis.
+
+#### Interests
+- Development Economics
+- Policy Analysis
+- Migration
+- Meta-research
+- Evidence synthesis
+- Big data in International development
+- Machine Learning and Causal Inference
+- Geospatial impact evaluation
+
 
 Please find my latest CV [here](/cv/Sayak_Khatua_CV.pdf)
 

@@ -20,7 +20,7 @@ description: Personal website of Sayak Khatua
 
 # List of links in the navigation bar
 navbar-links:
-  About: "about"
+  #About: "about"
   Research: 
     - Working Papers: "working_paper"
     - Book Chapters: "book"
@@ -28,8 +28,8 @@ navbar-links:
     - Other work: "other_work"
   Resources:
     - Visualizations: "visual"
-    - Data links: "/404.html"
-    - Notes: "/404.html"
+    #- Data links: "/404.html"
+    #- Notes: "/404.html"
   #Travelogue: "/404.html"
   #Personal: "personal"
 
