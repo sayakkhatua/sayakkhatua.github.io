@@ -5,7 +5,7 @@ subtitle: Working Papers
 
 ---
 
-"Using big data for evaluating development outcomes: a systematic map."(CEDIL Methods Working Paper Series, December 2020)  <br> with colleagues at 3ie and Flowminder <br>[Click here for Map visualization](https://gapmaps.3ieimpact.org/evidence-maps/big-data-systematic-map) [Paper](https://cedilprogramme.org/wp-content/uploads/2020/12/Big-data-for-evaluating-development-outcomes_CEDIL-Programme_December-2020.docx.pdf)
+Rathinam, F., Khatua, S., Siddiqui, Z., Malik, M., Duggal, P., Watson, S., Vollenweider, X. Using big data for evaluating development outcomes: a systematic map. Campbell Systematic Reviews. 2021; 17:e1149. [Link Here](https://doi.org/10.1002/cl2.1149) [Map visualization](https://gapmaps.3ieimpact.org/evidence-maps/big-data-systematic-map) [Paper](https://cedilprogramme.org/wp-content/uploads/2020/12/Big-data-for-evaluating-development-outcomes_CEDIL-Programme_December-2020.docx.pdf)
 
 <details>
 <summary>Abstract</summary>
