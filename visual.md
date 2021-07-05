@@ -10,6 +10,8 @@ subtitle:
 
 Connection between study types, big data sources and development outcomes. Access Tableau files [here](/visual_data/Design_source_outcome_sankey.twbx)
 
+---
+
 ## Childhood obesity: is proximity to fast food centers a factor in Chicago area?
 ![](/img/chicago.png)
 

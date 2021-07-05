@@ -22,7 +22,8 @@ description: Personal website of Sayak Khatua
 navbar-links:
   #About: "about"
   CV: "/cv/Sayak_Khatua_CV.pdf"
-  Research: 
+  Research:
+    - Peer-reviewed: "peer_reviewed" 
     - Working Papers: "working_paper"
     - Book Chapters: "book"
     - In-progress: "in_progress"
