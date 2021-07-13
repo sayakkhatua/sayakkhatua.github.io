@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.10)  5 JUL 2021 23:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.10)  12 JUL 2021 12:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -488,12 +488,6 @@ Overfull \hbox (13.66728pt too wide) in paragraph at lines 396--397
  Brown Bag, De-part-ment of Eco-nomics,
  []
 
-
-Overfull \hbox (19.97174pt too wide) in paragraph at lines 407--408
-[]\OT1/phv/m/n/10 Development Eco-nomics, Pol-icy Anal-y-sis, Mi-gra-tion, Ev-i
--dence Syn-the-sis, Big data in In-ter-na-tional
- []
-
 [2] 
 AED: lastpage setting LastPage
 [3]
@@ -521,7 +515,7 @@ local/texlive/2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Sayak_Khatua_CV.pdf (3 pages, 61461 bytes).
+Output written on Sayak_Khatua_CV.pdf (3 pages, 61481 bytes).
 PDF statistics:
  117 PDF objects out of 1000 (max. 8388607)
  104 compressed objects within 2 object streams
