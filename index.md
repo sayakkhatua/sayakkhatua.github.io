@@ -12,6 +12,7 @@ I lead 3ie’s [Transparency, Reproducibility, and Ethics(TRE)](https://www.3iei
 - Development Economics
 - Policy Analysis
 - Migration
+- Climate Change
 - Evidence synthesis
 - Big data in International development
 - Machine Learning and Causal Inference
