@@ -68,6 +68,8 @@ format:
     fontsize: 1.2em
     linestretch: 1.5
     max-width: 1400px
+    page-layout: full
+    smooth-scroll: true
     theme: 
       - lumen
       - html/styles1.scss
