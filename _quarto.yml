@@ -33,21 +33,21 @@ website:
 # Don't touch unless you know what you are doing :) ------------
   search: 
     location: navbar
-    type: textbox
+#    type: textbox
   page-footer:
     border: true
     left: "&#169; 2025 Sayak Khatua"
     # your social media handles
-    center:
+#   center:
 #      - icon: folder-symlink
 #        href: https://www.marvinschmitt.com/blog/website-tutorial-quarto/
 #     - icon: twitter
 #        href: https://twitter.com/MarvinSchmittML
 #      - icon: linkedin
 #        href: https://www.linkedin.com/in/marvin-schmitt-a85b321a2/
-      - icon: envelope
-        aria-label: email
-        href: "mailto:khatuas@oregonstate.edu" 
+#      - icon: envelope
+#        aria-label: email
+#        href: "mailto:khatuas@oregonstate.edu" 
     right: "made with [Quarto](https://quarto.org)"
 
 project:
@@ -65,10 +65,12 @@ execute:
 
 format:
   html:
-    fontsize: 1.1em
+    fontsize: 1.2em
+    linestretch: 1.5
+    max-width: 1400px
     theme: 
       - lumen
-      - html/styles.scss
+#      - html/styles.scss
     toc: false
     code-link: true
     anchor-sections: true
