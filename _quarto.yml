@@ -70,7 +70,7 @@ format:
     max-width: 1400px
     theme: 
       - lumen
-#      - html/styles.scss
+      - html/styles1.scss
     toc: false
     code-link: true
     anchor-sections: true
