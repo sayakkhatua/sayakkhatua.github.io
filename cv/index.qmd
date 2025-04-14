@@ -1,8 +1,10 @@
 ---
 layout: page
 title: Curriculum vitae
+pagetitle: "Sayak Khatua | CV"
 description: "Sayak Khatua's CV"
 published-title: CV last updated
+image: assets/img/sayak.png
 date: 2025-01-28
 excerpt: My current CV
 execute:

@@ -1,7 +1,9 @@
 ---
 title: ""
+pagetitle: "Sayak Khatua | Teach"
 toc: true 
 link-external-newwindow: true
+image: assets/img/sayak.png
 ---
 
 ## Oregon State University (Instructor - Online)
