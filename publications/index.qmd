@@ -7,9 +7,21 @@ image: assets/img/sayak.png
 ---
 ## Articles
 
-#### 2024
+#### 2025
 
-**Power to the Researchers: Calculating Power After Estimation** *(Review of Development Economics )* </br> *with* Alex Tian, Robert Reed, Tom Coupe, Ben Wood
+**The Reliability of Replications: A Study in Computational Reproductions** *(Royal Society Open Science)* </br> *with* Nate Breznau et. al.
+
+<a href="https://www.doi.org/10.31235/osf.io/j7qta"> Preprint </a>\ <a href="https://doi.org/10.1098/rsos.241038"> Published Article </a>
+
+<details>
+
+<summary>Abstract</summary>
+
+This paper reports findings from a crowdsourced replication. Eighty-five independent teams attempted a computational replication of results reported in an original study of policy preferences and immigration by fitting the same statistical models to the same data. The replication involved an experimental condition. Random assignment put participating teams into either the transparent group that received the original study and code, or the opaque group receiving only a methods section, rough results description and no code. The transparent group mostly verified the numerical results of the original study with the same sign and p-value threshold (95.7%), while the opaque group had less success (89.3%). Exact numerical reproductions to the second decimal place were far less common (76.9% and 48.1%), and the number of teams who verified at least 95% of all effects in all models they ran was 79.5% and 65.2% respectively. Therefore, the reliability we quantify depends on how reliability is defined, but most definitions suggest it would take a minimum of three independent replications to achieve reliability. Qualitative investigation of the teams’ workflows reveals many causes of error including mistakes and procedural variations. Although minor error across researchers is not surprising, we show this occurs where it is least expected in the case of computational reproduction. Even when we curate the results to boost ecological validity, the error remains large enough to undermine reliability between researchers to some extent. The presence of inter-researcher variability may explain some of the current “reliability crisis” in the social sciences because it may be undetected in all forms of research involving data analysis. The obvious implication of our study is more transparency. Broader implications are that researcher variability adds an additional meta-source of error that may not derive from conscious measurement or modeling decisions, and that replications cannot alone resolve this type of uncertainty.
+
+</details>
+
+**Power to the Researchers: Calculating Power After Estimation** *(Review of Development Economics)* </br> *with* Alex Tian, Robert Reed, Tom Coupe, Ben Wood
 
 <a href="https://doi.org/10.1002/jae.3045"> Working Paper </a>\ <a href="https://doi.org/10.1111/rode.13130"> Published Article </a>
 
@@ -20,6 +32,8 @@ image: assets/img/sayak.png
 Calculating statistical power before estimation is considered good practice. However, there is no generally accepted method for calculating power after estimation. There are several reasons why one would want to do this. First, there is general interest in knowing whether ex ante power calculations are dependable guides of actual power. Further, knowing the statistical power of an estimated equation can aid one in interpreting the associated estimates. This study proposes a simple method for calculating power after estimation. To assess its performance, we conduct Monte Carlo experiments customized to produce simulated datasets that resemble actual data from studies funded by the International Initiative for Impact Evaluation (3ie). In addition to the final reports, 3ie provided ex ante power calculations from the funding applications, along with data and code to reproduce the estimates in the final reports. After determining that our method performs adequately, we apply it to the 3ie-funded studies. We find an average ex post power of 75.4%, not far from the 80% commonly claimed in the 3ie funding applications. However, we observe significantly more estimates of low power than would be expected given the ex ante claims. We conclude by providing three examples to illustrate how ex post power can aid the interpretation of estimates that are (i) insignificant and low powered, (ii) insignificant and high powered, and (iii) significant and low powered.
 
 </details>
+
+#### 2024
 
 **Research Transparency and Reproducibility at the  International Initiative for Impact Evaluation** *(Journal of Development Effectiveness)* </br> *with* <a href="https://education.uoregon.edu/directory/faculty/all/spgrant">Sean Grant</a>
 

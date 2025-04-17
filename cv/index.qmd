@@ -5,15 +5,15 @@ pagetitle: "Sayak Khatua | CV"
 description: "Sayak Khatua's CV"
 published-title: CV last updated
 image: assets/img/sayak.png
-date: 2025-01-28
+date: 2025-04-17
 excerpt: My current CV
 execute:
   freeze: true  # never re-render during project render
 engine: knitr 
 resources:
-  - "CV_2024.pdf"
+  - "Khatua_CV.pdf"
 cv:
-  pdf: "CV_2024.pdf"
+  pdf: "Khatua_CV.pdf"
 ---
 
 ```{css echo=FALSE}

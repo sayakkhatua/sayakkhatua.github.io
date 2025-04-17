@@ -38,7 +38,7 @@ website:
     border: true
     left: "&#169; 2025 Sayak Khatua"
     # your social media handles
-#   center:
+    # center: "slow and steady wins the race"
 #      - icon: folder-symlink
 #        href: https://www.marvinschmitt.com/blog/website-tutorial-quarto/
 #     - icon: twitter
