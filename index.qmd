@@ -1,6 +1,6 @@
 ---
 title: "Sayak Khatua"
-pagetitle: "Sayak Khatua | About"
+pagetitle: "Sayak Khatua | Home"
 subtitle: "PhD Candidate, School of Public Policy, Oregon State University "
 image: assets/img/sayak.png
     

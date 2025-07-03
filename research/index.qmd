@@ -22,7 +22,7 @@ Status: *Under Review at Journal of Real Estate Finance and Economics*
 
 **To not move forward is to fall behind: Evidence of Policy Failure from India**</br>
 
-<a href="https://oregonstate.box.com/s/ecnb0ngyq0awrtx296v61si9gdvyt5h4"> Summary </a>
+[Summary](https://oregonstate.box.com/s/ecnb0ngyq0awrtx296v61si9gdvyt5h4)
 
 <details>
 
@@ -36,7 +36,7 @@ Status: *Draft coming soon*
 
 ## Work-in-progress
 
-**Improving school management in a low-income country: Experimental evidence from India** </br> *with* <a href="https://sites.google.com/site/toddpugatch/">Todd Pugatch</a> , <a href="http://ketkisheth.weebly.com">Ketki Sheth</a>, <a href="https://sites.google.com/view/nshakira-rukundo/home">Emmanuel Rukundo</a>
+**Improving school management in a low-income country: Experimental evidence from India** </br> *with* [Todd Pugatch](https://sites.google.com/site/toddpugatch/) , [Ketki Sheth](http://ketkisheth.weebly.com), [Emmanuel Rukundo](https://sites.google.com/view/nshakira-rukundo/home)
 
 <details>
 
@@ -48,7 +48,7 @@ Status: *Draft coming soon*
 
 Status: *Data collection*
 
-**Where morning feels different: Labor market consequences of state reorganisation in India**
+**Do compulsory schooling laws matter? Evidence from Peru**
 
 <details>
 
@@ -84,7 +84,7 @@ Status: *Data Analysis*
 
 <!-- Status: *Data cleaning* -->
 
-**Learning or Earning: How Mandatory Education Shapes Child Labor in India**
+**School quality and child labor: Evidence from Brazil**
 
 <details>
 
@@ -96,7 +96,7 @@ Status: *Data Analysis*
 
 Status: *Data analysis*
 
-**Navigating Margins: Gender, Identity, and Developmental Discourse among Ethnic Minorities** </br> *with* Malvya Chintakindi
+**Navigating Margins: Gender, Identity, and Developmental Discourse among Ethnic Minorities** </br> *with* [Malvya Chintakindi](https://malvya.github.io)
 
 <details>
 
@@ -108,7 +108,7 @@ Status: *Data analysis*
 
 Status: *Data analysis*
 
-**Threads of Survival: Kinship, Gender, and Intersectional Dynamics in Urban Slums** </br> *with* Malvya Chintakindi
+**Threads of Survival: Kinship, Gender, and Intersectional Dynamics in Urban Slums** </br> *with* [Malvya Chintakindi](https://malvya.github.io)
 
 <details>
 
