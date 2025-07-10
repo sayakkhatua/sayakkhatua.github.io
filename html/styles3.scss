@@ -1,0 +1,588 @@
+/*-- scss:defaults --*/
+
+/* Professional academic color palette */
+
+$white:    #ffffff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #373a3c !default;
+$gray-900: #212529 !default;
+$black:    #000000 !default;
+
+// Fun earthy palette - no browns!
+$warm-cream:     #faf7f2 !default;
+$soft-sand:      #f4ede4 !default;
+$warm-peach:     #f2d7b6 !default;
+$sage-green:     #87a96b !default;
+$forest-green:   #5d7c47 !default;
+$terracotta:     #c17767 !default;
+$warm-orange:    #d4975a !default;
+$dusty-purple:   #9d7b8a !default;
+$slate-blue:     #6b7a8f !default;
+
+$blue:    #2780e3 !default;
+$indigo:  #6610f2 !default;
+$purple:  #170C3A !default;
+$pink:    #A52C60 !default;
+$red:     #CF4446 !default;
+$orange:  #EE6A24 !default;
+$light-orange:  #FB9E07 !default;
+$yellow:  #F6D645 !default;
+$green:   #118230 !default;
+$teal:    #068194 !default;
+$cyan:    #3093CF !default;
+
+// Clean earthy gradients - much more subtle
+$gradient-primary: linear-gradient(135deg, $warm-cream 0%, $soft-sand 100%) !default;
+$gradient-accent: $sage-green !default;
+$gradient-fun: $terracotta !default;
+
+$primary:   $teal !default;
+$secondary: $gray-700 !default;
+$success:   $green !default;
+$info:      $cyan !default;
+$warning:   $orange !default;
+$danger:    $red !default;
+$light:     $gray-400 !default;
+$dark:      $black !default;
+
+// Professional link styles
+$link-color: $primary !default;
+$link-decoration: none !default;
+$link-hover-color: darken($primary, 15%) !default;
+$link-hover-decoration: underline !default;
+
+// Clean footer
+$footer-bg: $gray-900 !default;
+$footer-fg: $gray-300 !default;
+
+// Professional code styling
+$code-bg: $gray-100 !default;
+$code-color: $gray-800 !default;
+
+// TOC styling
+$toc-color: $orange;
+$toc-font-size: 1em;
+
+// Professional button styling
+$btn-code-copy-color-active: $primary !default;
+
+// Subtle modern effects
+$subtle-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) !default;
+$hover-shadow: 0 4px 20px rgba(0, 0, 0, 0.12) !default;
+
+/*-- scss:rules --*/
+
+// Enhanced typography with fun fonts
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+// Fun, modern body with earthy background
+body {
+    background: $gradient-primary;
+    background-attachment: fixed;
+    color: $gray-800;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+// Clean, professional navigation
+.navbar, .nav-header {
+    background: $forest-green !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 3px solid $sage-green;
+    box-shadow: 0 4px 20px rgba($forest-green, 0.2);
+    
+    .navbar-brand {
+        color: $warm-cream !important;
+        font-family: 'Outfit', sans-serif !important;
+        font-weight: 700 !important;
+        font-size: 1.5rem !important;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            color: $warm-orange !important;
+        }
+    }
+    
+    .nav-link {
+        color: rgba($warm-cream, 0.95) !important;
+        font-family: 'Outfit', sans-serif !important;
+        font-weight: 500 !important;
+        font-size: 1rem !important;
+        transition: all 0.3s ease;
+        position: relative;
+        
+        &:hover {
+            color: $warm-orange !important;
+        }
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: $warm-orange;
+            border-radius: 2px;
+            transition: width 0.3s ease;
+        }
+        
+        &:hover::after {
+            width: 80%;
+        }
+    }
+}
+
+// Professional section styling with better spacing
+.section, .content {
+    background: rgba($white, 0.95);
+    border-radius: 12px;
+    margin: 1.5rem 0;
+    padding: 2.5rem;
+    box-shadow: 0 6px 25px rgba($terracotta, 0.1);
+    border: 1px solid rgba($sage-green, 0.2);
+    transition: box-shadow 0.3s ease;
+    
+    &:hover {
+        box-shadow: 0 8px 35px rgba($terracotta, 0.15);
+    }
+}
+
+// Professional typography with solid colors
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif !important;
+    color: $forest-green;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    position: relative;
+    letter-spacing: -0.02em;
+    
+    &.section-title {
+        text-align: center;
+        color: $forest-green;
+        font-size: 2.8rem;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: $terracotta;
+            border-radius: 2px;
+        }
+    }
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: $terracotta;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: $terracotta;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: $sage-green;
+}
+
+// Clean, professional cards
+.card, .callout {
+    background: rgba($white, 0.95) !important;
+    border: 2px solid transparent !important;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba($terracotta, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: $sage-green;
+    }
+    
+    &:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 16px 40px rgba($terracotta, 0.2);
+        border-color: $warm-orange !important;
+        
+        &::before {
+            background: $terracotta;
+        }
+    }
+    
+    .card-header {
+        background: $soft-sand !important;
+        border-bottom: 2px solid $sage-green;
+        font-family: 'Outfit', sans-serif !important;
+        font-weight: 700 !important;
+        color: $forest-green;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+}
+
+// Clean, professional buttons
+.btn {
+    border-radius: 8px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    padding: 0.9rem 1.8rem;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 0.95rem;
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba($white, 0.2), transparent);
+        transition: left 0.6s;
+    }
+    
+    &:hover::before {
+        left: 100%;
+    }
+    
+    &.btn-primary {
+        background: $terracotta;
+        color: $white;
+        box-shadow: 0 4px 15px rgba($terracotta, 0.3);
+        
+        &:hover {
+            background: darken($terracotta, 10%);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba($terracotta, 0.4);
+        }
+    }
+    
+    &.btn-outline-primary {
+        border: 2px solid $terracotta;
+        color: $terracotta;
+        background: transparent;
+        
+        &:hover {
+            background: $terracotta;
+            color: $white;
+            transform: translateY(-2px);
+        }
+    }
+    
+    &.btn-secondary {
+        background: $sage-green;
+        color: $white;
+        
+        &:hover {
+            background: $forest-green;
+            transform: translateY(-2px);
+        }
+    }
+}
+
+// Clean footer with solid color
+.nav-footer {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border: 0 !important;
+    min-height: 3em;
+    background: $gray-800 !important;
+    color: $warm-cream;
+    padding: 2.5rem 0;
+    position: relative;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: $sage-green;
+    }
+
+    a {
+        color: $sage-green;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            color: $warm-orange;
+        }
+    }
+
+    .faux-block {
+        display: block;
+        padding-bottom: 0.4em;
+    }
+
+    .nav-footer-center {
+        text-align: center;
+        position: inherit;
+        margin-top: 0;
+
+        @media (max-width: map-get($grid-breakpoints, md)) {
+            margin-top: 0.5em;
+            margin-bottom: 1.5em;
+        }
+    }
+
+    .nav-footer-left,
+    .nav-footer-right,
+    .nav-footer-center {
+        text-align: center;
+        width: 100%;
+        min-height: 2em;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        .nav-footer-left {
+            text-align: left;
+        }
+
+        .nav-footer-right {
+            text-align: right;
+        }
+
+        .nav-footer-left,
+        .nav-footer-right,
+        .nav-footer-center {
+            flex: 1 1 33%;
+        }
+    }
+}
+
+// Fun code styling
+pre, code {
+    background: rgba($dusty-purple, 0.1) !important;
+    border: 2px solid rgba($sage-green, 0.2);
+    border-radius: 12px;
+    color: $forest-green;
+    font-family: 'JetBrains Mono', monospace !important;
+    
+    &:hover {
+        box-shadow: 0 6px 20px rgba($dusty-purple, 0.1);
+        transform: translateY(-1px);
+        border-color: $sage-green;
+    }
+}
+
+// Professional tables with solid colors
+.table {
+    background: rgba($white, 0.95);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba($terracotta, 0.1);
+    
+    th {
+        background: $forest-green;
+        color: $warm-cream;
+        border: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+    }
+    
+    td {
+        border-color: rgba($sage-green, 0.2);
+        transition: background-color 0.3s ease;
+    }
+    
+    tr:hover td {
+        background-color: rgba($sage-green, 0.05);
+    }
+}
+
+// Refined blockquotes
+blockquote {
+    background: $soft-sand;
+    border-left: 4px solid $primary;
+    border-radius: 0 8px 8px 0;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 15px rgba($terracotta, 0.1);
+    font-style: italic;
+    color: $gray-700;
+}
+
+// Smooth interactions
+html {
+    scroll-behavior: smooth;
+}
+
+// Professional form elements
+.form-control, .form-select {
+    background: $white;
+    border: 1px solid $gray-300;
+    border-radius: 8px;
+    color: $gray-800;
+    transition: all 0.3s ease;
+    
+    &:focus {
+        border-color: $primary;
+        box-shadow: 0 0 0 0.15rem rgba($primary, 0.15);
+        background: $white;
+    }
+}
+
+// Professional alerts
+.alert {
+    background: $soft-sand !important;
+    border: 1px solid $gray-200;
+    border-radius: 8px;
+    border-left: 4px solid $primary;
+    
+    &.alert-info {
+        border-left-color: $info;
+        background: rgba($info, 0.05) !important;
+    }
+    
+    &.alert-warning {
+        border-left-color: $warning;
+        background: rgba($warning, 0.05) !important;
+    }
+    
+    &.alert-danger {
+        border-left-color: $danger;
+        background: rgba($danger, 0.05) !important;
+    }
+    
+    &.alert-success {
+        border-left-color: $success;
+        background: rgba($success, 0.05) !important;
+    }
+}
+
+// Refined list styling
+ul, ol {
+    li {
+        margin-bottom: 0.4rem;
+        color: $gray-700;
+        
+        &:hover {
+            color: $gray-900;
+        }
+    }
+}
+
+// Professional image styling
+img {
+    border-radius: 8px;
+    box-shadow: $subtle-shadow;
+    transition: box-shadow 0.3s ease;
+    
+    &:hover {
+        box-shadow: $hover-shadow;
+    }
+}
+
+// Fun link styling
+a {
+    color: $terracotta;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: $warm-orange;
+        transition: width 0.3s ease;
+    }
+    
+    &:hover {
+        color: $warm-orange;
+        
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+// Full-width content for CV and other pages
+.content, .quarto-container {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 2rem !important;
+    min-height: calc(100vh - 200px);
+}
+
+// Specific styling for CV page
+.cv-content, #quarto-content {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 3rem !important;
+    background: rgba($white, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba($terracotta, 0.1);
+    border: 1px solid rgba($sage-green, 0.2);
+}
+
+// Enhanced typography for better readability and fun
+p {
+    color: $gray-700;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+// Professional spacing
+.section {
+    margin-bottom: 3rem;
+}
+
+// Clean, professional overall look
+* {
+    box-sizing: border-box;
+}
+
+// Academic-appropriate spacing
+.container, .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+// Professional typography
+.text-primary {
+    color: $primary !important;
+}
+
+.text-muted {
+    color: $gray-600 !important;
+}

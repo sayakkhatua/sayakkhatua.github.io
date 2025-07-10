@@ -75,7 +75,7 @@ format:
     smooth-scroll: true
     theme: 
       - lumen
-      - html/styles.scss
+      - html/styles3.scss
     toc: false
     code-link: true
     anchor-sections: true
