@@ -34,55 +34,20 @@ This paper studies the effect of non-implementation of education reforms on enro
 
 Status: *Draft coming soon*
 
-## Work-in-progress
-
-**Improving school management in a low-income country: Experimental evidence from India** </br> *with* [Todd Pugatch](https://sites.google.com/site/toddpugatch/) , [Ketki Sheth](http://ketkisheth.weebly.com), [Emmanuel Rukundo](https://sites.google.com/view/nshakira-rukundo/home)
-
-<details>
-
-<summary>Abstract</summary>
-
-... Coming soon
-
-</details>
-
-Status: *Data collection*
-
 **Do compulsory schooling laws matter? Evidence from Peru**
 
 <details>
 
 <summary>Abstract</summary>
 
-... Coming soon
+This paper estimates the returns to schooling in Peru using the 1993 compulsory schooling reform as an instrumental variable to address endogeneity concerns. The reform extended mandatory education from 6 to 11 years, creating exogenous variation in educational attainment for individuals born in 1982 and later. Using repeated cross-sections from the Encuesta Nacional de Hogares (ENAHO) survey spanning 2001-2017, I construct a birth-cohort panel of individuals aged 25-35 to estimate early career labor market effects.
+The results reveal exceptionally large returns to compulsory schooling. The reform increased educational attainment by 0.6 years and generated a 36.3% return per additional year of schooling—substantially higher than estimates typically found in both developed and developing countries. These instrumental variable estimates exceed corresponding OLS estimates (9.1%) by nearly a four-to-one ratio, contrasting sharply with the conventional ability bias pattern observed in most developing countries where IV estimates are smaller than OLS estimates.
 
 </details>
 
-Status: *Data Analysis*
+Status: *Draft coming soon*
 
-<!-- **Connecting Communities, Reducing Conflict: Evidence from India's Rural Road Program** -->
-
-<!-- <details> -->
-
-<!-- <summary>Abstract</summary> -->
-
-<!-- ... Coming soon -->
-
-<!-- </details> -->
-
-<!-- Status: *Data Analysis* -->
-
-<!-- **When Waters Recede: Impact of Extreme Weather Events on Child Labor** -->
-
-<!-- <details> -->
-
-<!-- <summary>Abstract</summary> -->
-
-<!-- ... Coming soon -->
-
-<!-- </details> -->
-
-<!-- Status: *Data cleaning* -->
+## Work-in-progress
 
 **School quality and child labor: Evidence from Brazil**
 
@@ -95,6 +60,42 @@ Status: *Data Analysis*
 </details>
 
 Status: *Data analysis*
+
+**Learning or Earning: How Compulsory Schooling Shaped Child Labor in India** </br> *with* Ayesha Jamal
+
+<details>
+
+<summary>Abstract</summary>
+
+... Coming soon
+
+</details>
+
+Status: *Data analysis*
+
+**Education in the shadow of civil conflict: Evidence from India** </br> *with* [Ratul Das Chaudhury](https://sites.google.com/view/ratul-das-chaudhury)
+
+<details>
+
+<summary>Abstract</summary>
+
+... Coming soon
+
+</details>
+
+Status: *Data analysis*
+
+**Improving school management in a low-income country: Experimental evidence from India** </br> *with* [Todd Pugatch](https://sites.google.com/site/toddpugatch/) , [Ketki Sheth](http://ketkisheth.weebly.com), [Emmanuel Rukundo](https://sites.google.com/view/nshakira-rukundo/home)
+
+<details>
+
+<summary>Abstract</summary>
+
+... Coming soon
+
+</details>
+
+Status: *Data collection*
 
 **Navigating Margins: Gender, Identity, and Developmental Discourse among Ethnic Minorities** </br> *with* [Malvya Chintakindi](https://malvya.github.io)
 
@@ -141,3 +142,27 @@ Status: *Gathering data*
 **Making data accessible: lessons learned from computational reproducibility of impact evaluations** </br> *with* Neeta Goel and Marie Gaarder
 
 <a href="https://www.doi.org/10.31219/osf.io/4jvq2"> Preprint </a> <a href="https://doi.org/10.7910/DVN/FPNITS"> Data and Code </a>\
+
+<!-- **Connecting Communities, Reducing Conflict: Evidence from India's Rural Road Program** -->
+
+<!-- <details> -->
+
+<!-- <summary>Abstract</summary> -->
+
+<!-- ... Coming soon -->
+
+<!-- </details> -->
+
+<!-- Status: *Data Analysis* -->
+
+<!-- **When Waters Recede: Impact of Extreme Weather Events on Child Labor** -->
+
+<!-- <details> -->
+
+<!-- <summary>Abstract</summary> -->
+
+<!-- ... Coming soon -->
+
+<!-- </details> -->
+
+<!-- Status: *Data cleaning* -->

@@ -2,10 +2,10 @@
 layout: page
 title: Curriculum vitae
 pagetitle: "Sayak Khatua | CV"
-description: "Sayak Khatua's CV"
+#description: "Sayak Khatua's CV"
 published-title: CV last updated
 image: assets/img/sayak.png
-date: 2025-04-17
+date: 2025-08-07
 excerpt: My current CV
 execute:
   freeze: true  # never re-render during project render

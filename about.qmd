@@ -1,8 +1,9 @@
 ---
-title: "Sayak Khatua - Professional Bio"
+title: ""
 toc: true
 link-external-newwindow: true
 ---
+## About
 
 ### Current Position
 
@@ -19,4 +20,11 @@ Research Associate 2018-2019
 
 #### Outline India (2017-2018)
 
-Research Associate 2017-2018
+Research Associate
+
+### Research Positions
+Assistant to Professor Cesar Rodriguez, Portland State University (PSU) 2025, 2023, 2021 </br>
+Assistant to Professor John Gallup, PSU 2014 - 2015 </br>
+Assistant to Professor Jamein Cunningham, PSU 2014 - 2015 </br>
+Assistant to Professor Saumik Paul, University of Nottingham Malaysia 2013 </br>
+Summer Researcher, Indian Statistical Institute (ISI) 2012

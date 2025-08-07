@@ -16,12 +16,12 @@ website:
     
     # your sub-pages
     right:
-      - text: CV
-        aria-label: "CV"
-        href: "cv/index.qmd"
-#     - text: About
-#        aria-label: "About"
-#        href: "about.qmd"
+      - text: Home
+        aria-label: "Home"
+        href: "index.qmd"
+      #- text: About
+      #  aria-label: "About"
+      #  href: "about.qmd"
       - text: Research
         aria-label: "Research"
         href: "research/index.qmd"
@@ -31,7 +31,9 @@ website:
       - text: Teaching
         aria-label: "Teaching"
         href: "teaching/index.qmd"
-
+      - text: CV
+        aria-label: "CV"
+        href: "cv/index.qmd"
 
 # Don't touch unless you know what you are doing :) ------------
   search: 
