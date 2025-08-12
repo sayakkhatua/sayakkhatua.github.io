@@ -70,14 +70,14 @@ execute:
 
 format:
   html:
-    fontsize: 1.2em
+    fontsize: 1.1em
     linestretch: 1.5
     max-width: 1400px
     page-layout: full
     smooth-scroll: true
     theme: 
       - lumen
-      - html/styles3.scss
+      - html/styles4.scss
     toc: false
     code-link: true
     anchor-sections: true
