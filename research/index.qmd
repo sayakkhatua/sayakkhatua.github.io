@@ -1,0 +1,168 @@
+---
+title: ""
+pagetitle: "Sayak Khatua | Research"
+toc: true 
+link-external-newwindow: true
+image: assets/img/sayak.png
+---
+
+## Working Papers
+
+**Private credit and Property prices: New insights into this nexus**</br> *with* <a href="https://sites.google.com/site/cesarruy"> Cesar Rodriguez </a>
+
+<details>
+
+<summary>Abstract</summary>
+
+The relationship between the dynamics of property prices and private credit has long been a focal point for economists and policymakers, particularly given its role in financial stability. Understanding this relationship is especially crucial for developing economies, where financial markets are often less mature and more vulnerable to external shocks. This paper examines this relationship using quarterly data from 27 countries spanning 1982 to 2021. Through an instrumental variables approach that addresses endogeneity concerns, we identify three key findings. First, property price growth consistently drives private credit growth across both developed and developing economies, with a one percentage point increase in property prices associated with a 0.35 percentage point rise in private credit growth. Second, conventional macroeconomic factors such as interest rates, inflation, and GDP growth affect credit dynamics differently across development levels. Third, external factors, particularly trade openness and commodity price fluctuations, play an especially significant role in shaping credit dynamics in developing countries. Additionally, our analysis suggests that the property price-credit nexus has evolved, with notable shifts occurring around major economic events. Our results are robust to various sensitivity checks and alternative specifications and methodologies. These findings have important implications for the design of macroprudential policies, especially in developing economies where institutional capacities may differ from more developed markets.
+
+</details>
+
+Status: *R&R at Journal of Real Estate Finance and Economics*
+
+**To not move forward is to fall behind: Evidence of Policy Failure from India**</br>
+
+[Summary](https://oregonstate.box.com/s/ecnb0ngyq0awrtx296v61si9gdvyt5h4)
+
+<details>
+
+<summary>Abstract</summary>
+
+This paper studies the effect of non-implementation of education reforms on enrollment levels at the elementary school level in India. The paper exploits a unique natural experiment in which the Right of Children to Free and Compulsory Education (RTE) Act of 2009 was implemented in India, except for the state (now Union Territory(UT)) of Jammu \& Kashmir (J\&K). Using a quasi-experimental synthetic control approach, I estimate the causal impact of the non-implementation of the RTE act on enrollment levels in elementary schools in J\&K. Using household surveys and administrative data from the Ministry of Education, I find that on average nearly 300,000 (16.8\% more than pre-RTE enrollments) additional elementary-aged children could have enrolled annually if the act had been rolled out in J\&K. I demonstrate differential impacts of non-implementation of RTE across primary and upper primary levels of schooling and find that the negative effects are more pronounced at the upper primary level. I establish the economic significance through Mincer wage equations showing substantial lifetime earnings losses. I find that children in J\&K who complete elementary education earn 46\% more than children who do not.
+
+</details>
+
+Status: *Draft coming soon*
+
+**Do compulsory schooling laws matter? Evidence from Peru**
+
+<details>
+
+<summary>Abstract</summary>
+
+This paper estimates the returns to schooling in Peru using the 1993 compulsory schooling reform as an instrumental variable to address endogeneity concerns. The reform extended mandatory education from 6 to 11 years, creating exogenous variation in educational attainment for individuals born in 1982 and later. Using repeated cross-sections from the Encuesta Nacional de Hogares (ENAHO) survey spanning 2001-2017, I construct a birth-cohort panel of individuals aged 25-35 to estimate early career labor market effects.
+The results reveal exceptionally large returns to compulsory schooling. The reform increased educational attainment by 0.6 years and generated a 36.3% return per additional year of schooling—substantially higher than estimates typically found in both developed and developing countries. These instrumental variable estimates exceed corresponding OLS estimates (9.1%) by nearly a four-to-one ratio, contrasting sharply with the conventional ability bias pattern observed in most developing countries where IV estimates are smaller than OLS estimates.
+
+</details>
+
+Status: *Draft coming soon*
+
+## Work-in-progress
+
+**School quality and child labor: Evidence from Brazil**
+
+<details>
+
+<summary>Abstract</summary>
+
+... Coming soon
+
+</details>
+
+Status: *Data analysis*
+
+**Learning or Earning: How Compulsory Schooling Shaped Child Labor in India** </br> *with* Ayesha Jamal
+
+<details>
+
+<summary>Abstract</summary>
+
+... Coming soon
+
+</details>
+
+Status: *Data analysis*
+
+**Education in the shadow of civil conflict: Evidence from India** </br> *with* [Ratul Das Chaudhury](https://sites.google.com/view/ratul-das-chaudhury)
+
+<details>
+
+<summary>Abstract</summary>
+
+... Coming soon
+
+</details>
+
+Status: *Data analysis*
+
+**Improving school management in a low-income country: Experimental evidence from India** </br> *with* [Todd Pugatch](https://sites.google.com/site/toddpugatch/) , [Ketki Sheth](http://ketkisheth.weebly.com), [Emmanuel Rukundo](https://sites.google.com/view/nshakira-rukundo/home)
+
+<details>
+
+<summary>Abstract</summary>
+
+... Coming soon
+
+</details>
+
+Status: *Data collection*
+
+**Navigating Margins: Gender, Identity, and Developmental Discourse among Ethnic Minorities** </br> *with* [Malvya Chintakindi](https://malvya.github.io)
+
+<details>
+
+<summary>Abstract</summary>
+
+... Coming soon
+
+</details>
+
+Status: *Data analysis*
+
+**Threads of Survival: Kinship, Gender, and Intersectional Dynamics in Urban Slums** </br> *with* [Malvya Chintakindi](https://malvya.github.io)
+
+<details>
+
+<summary>Abstract</summary>
+
+... Coming soon
+
+</details>
+
+Status: *Data analysis*
+
+**The Great (research) Divide: The long term dynamics of Coauthorship Networks in International Development**
+
+<details>
+
+<summary>Abstract</summary>
+
+... Coming soon
+
+</details>
+
+Status: *Gathering data*
+
+## Dormant Papers
+
+**The Use of Behavioural-science Informed Interventions to Promote Latrine Use in Rural India: A Synthesis of Findings** </br> *with* Charlotte Lane and Bethany Caruso
+
+<a href="https://www.doi.org/10.31222/osf.io/g7cmd"> Preprint </a> <a href="https://doi.org/10.7910/DVN/IDJ8FJ"> Data and Code </a>\
+
+**Making data accessible: lessons learned from computational reproducibility of impact evaluations** </br> *with* Neeta Goel and Marie Gaarder
+
+<a href="https://www.doi.org/10.31219/osf.io/4jvq2"> Preprint </a> <a href="https://doi.org/10.7910/DVN/FPNITS"> Data and Code </a>\
+
+<!-- **Connecting Communities, Reducing Conflict: Evidence from India's Rural Road Program** -->
+
+<!-- <details> -->
+
+<!-- <summary>Abstract</summary> -->
+
+<!-- ... Coming soon -->
+
+<!-- </details> -->
+
+<!-- Status: *Data Analysis* -->
+
+<!-- **When Waters Recede: Impact of Extreme Weather Events on Child Labor** -->
+
+<!-- <details> -->
+
+<!-- <summary>Abstract</summary> -->
+
+<!-- ... Coming soon -->
+
+<!-- </details> -->
+
+<!-- Status: *Data cleaning* -->

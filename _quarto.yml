@@ -1,0 +1,86 @@
+# This file controls the settings for your Quarto template from www.marvinschmitt.com
+
+# website settings
+website:
+  title: ""
+  favicon: assets/img/turtle.webp
+  site-url: https://sayakkhatua.github.io
+  repo-url: https://github.com/sayakkhatua/sayakkhatua.github.io
+  page-navigation: true
+  #back-to-top-navigation: true
+  
+  # start of the navigation bar at the top of the website
+  navbar:
+    pinned: true
+    logo: assets/img/turtle.webp
+    
+    # your sub-pages
+    right:
+      - text: Home
+        aria-label: "Home"
+        href: "index.qmd"
+      #- text: About
+      #  aria-label: "About"
+      #  href: "about.qmd"
+      - text: Research
+        aria-label: "Research"
+        href: "research/index.qmd"
+      - text: Publications
+        aria-label: "Publications"
+        href: "publications/index.qmd"
+      - text: Teaching
+        aria-label: "Teaching"
+        href: "teaching/index.qmd"
+      - text: CV
+        aria-label: "CV"
+        href: "cv/index.qmd"
+
+# Don't touch unless you know what you are doing :) ------------
+  search: 
+    location: navbar
+#    type: textbox
+  page-footer:
+    border: true
+    left: "&#169; 2025 Sayak Khatua"
+    # your social media handles
+    # center: "slow and steady wins the race"
+#      - icon: folder-symlink
+#        href: https://www.marvinschmitt.com/blog/website-tutorial-quarto/
+#     - icon: twitter
+#        href: https://twitter.com/MarvinSchmittML
+#      - icon: linkedin
+#        href: https://www.linkedin.com/in/marvin-schmitt-a85b321a2/
+#      - icon: envelope
+#        aria-label: email
+#        href: "mailto:khatuas@oregonstate.edu" 
+    right: "Made with [Quarto](https://quarto.org)"
+
+project:
+  type: website
+  output-dir: docs
+
+  preview: 
+    port: 22222
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+execute:
+  freeze: true
+
+format:
+  html:
+    fontsize: 1.1em
+    linestretch: 1.5
+    max-width: 1400px
+    page-layout: full
+    smooth-scroll: true
+    theme: 
+      - lumen
+      - html/styles4.scss
+    toc: false
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true
