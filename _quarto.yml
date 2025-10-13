@@ -18,22 +18,22 @@ website:
     right:
       - text: Home
         aria-label: "Home"
-        href: "index.qmd"
+        href: "home.qmd"
       #- text: About
       #  aria-label: "About"
       #  href: "about.qmd"
       - text: Research
         aria-label: "Research"
-        href: "research/index.qmd"
+        href: "research/research.qmd"
       - text: Publications
         aria-label: "Publications"
-        href: "publications/index.qmd"
+        href: "publications/pubs.qmd"
       - text: Teaching
         aria-label: "Teaching"
-        href: "teaching/index.qmd"
+        href: "teaching/teach.qmd"
       - text: CV
         aria-label: "CV"
-        href: "cv/index.qmd"
+        href: "cv/cv.qmd"
 
 # Don't touch unless you know what you are doing :) ------------
   search: 

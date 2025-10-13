@@ -5,7 +5,7 @@ pagetitle: "Sayak Khatua | CV"
 #description: "Sayak Khatua's CV"
 published-title: CV last updated
 image: assets/img/sayak.png
-date: 2025-08-07
+date: 2025-10-04
 excerpt: My current CV
 execute:
   freeze: true  # never re-render during project render
