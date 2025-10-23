@@ -72,7 +72,7 @@ format:
   html:
     fontsize: 1.1em
     linestretch: 1.5
-    max-width: 1400px
+    max-width: 1600px
     page-layout: full
     smooth-scroll: true
     theme: 

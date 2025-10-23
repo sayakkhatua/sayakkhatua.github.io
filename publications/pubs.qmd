@@ -3,7 +3,6 @@ title: ""
 pagetitle: "Sayak Khatua | Publication"
 toc: true 
 link-external-newwindow: true
-image: assets/img/sayak.png
 ---
 
 ## Articles
