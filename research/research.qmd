@@ -5,19 +5,7 @@ toc: true
 link-external-newwindow: true
 ---
 
-## Working Papers
-
-**Private credit and Property prices: New insights into this nexus**</br> *with* <a href="https://sites.google.com/site/cesarruy"> Cesar Rodriguez </a>
-
-<details>
-
-<summary>Abstract</summary>
-
-The relationship between the dynamics of property prices and private credit has long been a focal point for economists and policymakers, particularly given its role in financial stability. Understanding this relationship is especially crucial for developing economies, where financial markets are often less mature and more vulnerable to external shocks. This paper examines this relationship using quarterly data from 27 countries spanning 1982 to 2021. Through an instrumental variables approach that addresses endogeneity concerns, we identify three key findings. First, property price growth consistently drives private credit growth across both developed and developing economies, with a one percentage point increase in property prices associated with a 0.35 percentage point rise in private credit growth. Second, conventional macroeconomic factors such as interest rates, inflation, and GDP growth affect credit dynamics differently across development levels. Third, external factors, particularly trade openness and commodity price fluctuations, play an especially significant role in shaping credit dynamics in developing countries. Additionally, our analysis suggests that the property price-credit nexus has evolved, with notable shifts occurring around major economic events. Our results are robust to various sensitivity checks and alternative specifications and methodologies. These findings have important implications for the design of macroprudential policies, especially in developing economies where institutional capacities may differ from more developed markets.
-
-</details>
-
-Status: *R&R at Journal of Real Estate Finance and Economics*
+## Job market paper
 
 **To not move forward is to fall behind: Evidence of Policy Failure from India**</br>
 
@@ -32,6 +20,20 @@ This paper studies the effect of non-implementation of education reforms on enro
 </details>
 
 Status: *Draft coming soon*
+
+## Working Papers
+
+**Private credit and Property prices: New insights into this nexus**</br> *with* <a href="https://sites.google.com/site/cesarruy"> Cesar Rodriguez </a>
+
+<details>
+
+<summary>Abstract</summary>
+
+The relationship between the dynamics of property prices and private credit has long been a focal point for economists and policymakers, particularly given its role in financial stability. Understanding this relationship is especially crucial for developing economies, where financial markets are often less mature and more vulnerable to external shocks. This paper examines this relationship using quarterly data from 27 countries spanning 1982 to 2021. Through an instrumental variables approach that addresses endogeneity concerns, we identify three key findings. First, property price growth consistently drives private credit growth across both developed and developing economies, with a one percentage point increase in property prices associated with a 0.35 percentage point rise in private credit growth. Second, conventional macroeconomic factors such as interest rates, inflation, and GDP growth affect credit dynamics differently across development levels. Third, external factors, particularly trade openness and commodity price fluctuations, play an especially significant role in shaping credit dynamics in developing countries. Additionally, our analysis suggests that the property price-credit nexus has evolved, with notable shifts occurring around major economic events. Our results are robust to various sensitivity checks and alternative specifications and methodologies. These findings have important implications for the design of macroprudential policies, especially in developing economies where institutional capacities may differ from more developed markets.
+
+</details>
+
+Status: *R&R at Journal of Real Estate Finance and Economics*
 
 **Do compulsory schooling laws matter? Evidence from Peru**
 
@@ -60,8 +62,7 @@ Status: *Draft coming soon*
 
 Status: *Data analysis*
 
-**Learning or Earning: How Compulsory Schooling Shaped Child Labor in India** </br> *with* Ayesha Jamal
-
+**Learning or Earning: How Compulsory Schooling Shaped Child Labor**
 <details>
 
 <summary>Abstract</summary>
@@ -88,13 +89,13 @@ Status: *Data analysis*
 
 <details>
 
-<summary>Abstract</summary>
+<summary>Project Summary</summary>
 
-... Coming soon
+This project examines a critical yet understudied mechanism of the educational production function - how investments in school management capacity translate into student learning outcomes and holistic skill development. The study is still in progress but nearing its completion,with the endline data collection currently underway.
 
 </details>
 
-Status: *Data collection*
+Status: *Endline Data collection*
 
 **Navigating Margins: Gender, Identity, and Developmental Discourse among Ethnic Minorities** </br> *with* [Malvya Chintakindi](https://malvya.github.io)
 
