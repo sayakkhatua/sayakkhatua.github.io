@@ -48,9 +48,7 @@ The results reveal exceptionally large returns to compulsory schooling. The refo
 
 Status: *Draft coming soon*
 
-## Work-in-progress
-
-**School quality and child labor: Evidence from Brazil**
+**Does School Quality Reduce Child Labor? Evidence from Brazil's Rural Electrification Program**
 
 <details>
 
@@ -60,7 +58,9 @@ Status: *Draft coming soon*
 
 </details>
 
-Status: *Data analysis*
+Status: *Draft coming soon*
+
+## Work-in-progress
 
 **Learning or Earning: How Compulsory Schooling Shaped Child Labor**
 <details>

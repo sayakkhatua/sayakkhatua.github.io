@@ -8,7 +8,7 @@ image: assets/img/sayak.png
 
 ## Oregon State University (Instructor)
 Sustainable Living - Practice and Policy (Winter 2023, Fall 2024, Spring 2025 ) </br>
-Politics of Developing Nations (Summer 2023, Winter 2024, Spring 2024, Winter 2025) </br>
+Politics of Developing Nations (Summer 2023, Winter 2024, Spring 2024, Winter 2025, Winter 2026, Spring 2026) </br>
 Environmental Politics and Policy (Fall 2023)
 
 ## Oregon State University (Teaching Assistant)
