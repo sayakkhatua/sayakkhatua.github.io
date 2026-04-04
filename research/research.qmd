@@ -7,7 +7,7 @@ link-external-newwindow: true
 
 ## Job market paper
 
-**To not move forward is to fall behind: Evidence of Policy Failure from India**</br>
+**The Cost of Policy Failure: Evidence from India's Right to Education Act**</br>
 
 [Summary](https://oregonstate.box.com/s/ecnb0ngyq0awrtx296v61si9gdvyt5h4)
 
@@ -15,7 +15,7 @@ link-external-newwindow: true
 
 <summary>Abstract</summary>
 
-This paper studies the effect of non-implementation of education reforms on enrollment levels at the elementary school level in India. The paper exploits a unique natural experiment in which the Right of Children to Free and Compulsory Education (RTE) Act of 2009 was implemented in India, except for the state (now Union Territory(UT)) of Jammu \& Kashmir (J\&K). Using a quasi-experimental synthetic control approach, I estimate the causal impact of the non-implementation of the RTE act on enrollment levels in elementary schools in J\&K. Using household surveys and administrative data from the Ministry of Education, I find that on average nearly 300,000 (16.8\% more than pre-RTE enrollments) additional elementary-aged children could have enrolled annually if the act had been rolled out in J\&K. I demonstrate differential impacts of non-implementation of RTE across primary and upper primary levels of schooling and find that the negative effects are more pronounced at the upper primary level. I establish the economic significance through Mincer wage equations showing substantial lifetime earnings losses. I find that children in J\&K who complete elementary education earn 46\% more than children who do not.
+This paper studies the effect of the non-implementation of education reforms on enrollment levels at the elementary school level in India. The paper exploits a unique natural experiment in which the Right of Children to Free and Compulsory Education (RTE) Act of 2009 was implemented in India, except for the state (now Union Territory(UT)) of Jammu \& Kashmir (J\&K). Using a synthetic control approach, I estimate the causal impact of the non-implementation of the RTE act on enrollment levels in elementary schools in J\&K. Using household surveys and administrative data from the Ministry of Education, I find that, on average, nearly $300,000$ ($16.8\%$ more than pre-RTE enrollments) additional elementary-aged children could have enrolled annually if the act had been rolled out in J\&K. I find that the effects are more pronounced in the upper primary level compared to the primary level. I establish the economic significance first through Mincer wage equations, showing that children in J\&K who complete elementary education earn $45.6\%$ more than children without any schooling. Second, the forgone lifetime earnings were approximately INR $66,739$ crore (roughly USD $7$ billion in 2026) across all cohorts that were affected by the non-implementation.
 
 </details>
 
