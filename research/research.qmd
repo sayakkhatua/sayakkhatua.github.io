@@ -9,7 +9,7 @@ link-external-newwindow: true
 
 **The Cost of Policy Failure: Evidence from India's Right to Education Act**</br>
 
-[Summary](https://oregonstate.box.com/s/ecnb0ngyq0awrtx296v61si9gdvyt5h4)
+[Draft Here](https://oregonstate.box.com/s/trl8wywdk8nsppe268nuqu76tnswyhn6)
 
 <details>
 
@@ -18,8 +18,6 @@ link-external-newwindow: true
 This paper studies the effect of the non-implementation of education reforms on enrollment levels at the elementary school level in India. The paper exploits a unique natural experiment in which the Right of Children to Free and Compulsory Education (RTE) Act of 2009 was implemented in India, except for the state (now Union Territory(UT)) of Jammu \& Kashmir (J\&K). Using a synthetic control approach, I estimate the causal impact of the non-implementation of the RTE act on enrollment levels in elementary schools in J\&K. Using household surveys and administrative data from the Ministry of Education, I find that, on average, nearly $300,000$ ($16.8\%$ more than pre-RTE enrollments) additional elementary-aged children could have enrolled annually if the act had been rolled out in J\&K. I find that the effects are more pronounced in the upper primary level compared to the primary level. I establish the economic significance first through Mincer wage equations, showing that children in J\&K who complete elementary education earn $45.6\%$ more than children without any schooling. Second, the forgone lifetime earnings were approximately INR $66,739$ crore (roughly USD $7$ billion in 2026) across all cohorts that were affected by the non-implementation.
 
 </details>
-
-Status: *Draft coming soon*
 
 ## Working Papers
 
@@ -41,12 +39,11 @@ Status: *R&R at Journal of Real Estate Finance and Economics*
 
 <summary>Abstract</summary>
 
-This paper estimates the returns to schooling in Peru using the 1993 compulsory schooling reform as an instrumental variable to address endogeneity concerns. The reform extended mandatory education from 6 to 11 years, creating exogenous variation in educational attainment for individuals born in 1982 and later. Using repeated cross-sections from the Encuesta Nacional de Hogares (ENAHO) survey spanning 2001-2017, I construct a birth-cohort panel of individuals aged 25-35 to estimate early career labor market effects.
-The results reveal exceptionally large returns to compulsory schooling. The reform increased educational attainment by 0.6 years and generated a 36.3% return per additional year of schooling—substantially higher than estimates typically found in both developed and developing countries. These instrumental variable estimates exceed corresponding OLS estimates (9.1%) by nearly a four-to-one ratio, contrasting sharply with the conventional ability bias pattern observed in most developing countries where IV estimates are smaller than OLS estimates.
+This paper estimates the effects of Peru's 1993 compulsory schooling reform, which extended mandatory education from 6 to 11 years, on educational attainment, labor market outcomes, and welfare. Using eighteen rounds of Peru's national household survey (ENAHO, 2001–2018) and a cohort-comparison design, I find that the reform increased years of schooling by 0.30–0.32 years and monthly earnings by 16.2–17.4\% for individuals aged 25–35. Because the reform operated through multiple channels beyond years of schooling, including the formalization of employment, exit from agriculture, rural-to-urban migration, and increased tertiary attainment, I argue that reduced-form estimation is more appropriate than standard instrumental variables approaches. The reform's effects were largest among individuals from the lowest socioeconomic backgrounds, conflict-affected regions, and areas with below-median baseline education. The reform reduced poverty by 9.1 percentage points and extreme poverty by 3.7 percentage points. These findings suggest that compulsory schooling reforms generate the largest returns when complemented by broader institutional transformations such as economic liberalization, post-conflict reconstruction, and higher education expansion that create demand for the skills such reforms supply.
 
 </details>
 
-Status: *Draft coming soon*
+Status: *Draft coming April 2026*
 
 **Does School Quality Reduce Child Labor? Evidence from Brazil's Rural Electrification Program**
 
@@ -54,11 +51,11 @@ Status: *Draft coming soon*
 
 <summary>Abstract</summary>
 
-... Coming soon
+This paper investigates the causal impact of an increase in school quality on the prevalence of child labor in affected communities in Brazil. Using school electrification as a proxy for school quality, the variation in the timing of electrification is used as an instrument that is plausibly exogenous to the unexplained child labor choice. An increase in school quality in the form of electrification is found to have a depressing effect of between 6.5 and 9 percentage points on child labor prevalence within the same community over a ten year period. These results suggest that improvements in the quality of schools might be an effective tool to reduce child labor overall. 
 
 </details>
 
-Status: *Draft coming soon*
+Status: *Draft coming April 2026*
 
 ## Work-in-progress
 
@@ -95,7 +92,7 @@ This project examines a critical yet understudied mechanism of the educational p
 
 </details>
 
-Status: *Endline Data collection*
+Status: *Data Analysis*
 
 **Navigating Margins: Gender, Identity, and Developmental Discourse among Ethnic Minorities** </br> *with* [Malvya Chintakindi](https://malvya.github.io)
 
