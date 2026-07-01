@@ -9,13 +9,13 @@ link-external-newwindow: true
 
 **The Cost of Policy Failure: Evidence from India's Right to Education Act**</br>
 
-[Draft Here](https://oregonstate.box.com/s/trl8wywdk8nsppe268nuqu76tnswyhn6)
+[Preprint](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7029015&__cf_chl_f_tk=kEqdsEqXQ8_x65VY1nSsCDubB0W1s9GBuU1t613uVKo-1782888387-1.0.1.1-sDMkElKFDC7hA1LndW5Lvkw3Jm9YONAPsZ_QKQAJgno)
 
 <details>
 
 <summary>Abstract</summary>
 
-This paper studies the effect of the non-implementation of education reforms on enrollment levels at the elementary school level in India. The paper exploits a unique natural experiment in which the Right of Children to Free and Compulsory Education (RTE) Act of 2009 was implemented in India, except for the state (now Union Territory(UT)) of Jammu \& Kashmir (J\&K). Using a synthetic control approach, I estimate the causal impact of the non-implementation of the RTE act on enrollment levels in elementary schools in J\&K. Using household surveys and administrative data from the Ministry of Education, I find that, on average, nearly $300,000$ ($16.8\%$ more than pre-RTE enrollments) additional elementary-aged children could have enrolled annually if the act had been rolled out in J\&K. I find that the effects are more pronounced in the upper primary level compared to the primary level. I establish the economic significance first through Mincer wage equations, showing that children in J\&K who complete elementary education earn $45.6\%$ more than children without any schooling. Second, the forgone lifetime earnings were approximately INR $66,739$ crore (roughly USD $7$ billion in 2026) across all cohorts that were affected by the non-implementation.
+This paper studies the effect of the non-implementation of education reforms on enrollment levels at the elementary school level in India. The paper exploits a unique natural experiment in which the Right of Children to Free and Compulsory Education (RTE) Act of 2009 was implemented in India, except for the state (now Union Territory(UT)) of Jammu & Kashmir (J&K). Using a synthetic control approach, I estimate the causal impact of the non-implementation of the RTE act on enrollment levels in elementary schools in J&K. Using household surveys and administrative data from the Ministry of Education, I find that, on average, nearly 300,000 ($16.8%$ more than pre-RTE enrollments) additional elementary-aged children could have enrolled annually if the act had been rolled out in J&K. I find that the effects are more pronounced in the upper primary level compared to the primary level. Given the high and well-documented returns to schooling in India, these enrollment losses represent economically meaningful forgone gains in human capital and lifetime earnings.
 
 </details>
 
@@ -43,9 +43,9 @@ This paper estimates the effects of Peru's 1993 compulsory schooling reform, whi
 
 </details>
 
-Status: *Draft coming April 2026*
+Status: *Draft in preparation*
 
-**Does School Quality Reduce Child Labor? Evidence from Brazil's Rural Electrification Program**
+**Does School Quality Reduce Child Labor? Evidence from a Rural Electrification Program**</br> *with* Bruna Alvarez, Patrick Emerson, and Andre Souza
 
 <details>
 
@@ -55,7 +55,7 @@ This paper investigates the causal impact of an increase in school quality on th
 
 </details>
 
-Status: *Draft coming April 2026*
+Status: *Draft in preparation*
 
 ## Work-in-progress
 
