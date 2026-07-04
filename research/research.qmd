@@ -19,6 +19,8 @@ This paper studies the effect of the non-implementation of education reforms on 
 
 </details>
 
+Status: *Under review at Economics of Education Review*
+
 ## Working Papers
 
 **Private credit and Property prices: New insights into this nexus**</br> *with* <a href="https://sites.google.com/site/cesarruy"> Cesar Rodriguez </a>
@@ -43,7 +45,7 @@ This paper estimates the effects of Peru's 1993 compulsory schooling reform, whi
 
 </details>
 
-Status: *Draft in preparation*
+Status: *Draft being updated currently*
 
 **Does School Quality Reduce Child Labor? Evidence from a Rural Electrification Program**</br> *with* Bruna Alvarez, Patrick Emerson, and Andre Souza
 
@@ -55,9 +57,21 @@ This paper investigates the causal impact of an increase in school quality on th
 
 </details>
 
-Status: *Draft in preparation*
+Status: *Draft being updated currently*
 
 ## Work-in-progress
+
+**Improving school management in a low-income country: Experimental evidence from India** </br> *with* [Todd Pugatch](https://sites.google.com/site/toddpugatch/) , [Ketki Sheth](http://ketkisheth.weebly.com), [Emmanuel Rukundo](https://sites.google.com/view/nshakira-rukundo/home)
+
+<details>
+
+<summary>Project Summary</summary>
+
+This project examines a critical yet understudied mechanism of the educational production function - how investments in school management capacity translate into student learning outcomes and holistic skill development. The study is still in progress but nearing its completion,with the endline data collection currently underway.
+
+</details>
+
+Status: *Data Analysis*
 
 **Learning or Earning: How Compulsory Schooling Shaped Child Labor**
 <details>
@@ -81,18 +95,6 @@ Status: *Data analysis*
 </details>
 
 Status: *Data analysis*
-
-**Improving school management in a low-income country: Experimental evidence from India** </br> *with* [Todd Pugatch](https://sites.google.com/site/toddpugatch/) , [Ketki Sheth](http://ketkisheth.weebly.com), [Emmanuel Rukundo](https://sites.google.com/view/nshakira-rukundo/home)
-
-<details>
-
-<summary>Project Summary</summary>
-
-This project examines a critical yet understudied mechanism of the educational production function - how investments in school management capacity translate into student learning outcomes and holistic skill development. The study is still in progress but nearing its completion,with the endline data collection currently underway.
-
-</details>
-
-Status: *Data Analysis*
 
 **Navigating Margins: Gender, Identity, and Developmental Discourse among Ethnic Minorities** </br> *with* [Malvya Chintakindi](https://malvya.github.io)
 
