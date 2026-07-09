@@ -1,7 +1,7 @@
 ---
 title: "Sayak Khatua"
 pagetitle: "Sayak Khatua | Economist"
-subtitle: "PhD Candidate, School of Public Policy, Oregon State University "
+subtitle: "PhD Public Policy, School of Public Policy, Oregon State University "
 image: assets/img/sayak.png
     
 about:
@@ -31,7 +31,7 @@ execute:
 
 I received my PhD in Public Policy at the [School of Public Policy](https://liberalarts.oregonstate.edu/spp), Oregon State University in June 2026. I am a applied microeconomist with interests in economics of education, labor, program evaluation, and research ethics.
 
-**I am on the 2025-26 job market.** You can access my CV [here](https://sayakkhatua.github.io/cv/cv.html).
+You can access my CV [here](https://sayakkhatua.github.io/cv/cv.html).
 
 My dissertation primarily focuses on education policy and its effects on educational attainment and labor market outcomes, including child labor, in the global south. My job market paper examines policy implementation failures in India's education system, demonstrating how the non-implementation of the Right to Education Act excluded 300,000 children annually from schooling, resulting in substantial lifetime wage penalties (46% earnings gap). You can read more about my current research [here](https://sayakkhatua.github.io/research/research.html).
 
