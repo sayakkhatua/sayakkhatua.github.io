@@ -29,7 +29,7 @@ execute:
   freeze: true
 ---
 
-I received my PhD in Public Policy at the [School of Public Policy](https://liberalarts.oregonstate.edu/spp), Oregon State University in June 2026. I am a applied microeconomist with interests in economics of education, labor, program evaluation, and research ethics.
+I received my PhD in Public Policy at the [School of Public Policy](https://liberalarts.oregonstate.edu/spp), Oregon State University in June 2026. I am a applied microeconomist with interests in economics of education, climate change, child labor, program evaluation, and research ethics.
 
 You can access my CV [here](https://sayakkhatua.github.io/cv/cv.html).
 
