@@ -1,0 +1,591 @@
+/*-- scss:defaults --*/
+
+// -----------------------------------------------------------------------------
+// Confetti — a loud, colorful theme for sayakkhatua.github.io
+//
+// Risograph / zine energy: a cream page, hard-edged offset shadows instead of
+// soft blur, chunky borders, and a six-color palette that cycles through the
+// navigation. Wonky display type up top, clean geometric sans underneath.
+// -----------------------------------------------------------------------------
+
+// Neutrals — warm cream through inky purple-black. No true grey anywhere.
+$white:    #ffffff !default;
+$cream:    #fffaf0 !default;   // page background
+$gray-100: #fdf3e3 !default;
+$gray-200: #f5e6d0 !default;
+$gray-300: #e4d3ba !default;
+$gray-400: #c2ad91 !default;
+$gray-500: #8e7f6d !default;
+$gray-600: #5f5648 !default;
+$gray-700: #3d3730 !default;
+$gray-800: #262233 !default;
+$gray-900: #16123a !default;   // ink — deep indigo, not black
+$black:    #16123a !default;
+
+$ink: $gray-900 !default;
+
+// The six ---------------------------------------------------------------------
+$violet:    #6c3bf5 !default;   // electric violet
+$coral:     #ff4d6d !default;   // hot coral
+$tangerine: #ff8c1a !default;   // tangerine
+$sunny:     #ffc93c !default;   // sunny yellow
+$mint:      #14b8a6 !default;   // mint teal
+$sky:       #3b9dff !default;   // sky blue
+
+// Tints for backgrounds
+$violet-pale: #ece5ff !default;
+$coral-pale:  #ffe4e9 !default;
+$mint-pale:   #d7f5f1 !default;
+$sunny-pale:  #fff2cc !default;
+
+// Bootstrap's named colors
+$blue:   $sky !default;
+$indigo: $violet !default;
+$purple: $violet !default;
+$pink:   $coral !default;
+$red:    $coral !default;
+$orange: $tangerine !default;
+$yellow: $sunny !default;
+$green:  $mint !default;
+$teal:   $mint !default;
+$cyan:   $sky !default;
+
+$primary:   $violet !default;
+$secondary: $gray-600 !default;
+$success:   $mint !default;
+$info:      $sky !default;
+$warning:   $tangerine !default;
+$danger:    $coral !default;
+$light:     $gray-100 !default;
+$dark:      $ink !default;
+
+// Typography ------------------------------------------------------------------
+// Bricolage Grotesque is the fun one — a deliberately wonky display grotesque
+// with optical sizing. Space Grotesk carries the body copy with just enough
+// quirk to match. Space Mono for code, because the ampersands are great.
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap');
+
+$font-family-sans-serif: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !default;
+$font-family-display: "Bricolage Grotesque", "Space Grotesk", Impact, sans-serif !default;
+$font-family-monospace: "Space Mono", "SF Mono", Menlo, Consolas, monospace !default;
+
+$font-family-base: $font-family-sans-serif !default;
+$headings-font-family: $font-family-display !default;
+$headings-font-weight: 800 !default;
+$headings-color: $ink !default;
+$headings-line-height: 1.05 !default;
+
+$body-bg: $cream !default;
+$body-color: $gray-800 !default;
+
+// Links
+$link-color: $violet !default;
+$link-decoration: none !default;
+$link-hover-color: $coral !default;
+$link-hover-decoration: none !default;
+
+// Navbar
+$navbar-bg: $violet !default;
+$navbar-fg: $white !default;
+$navbar-hl: $sunny !default;
+
+// Footer
+$footer-bg: $ink !default;
+$footer-fg: $gray-200 !default;
+
+// Code
+$code-bg: $violet-pale !default;
+$code-color: $violet !default;
+$code-block-bg: #1e1a3f !default;
+
+// TOC
+$toc-color: $ink !default;
+$toc-font-size: 0.9em !default;
+
+$btn-code-copy-color-active: $coral !default;
+
+// Chunky by default
+$border-radius: 0.5rem !default;
+$border-radius-lg: 0.9rem !default;
+
+
+/*-- scss:mixins --*/
+
+// The signature move: a hard, unblurred offset shadow, like a sticker or a
+// misregistered riso print.
+@mixin hard-shadow($color: $ink, $x: 4px, $y: 4px) {
+  box-shadow: #{$x} #{$y} 0 0 $color;
+}
+
+// Press the element into its shadow on hover.
+@mixin press($color: $ink, $x: 4px, $y: 4px) {
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+
+  &:hover,
+  &:focus-visible {
+    transform: translate(#{$x * 0.5}, #{$y * 0.5});
+    box-shadow: #{$x * 0.5} #{$y * 0.5} 0 0 $color;
+  }
+}
+
+
+/*-- scss:rules --*/
+
+// Motion here is decorative in every case, so this covers all of it.
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  // A faint dot grid, like graph paper under the ink.
+  background-image: radial-gradient(rgba($ink, 0.055) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+// Headings -------------------------------------------------------------------
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  letter-spacing: -0.03em;
+}
+
+h1, .h1 {
+  font-weight: 800;
+}
+
+// Page title gets a color-shifting gradient fill.
+.quarto-title-block .quarto-title .title {
+  background: linear-gradient(100deg, $violet, $coral 40%, $tangerine 70%, $violet);
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: confetti-drift 9s ease-in-out infinite;
+}
+
+@keyframes confetti-drift {
+  0%, 100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+
+.quarto-title-block .subtitle {
+  font-family: $font-family-sans-serif;
+  font-weight: 500;
+  color: $gray-600;
+}
+
+// Section headings get a short colored dash in front. Each level a new color.
+h2, .h2 {
+  margin-top: 2.2rem;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 1.6rem;
+    height: 0.32rem;
+    margin-right: 0.6rem;
+    vertical-align: 0.28em;
+    border-radius: 99px;
+    background: $coral;
+  }
+}
+
+h3, .h3 {
+  color: $violet;
+}
+
+// Body links -----------------------------------------------------------------
+// Scoped to content so nav/footer keep their own treatment.
+
+main a:not(.btn):not(.nav-link):not(.anchorjs-link):not(.about-link),
+.about-links a:not(.btn):not(.about-link) {
+  color: $link-color;
+  font-weight: 700;
+  background-image: linear-gradient(90deg, $coral, $tangerine, $sunny);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 0.18em;
+  transition: background-size 0.2s ease, color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: $link-hover-color;
+    background-size: 100% 100%;   // the underline swallows the whole word
+  }
+}
+
+// Navbar ----------------------------------------------------------------------
+
+.navbar {
+  border-bottom: 4px solid $ink;
+}
+
+.navbar-brand img,
+.navbar-logo {
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+// Turtle does a full lap on hover.
+.navbar-brand:hover img,
+.navbar-brand:hover .navbar-logo {
+  transform: rotate(360deg) scale(1.15);
+}
+
+.navbar .nav-link {
+  position: relative;
+  font-weight: 700;
+  font-family: $font-family-display;
+  letter-spacing: -0.01em;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.25rem;
+    height: 4px;
+    border-radius: 99px;
+    background: $sunny;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  &:hover::after,
+  &.active::after {
+    transform: scaleX(1);
+  }
+}
+
+// Each nav item claims its own color. Cycles if there are more than five.
+.navbar-nav .nav-item {
+  &:nth-child(5n + 1) .nav-link::after { background: $sunny; }
+  &:nth-child(5n + 2) .nav-link::after { background: $coral; }
+  &:nth-child(5n + 3) .nav-link::after { background: $mint; }
+  &:nth-child(5n + 4) .nav-link::after { background: $tangerine; }
+  &:nth-child(5n + 5) .nav-link::after { background: $sky; }
+}
+
+// Footer -----------------------------------------------------------------------
+
+.nav-footer {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border: 0 !important;
+  border-top: 4px solid $sunny !important;
+  min-height: 3em;
+  font-size: 0.9em;
+
+  a {
+    color: $sunny;
+    font-weight: 700;
+
+    &:hover {
+      color: $coral;
+    }
+  }
+
+  .faux-block {
+    display: block;
+    padding-bottom: 0.4em;
+  }
+
+  // Quarto absolutely-positions .nav-footer-center, which stops it being a
+  // flex item. Undo that.
+  .nav-footer-center {
+    text-align: center;
+    position: inherit;
+    margin-top: 0;
+
+    @media (max-width: map-get($grid-breakpoints, md)) {
+      margin-top: 0.5em;
+      margin-bottom: 1.5em;
+    }
+  }
+
+  .nav-footer-left,
+  .nav-footer-right,
+  .nav-footer-center {
+    text-align: center;
+    width: 100%;
+    min-height: 2em;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    .nav-footer-left  { text-align: left; }
+    .nav-footer-right { text-align: right; }
+
+    .nav-footer-left,
+    .nav-footer-right,
+    .nav-footer-center {
+      flex: 1 1 33%;
+    }
+  }
+}
+
+// Hero / about block ------------------------------------------------------------
+
+#hero-heading,
+.quarto-about-trestles {
+  .about-image,
+  img.about-image {
+    border: 4px solid $ink;
+    @include hard-shadow($violet, 8px, 8px);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    &:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 12px 12px 0 0 $coral;
+    }
+  }
+}
+
+// Social links as chunky sticker buttons.
+.about-links .about-link {
+  border: 3px solid $ink !important;
+  border-radius: 99px;
+  padding: 0.4rem 1rem;
+  color: $ink !important;
+  background: $white;
+  font-weight: 700;
+  background-image: none;
+  @include hard-shadow($ink, 3px, 3px);
+  @include press($ink, 3px, 3px);
+
+  &:nth-child(3n + 1):hover { background: $sunny; }
+  &:nth-child(3n + 2):hover { background: $mint; }
+  &:nth-child(3n + 3):hover { background: $coral; color: $white !important; }
+
+  .bi::before {
+    vertical-align: -0.15em;
+  }
+}
+
+// Cards & listings ----------------------------------------------------------------
+
+.card,
+.quarto-grid-item {
+  border: 3px solid $ink;
+  border-radius: $border-radius-lg;
+  background: $white;
+  @include hard-shadow($ink, 6px, 6px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 10px 10px 0 0 $violet;
+  }
+}
+
+// Listing chips, color-cycled.
+.quarto-category,
+.listing-category {
+  border: 2px solid $ink !important;
+  border-radius: 99px !important;
+  color: $ink !important;
+  font-weight: 700;
+  font-size: 0.75em;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  transition: transform 0.15s ease;
+
+  &:nth-of-type(4n + 1) { background: $sunny-pale !important; }
+  &:nth-of-type(4n + 2) { background: $mint-pale !important; }
+  &:nth-of-type(4n + 3) { background: $coral-pale !important; }
+  &:nth-of-type(4n + 4) { background: $violet-pale !important; }
+
+  &:hover {
+    transform: translateY(-2px) rotate(-2deg);
+  }
+}
+
+// Buttons --------------------------------------------------------------------------
+
+.btn-primary,
+.btn-secondary {
+  border: 3px solid $ink;
+  border-radius: 99px;
+  font-weight: 700;
+  color: $ink;
+  @include hard-shadow($ink, 4px, 4px);
+  @include press($ink, 4px, 4px);
+}
+
+.btn-primary {
+  background: $sunny;
+  border-color: $ink;
+
+  &:hover, &:focus-visible {
+    background: $tangerine;
+    color: $ink;
+    border-color: $ink;
+  }
+}
+
+// Blockquotes ------------------------------------------------------------------------
+
+blockquote {
+  position: relative;
+  margin: 2rem 0;
+  padding: 1.1rem 1.3rem;
+  border: 3px solid $ink;
+  border-left-width: 10px;
+  border-left-color: $tangerine;
+  border-radius: $border-radius-lg;
+  background: $sunny-pale;
+  color: $gray-800;
+  font-weight: 500;
+
+  p:last-child { margin-bottom: 0; }
+}
+
+// Code ---------------------------------------------------------------------------------
+
+code:not(.sourceCode) {
+  padding: 0.14em 0.4em;
+  border-radius: 5px;
+  font-size: 0.86em;
+  font-weight: 700;
+}
+
+div.sourceCode {
+  border: 3px solid $ink;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+  @include hard-shadow($ink, 5px, 5px);
+}
+
+// Tables ----------------------------------------------------------------------------------
+
+table:not(.dataTable) {
+  border: 3px solid $ink;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+
+  th {
+    background: $violet;
+    color: $white;
+    font-family: $font-family-display;
+    font-weight: 700;
+    border-bottom: 3px solid $ink;
+  }
+
+  tbody tr:nth-child(even) {
+    background: rgba($sunny, 0.14);
+  }
+
+  tbody tr:hover {
+    background: $mint-pale;
+  }
+}
+
+// TOC ---------------------------------------------------------------------------------------
+
+#TOC,
+.sidebar nav[role="doc-toc"] {
+  a {
+    color: $gray-600;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+    transition: color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+
+    &:hover {
+      color: $violet;
+      border-left-color: $sunny;
+      transform: translateX(2px);
+    }
+
+    &.active {
+      color: $violet;
+      font-weight: 700;
+      border-left-color: $coral;
+    }
+  }
+}
+
+// Margin notes (the site uses reference-location: margin) --------------------------------------
+
+.column-margin {
+  font-size: 0.82em;
+  color: $gray-600;
+}
+
+// Utility classes you can drop into any .qmd ----------------------------------------------------
+
+// Highlighter swipe: <span class="hl">like this</span>
+.hl {
+  background: linear-gradient(180deg, transparent 55%, rgba($sunny, 0.75) 55%);
+  padding: 0 0.12em;
+}
+
+// Sticker badge: <span class="badge-pop">new</span>
+.badge-pop {
+  display: inline-block;
+  padding: 0.16em 0.6em;
+  border: 2px solid $ink;
+  border-radius: 99px;
+  background: $coral;
+  color: $white;
+  font-family: $font-family-display;
+  font-size: 0.72em;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: 0.2em;
+  transform: rotate(-3deg);
+  @include hard-shadow($ink, 2px, 2px);
+}
+
+// Callout band: wrap a section in ::: {.pop-band} ... :::
+.pop-band {
+  border: 3px solid $ink;
+  border-radius: $border-radius-lg;
+  background: $violet-pale;
+  padding: 1.5rem 1.75rem;
+  margin: 2rem 0;
+  @include hard-shadow($ink, 6px, 6px);
+}
+
+// Wiggle on hover: <span class="wiggle">🐢</span>
+.wiggle {
+  display: inline-block;
+
+  &:hover {
+    animation: wiggle 0.5s ease-in-out;
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25%      { transform: rotate(-11deg) scale(1.1); }
+  75%      { transform: rotate(11deg) scale(1.1); }
+}
+
+// Rainbow rule: <hr class="rainbow">
+hr.rainbow {
+  height: 6px;
+  border: 0;
+  border-radius: 99px;
+  opacity: 1;
+  background: linear-gradient(90deg, $violet, $sky, $mint, $sunny, $tangerine, $coral);
+}
+
+::selection {
+  background: rgba($sunny, 0.7);
+  color: $ink;
+}
+
+:focus-visible {
+  outline: 3px solid $violet;
+  outline-offset: 3px;
+}

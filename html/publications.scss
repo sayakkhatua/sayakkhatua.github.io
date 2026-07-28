@@ -1,0 +1,308 @@
+/*-- scss:rules --*/
+
+// -----------------------------------------------------------------------------
+// Publication / research entry component  ("accent-bar list")
+//
+// Self-contained: styles are driven by Bootstrap 5.3 CSS custom properties
+// (--bs-primary, --bs-warning, ...), so this partial adapts to whatever Quarto
+// theme is active instead of shipping its own palette. Include it AFTER the
+// theme in _quarto.yml.
+//
+// Authoring pattern (in a .qmd):
+//
+//   :::: {.papers}
+//   ::: {.paper}
+//   [Paper title]{.paper-title}
+//   [with Coauthor A, Coauthor B]{.authors}
+//   [[Venue Name]{.venue} [Status]{.status}]{.meta}
+//
+//   [ [Preprint](url) [Data & Code](url) ]{.paper-links}
+//
+//   <details class="abstract"><summary>Abstract</summary>
+//   ... text ...
+//   </details>
+//   :::
+//   ::::
+//
+// Every line except .paper-title is optional. Wrap each section's entries in a
+// single .papers block so the accent-bar colour cycles cleanly and resets per
+// section.
+// -----------------------------------------------------------------------------
+
+.papers {
+  max-width: 62rem;      // a comfortable reading measure on the full-width layout
+}
+
+.paper {
+  position: relative;
+  border-left: 3px solid var(--bs-primary);
+  padding: 0.15rem 0 0.15rem 1.35rem;
+  margin: 0 0 2.4rem 0;
+  transition: border-left-color 0.2s ease, transform 0.2s ease;
+
+  &:last-child {
+    margin-bottom: 1rem;
+  }
+
+  // Cycle the accent colour through the theme's own semantic colours so it
+  // always harmonises. Scoped to .papers > .paper so the count is reliable
+  // (the only same-type siblings are the papers themselves) and resets in
+  // each section.
+  .papers > &:nth-of-type(5n + 1) { border-left-color: var(--bs-primary); }
+  .papers > &:nth-of-type(5n + 2) { border-left-color: var(--bs-warning); }
+  .papers > &:nth-of-type(5n + 3) { border-left-color: var(--bs-success); }
+  .papers > &:nth-of-type(5n + 4) { border-left-color: var(--bs-danger);  }
+  .papers > &:nth-of-type(5n + 5) { border-left-color: var(--bs-info);    }
+}
+
+// Title -----------------------------------------------------------------------
+
+.paper-title {
+  display: block;
+  font-family: "Fraunces", "Iowan Old Style", Georgia, serif;
+  font-size: 1.14rem;
+  font-weight: 700;
+  line-height: 1.32;
+  color: var(--bs-heading-color, var(--bs-emphasis-color, inherit));
+}
+
+// Authors ---------------------------------------------------------------------
+
+.authors {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--bs-secondary-color, #5f5648);
+
+  a {
+    color: inherit;
+    font-weight: 600;
+    background-image: none;   // opt out of the theme's sweep-underline
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    text-decoration-color: var(--bs-border-color);
+    transition: text-decoration-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      color: var(--bs-primary);
+      text-decoration-color: currentColor;
+    }
+  }
+}
+
+// Venue + status --------------------------------------------------------------
+
+.meta {
+  display: block;
+  margin-top: 0.55rem;
+  line-height: 1.6;
+}
+
+.venue {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--bs-secondary-color, #6b6152);
+}
+
+.status {
+  display: inline-block;
+  margin-left: 0.15rem;
+  padding: 0.08em 0.6em;
+  border-radius: 99px;
+  background: rgba(var(--bs-primary-rgb), 0.1);
+  color: var(--bs-primary);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: 0.12em;
+  white-space: nowrap;
+}
+
+// A middot between venue and status when both are present, so authors don't
+// have to type punctuation.
+.venue + .status::before {
+  content: "";
+}
+
+// Links -----------------------------------------------------------------------
+
+.paper-links {
+  display: block;
+  margin-top: 0.7rem;
+
+  a {
+    display: inline-block;
+    margin: 0.2rem 0.4rem 0 0;
+    padding: 0.16rem 0.7rem;
+    border: 1px solid var(--bs-border-color, #d6cbb6);
+    border-radius: 99px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1.4;
+    // !important is needed to beat the theme's high-specificity `main a:not(...)`
+    // rule, which would otherwise re-apply its mustard colour + sweep underline
+    // to these pills.
+    color: var(--bs-primary) !important;
+    background: transparent;       // never filled
+    background-image: none !important;   // opt out of the theme's sweep-underline
+    text-decoration: none;
+    text-underline-offset: 3px;
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+                text-decoration-color 0.18s ease;
+
+    // Pop into place on load, staggered per pill, with a springy ease so they
+    // feel like bubbles. `backwards` fill hides them before the animation runs
+    // and then hands styling back to the rules here (so the hover pop works).
+    animation: paper-link-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+
+    &:nth-child(1) { animation-delay: 0.04s; }
+    &:nth-child(2) { animation-delay: 0.14s; }
+    &:nth-child(3) { animation-delay: 0.24s; }
+    &:nth-child(4) { animation-delay: 0.34s; }
+
+    // On hover: still transparent, same colour, underline — plus a gentle pop.
+    &:hover,
+    &:focus-visible {
+      background: transparent;
+      color: var(--bs-primary) !important;
+      text-decoration: underline;
+      transform: translateY(-2px) scale(1.06);
+    }
+  }
+}
+
+@keyframes paper-link-pop {
+  0%   { opacity: 0; transform: translateY(7px) scale(0.8); }
+  60%  { opacity: 1; transform: translateY(-2px) scale(1.05); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+// Honour reduced-motion preferences: no pop-in, no hover bounce.
+@media (prefers-reduced-motion: reduce) {
+  .paper-links a,
+  .paper-links a:hover,
+  .paper-links a:focus-visible {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+// Abstract --------------------------------------------------------------------
+
+.paper details.abstract {
+  margin-top: 0.7rem;
+  max-width: 60rem;
+
+  > summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    width: fit-content;
+    cursor: pointer;
+    list-style: none;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--bs-secondary-color, #6b6152);
+    user-select: none;
+    transition: color 0.2s ease;
+
+    &::-webkit-details-marker { display: none; }
+
+    &::before {
+      content: "\25B8";               // ▸
+      font-size: 0.8em;
+      line-height: 1;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover { color: var(--bs-primary); }
+  }
+
+  &[open] > summary {
+    margin-bottom: 0.65rem;
+    color: var(--bs-primary);
+
+    &::before { transform: rotate(90deg); }
+  }
+
+  // The revealed abstract body: indented, lightly tinted, generous leading —
+  // this is the breathing room the old layout was missing.
+  &[open] {
+    border-left: 2px solid var(--bs-border-color, #e9e1d2);
+    padding-left: 1.1rem;
+    margin-left: 0.1rem;
+  }
+
+  > *:not(summary) {
+    font-size: 0.92rem;
+    line-height: 1.68;
+    color: var(--bs-body-color);
+  }
+
+  > *:not(summary):last-child { margin-bottom: 0.2rem; }
+}
+
+// Year / group sub-headings sit a little closer to their list ------------------
+
+.paper-year {
+  margin-top: 2.2rem;
+  margin-bottom: 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--bs-secondary-color, #6b6152);
+}
+
+// -----------------------------------------------------------------------------
+// Home-page News feed
+//   ::: {.news}
+//   [Oct 2026]{.news-date} Text of the update, with [links](...) as normal.
+//   :::
+// Each line becomes one dated row: a fixed-width date column + the update text.
+// -----------------------------------------------------------------------------
+
+.news {
+  max-width: 52rem;
+  margin-top: 0.5rem;
+
+  // Each entry is its own block: a mustard accent bar, a date label on its own
+  // line, then the description (with links) on the line(s) below.
+  p {
+    margin-bottom: 1.2rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--bs-warning);
+    line-height: 1.55;
+  }
+}
+
+.news-date {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--bs-secondary-color, #6b6152);
+}
+
+// Home hero: keep the role / affiliation subtitle on a single line. The trestles
+// left column is a fixed 42% (stacks below 992px), so on desktop the text has to
+// fit that narrow column — clamp() holds it at ~1rem on wide screens and shrinks
+// it just enough near the 992px breakpoint. It wraps normally on phones so it can
+// never force a horizontal scroll.
+.about-entity .subtitle {
+  white-space: nowrap;
+  font-size: clamp(0.8rem, 1.3vw, 1rem);
+
+  @media (max-width: 575.98px) {
+    white-space: normal;
+    font-size: 1rem;
+  }
+}

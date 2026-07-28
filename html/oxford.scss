@@ -1,0 +1,494 @@
+/*-- scss:defaults --*/
+
+// -----------------------------------------------------------------------------
+// Oxford — a theme for sayakkhatua.github.io
+//
+// Palette drawn from the city: Oxford blue, Cotswold limestone, punt-varnish
+// wood, quad ivy, and the mustard of a Bodleian reading lamp. Serious spine,
+// playful accents.
+// -----------------------------------------------------------------------------
+
+// Neutrals: warm, stone-tinted rather than pure grey
+$white:    #ffffff !default;
+$stone-50:  #faf8f4 !default;   // page background — parchment, not white
+$stone-100: #f3efe7 !default;
+$stone-200: #e7e0d3 !default;
+$stone-300: #d5cbb8 !default;
+$stone-400: #b3a68d !default;
+$stone-500: #8b7f68 !default;
+$stone-600: #6b6152 !default;
+$stone-700: #4a443a !default;
+$stone-800: #2e2a24 !default;
+$stone-900: #1a1815 !default;
+$black:    #000000 !default;
+
+// Quarto/Bootstrap expects the $gray-* scale to exist
+$gray-100: $stone-100 !default;
+$gray-200: $stone-200 !default;
+$gray-300: $stone-300 !default;
+$gray-400: $stone-400 !default;
+$gray-500: $stone-500 !default;
+$gray-600: $stone-600 !default;
+$gray-700: $stone-700 !default;
+$gray-800: $stone-800 !default;
+$gray-900: $stone-900 !default;
+
+// The Oxford blues
+$oxford-blue:      #002147 !default;   // the official one
+$oxford-blue-mid:  #10396b !default;
+$oxford-blue-soft: #2a5c96 !default;
+$oxford-blue-pale: #dbe6f2 !default;
+
+// Accents — this is where the fun lives
+$ivy:        #3f7d5c !default;   // quad ivy
+$punt:       #b1651a !default;   // varnished punt wood
+$lamp:       #e0a526 !default;   // reading-lamp mustard
+$rhubarb:    #a4243b !default;   // matriculation-ball red
+$thames:     #4a9d9c !default;   // river teal
+
+$blue:   $oxford-blue !default;
+$indigo: #3d2b8c !default;
+$purple: #4a2d6b !default;
+$pink:   #b0446b !default;
+$red:    $rhubarb !default;
+$orange: $punt !default;
+$yellow: $lamp !default;
+$green:  $ivy !default;
+$teal:   $thames !default;
+$cyan:   $oxford-blue-soft !default;
+
+$primary:   $oxford-blue !default;
+$secondary: $stone-600 !default;
+$success:   $ivy !default;
+$info:      $thames !default;
+$warning:   $lamp !default;
+$danger:    $rhubarb !default;
+$light:     $stone-100 !default;
+$dark:      $oxford-blue !default;
+
+// Typography ------------------------------------------------------------------
+// Body in a humanist serif for the academic register; headings in the same
+// family at heavier weight; UI/nav in a clean sans for contrast.
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap');
+
+$font-family-serif: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif !default;
+$font-family-sans-serif: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !default;
+$font-family-monospace: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace !default;
+
+$font-family-base: $font-family-sans-serif !default;
+$headings-font-family: $font-family-serif !default;
+$headings-font-weight: 600 !default;
+$headings-color: $oxford-blue !default;
+$headings-line-height: 1.2 !default;
+
+$body-bg: $stone-50 !default;
+$body-color: $stone-800 !default;
+
+// Links
+$link-color: $oxford-blue-mid !default;
+$link-decoration: none !default;
+$link-hover-color: $punt !default;
+$link-hover-decoration: none !default;   // replaced by an animated underline below
+
+// Navbar
+$navbar-bg: $oxford-blue !default;
+$navbar-fg: $stone-100 !default;
+$navbar-hl: $lamp !default;
+
+// Footer
+$footer-bg: $oxford-blue !default;
+$footer-fg: $stone-300 !default;
+
+// Inline code
+$code-bg: $oxford-blue-pale !default;
+$code-color: $oxford-blue !default;
+$code-block-bg: #0d1f33 !default;
+
+// TOC
+$toc-color: $oxford-blue !default;
+$toc-font-size: 0.9em !default;
+$toc-active-border: $lamp !default;
+
+// Code copy
+$btn-code-copy-color-active: $lamp !default;
+
+// Misc Bootstrap knobs
+$border-radius: 0.35rem !default;
+$border-radius-lg: 0.6rem !default;
+
+
+/*-- scss:mixins --*/
+
+// Underline that sweeps in from the left on hover.
+@mixin sweep-underline($color: $punt, $thickness: 2px) {
+  background-image: linear-gradient($color, $color);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% $thickness;
+  transition: background-size 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus-visible {
+    background-size: 100% $thickness;
+  }
+}
+
+
+/*-- scss:rules --*/
+
+// Respect users who ask for less motion. Everything decorative below is
+// transition-based, so this one block covers it.
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+// Headings ---------------------------------------------------------------------
+
+h1, .h1, h2, .h2, h3, .h3 {
+  letter-spacing: -0.015em;
+}
+
+// A small mustard rule under section headings — a nod to a ruled page.
+h2, .h2 {
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid $stone-200;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 2.5rem;
+    height: 3px;
+    background: $lamp;
+    border-radius: 2px;
+  }
+}
+
+// Title block: subtitle in the blue, understated
+.quarto-title-block .quarto-title .title {
+  font-weight: 700;
+}
+
+.quarto-title-block .subtitle {
+  font-family: $font-family-sans-serif;
+  font-weight: 400;
+  color: $stone-600;
+}
+
+// Body links --------------------------------------------------------------------
+// Scoped to content so navbar/footer/TOC links keep their own treatment.
+
+main a:not(.btn):not(.nav-link):not(.anchorjs-link):not(.quarto-title-author-orcid),
+.about-links a:not(.btn) {
+  color: $link-color;
+  font-weight: 600;
+  @include sweep-underline($punt, 2px);
+
+  &:hover,
+  &:focus-visible {
+    color: $link-hover-color;
+  }
+}
+
+// Navbar --------------------------------------------------------------------------
+
+.navbar {
+  border-bottom: 3px solid $lamp;
+  box-shadow: 0 2px 12px rgba($oxford-blue, 0.18);
+}
+
+.navbar-brand img,
+.navbar-logo {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+// The turtle in the logo gets a little bounce. Slow and steady.
+.navbar-brand:hover img,
+.navbar-brand:hover .navbar-logo {
+  transform: rotate(-8deg) scale(1.12);
+}
+
+.navbar .nav-link {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.2rem;
+    height: 2px;
+    background: $lamp;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+  }
+
+  &:hover::after,
+  &.active::after {
+    transform: scaleX(1);
+  }
+}
+
+// Footer ----------------------------------------------------------------------------
+
+.nav-footer {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border: 0 !important;
+  border-top: 3px solid $lamp !important;
+  min-height: 3em;
+  font-size: 0.9em;
+
+  a {
+    color: $stone-100;
+    @include sweep-underline($lamp, 1px);
+  }
+
+  .faux-block {
+    display: block;
+    padding-bottom: 0.4em;
+  }
+
+  // Quarto gives .nav-footer-center position: absolute, which stops it being a
+  // flex item. Undo that.
+  .nav-footer-center {
+    text-align: center;
+    position: inherit;
+    margin-top: 0;
+
+    @media (max-width: map-get($grid-breakpoints, md)) {
+      margin-top: 0.5em;
+      margin-bottom: 1.5em;
+    }
+  }
+
+  .nav-footer-left,
+  .nav-footer-right,
+  .nav-footer-center {
+    text-align: center;
+    width: 100%;
+    min-height: 2em;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    .nav-footer-left  { text-align: left; }
+    .nav-footer-right { text-align: right; }
+
+    .nav-footer-left,
+    .nav-footer-right,
+    .nav-footer-center {
+      flex: 1 1 33%;
+    }
+  }
+}
+
+// About / hero block (the trestles template on index.qmd) ----------------------------
+
+#hero-heading,
+.quarto-about-trestles {
+  .about-image,
+  img.about-image {
+    box-shadow: 0 10px 30px rgba($oxford-blue, 0.22);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba($oxford-blue, 0.28);
+    }
+  }
+}
+
+// Social buttons under the hero: outlined pills that fill on hover.
+.about-links .about-link {
+  border: 1.5px solid $stone-300;
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  color: $oxford-blue;
+  background: transparent;
+  transition: all 0.25s ease;
+  background-image: none;   // opt out of the sweep underline
+
+  &:hover {
+    background: $oxford-blue;
+    border-color: $oxford-blue;
+    color: $stone-50;
+    transform: translateY(-2px);
+  }
+
+  .bi::before {
+    vertical-align: -0.15em;
+  }
+}
+
+// Cards & listings --------------------------------------------------------------------
+
+.card,
+.quarto-grid-item {
+  border: 1px solid $stone-200;
+  border-radius: $border-radius-lg;
+  background: $white;
+  box-shadow: 0 1px 3px rgba($oxford-blue, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: $stone-300;
+    box-shadow: 0 12px 28px rgba($oxford-blue, 0.13);
+  }
+}
+
+// Listing category chips
+.quarto-category,
+.listing-category {
+  background: $oxford-blue-pale !important;
+  border: 1px solid transparent !important;
+  border-radius: 999px !important;
+  color: $oxford-blue !important;
+  font-size: 0.78em;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  transition: background 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    background: $lamp !important;
+    color: $oxford-blue !important;
+  }
+}
+
+// Blockquotes: a pull-quote with an oversized serif mark ---------------------------------
+
+blockquote {
+  position: relative;
+  margin: 1.75rem 0;
+  padding: 0.35rem 0 0.35rem 1.5rem;
+  border-left: 3px solid $lamp;
+  color: $stone-700;
+  font-family: $font-family-serif;
+  font-style: italic;
+
+  p:last-child { margin-bottom: 0; }
+}
+
+// Code -------------------------------------------------------------------------------------
+
+code:not(.sourceCode) {
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+  font-size: 0.88em;
+}
+
+div.sourceCode {
+  border: 1px solid $stone-200;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+}
+
+// Tables -------------------------------------------------------------------------------------
+
+table:not(.dataTable) {
+  th {
+    background: $oxford-blue;
+    color: $stone-50;
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+    border-bottom: none;
+  }
+
+  tbody tr:nth-child(even) {
+    background: rgba($stone-100, 0.6);
+  }
+
+  tbody tr:hover {
+    background: $oxford-blue-pale;
+  }
+}
+
+// TOC ------------------------------------------------------------------------------------------
+
+#TOC,
+.sidebar nav[role="doc-toc"] {
+  a {
+    color: $stone-600;
+    border-left: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+      color: $oxford-blue;
+      border-left-color: $stone-300;
+    }
+
+    &.active {
+      color: $oxford-blue;
+      font-weight: 600;
+      border-left-color: $lamp;
+    }
+  }
+}
+
+// Margin notes / sidenotes (the site uses reference-location: margin) --------------------------
+
+.column-margin {
+  font-size: 0.82em;
+  color: $stone-600;
+  font-family: $font-family-sans-serif;
+}
+
+// Utility classes you can drop into any .qmd ----------------------------------------------------
+
+// Highlighter-pen effect: <span class="hl">like this</span>
+.hl {
+  background: linear-gradient(180deg, transparent 58%, rgba($lamp, 0.55) 58%);
+  padding: 0 0.1em;
+}
+
+// Small caps label: <span class="label-oxf">new</span>
+.label-oxf {
+  display: inline-block;
+  padding: 0.12em 0.5em;
+  border-radius: 3px;
+  background: $rhubarb;
+  color: $white;
+  font-family: $font-family-sans-serif;
+  font-size: 0.7em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  vertical-align: 0.18em;
+}
+
+// Full-width tinted band: wrap a section in ::: {.band} ... :::
+.band {
+  background: $oxford-blue-pale;
+  border-radius: $border-radius-lg;
+  padding: 1.5rem 1.75rem;
+  margin: 2rem 0;
+}
+
+// Selection colour — a small detail people notice
+::selection {
+  background: rgba($lamp, 0.45);
+  color: $oxford-blue;
+}
+
+// Focus ring: keyboard users get a clear, on-brand outline
+:focus-visible {
+  outline: 3px solid $lamp;
+  outline-offset: 2px;
+}

@@ -1,30 +1,76 @@
 ---
 title: ""
+pagetitle: "Sayak Khatua | About"
 toc: true
 link-external-newwindow: true
 ---
+
 ## About
 
-### Current Position
+I am a Postdoctoral Research Fellow at the [Centre for the Study of African Economies](https://www.csae.ox.ac.uk/) in the [Department of Economics](https://www.economics.ox.ac.uk/) at the University of Oxford. I completed my PhD in Public Policy at the [School of Public Policy](https://liberalarts.oregonstate.edu/spp), Oregon State University, in 2026. My work sits at the intersection of the economics of education, child labor, climate change, and program evaluation.
 
-I am currently a PhD candidate in Public Policy at the [School of Public Policy](https://liberalarts.oregonstate.edu/spp), Oregon State University and a consultant in the Office of Evaluation, [International Fund for Agricultural Development](https://www.ifad.org/en/) (IFAD).
+You can download my full CV [here](cv/cv.qmd).
 
-### Previous positions
+**Research interests:** Economics of Education · Child Labor · Climate Change · Program Evaluation · Evidence Synthesis
 
-#### International Initiative for Impact Evaluation (2018-2022)
+### Education
 
-Consultant, Vaccine Hesitancy Project 2022 </br>
-Evaluation Specialist, Transparency, Reproducibility, and Ethical Evidence (TREE) 2021-2022 </br>
-Senior Research Associate 2020 </br>
-Research Associate 2018-2019
+PhD, Public Policy — School of Public Policy, Oregon State University (2026) </br>
+MS, Economics — Portland State University (2015) </br>
+MSc, Economics — University of Calcutta (2013) </br>
+BSc, Economics — Ramakrishna Mission Vidyamandira (2011)
 
-#### Outline India (2017-2018)
+### Appointments
 
-Research Associate
+Postdoctoral Research Fellow, Centre for the Study of African Economies, University of Oxford (2026–)
 
-### Research Positions
-Assistant to Professor Cesar Rodriguez, Portland State University (PSU) 2025, 2023, 2021 </br>
-Assistant to Professor John Gallup, PSU 2014 - 2015 </br>
-Assistant to Professor Jamein Cunningham, PSU 2014 - 2015 </br>
-Assistant to Professor Saumik Paul, University of Nottingham Malaysia 2013 </br>
-Summer Researcher, Indian Statistical Institute (ISI) 2012
+### Professional Experience
+
+Consultant, International Fund for Agricultural Development (IFAD) (2025) </br>
+Consultant, Vaccine Hesitancy Project, International Initiative for Impact Evaluation (3ie) (2022) </br>
+Evaluation Specialist — Transparency, Reproducibility & Ethical Evidence (TREE), 3ie (2021–2022) </br>
+Senior Research Associate, 3ie (2020) </br>
+Research Associate, 3ie (2018–2019) </br>
+Research Associate, Outline India (2017–2018)
+
+### Research Experience
+
+Assistant to Professor Cesar Rodriguez, Portland State University (2021, 2023, 2025, 2026) </br>
+Assistant to Professor John Gallup, Portland State University (2014–2015) </br>
+Assistant to Professor Jamein Cunningham, Portland State University (2014–2015) </br>
+Assistant to Professor Saumik Paul, University of Nottingham Malaysia (2013) </br>
+Summer Researcher, Indian Statistical Institute, ISI (2012)
+
+### Teaching
+
+Instructor / Graduate Teaching Assistant, Oregon State University (2022–2026) </br>
+Teaching Assistant, University of Illinois at Chicago (2015–2017) </br>
+Teaching Assistant, Portland State University (2013–2015)
+
+See the [Teaching](teaching/teach.qmd) page for a full list of courses.
+
+### Invited Talks & Conferences
+
+APPAM; Northwest Development Workshop (2025) </br>
+National Planning Department, Government of Colombia — remote (2021) </br>
+National Conference on Monitoring, Evaluation & Learning, NITI Aayog — remote (2021) </br>
+Transparency, Reproducibility & Credibility Research Symposium, World Bank, Washington D.C. (2019) </br>
+Research Transparency, ICAR short course series, ICAR-IIHR, Bangalore (2018) </br>
+EvalFest, Evaluation Community of India, New Delhi (2018)
+
+### Service & Affiliations
+
+Referee — *Journal of Development Effectiveness* </br>
+Advising — Asher Ward, Undergraduate Honor's Thesis, Oregon State University </br>
+Memberships — American Economic Association (AEA); Association for Public Policy Analysis and Management (APPAM)
+
+### Training & Certifications
+
+Research Transparency and Reproducibility Training (RT2), BITSS (2019) </br>
+Project Management for Development Professionals (PMD Pro), Level 1 (2018)
+
+### Skills
+
+Languages — English, Bengali, Hindi </br>
+Statistical software — Stata, R </br>
+Other tools — LaTeX, Python, GitHub, ArcGIS, GeoDa, SurveyCTO, Epi Info

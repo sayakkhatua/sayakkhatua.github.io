@@ -1,0 +1,598 @@
+/*-- scss:defaults --*/
+
+// -----------------------------------------------------------------------------
+// Oxford Confetti — the middle path for sayakkhatua.github.io
+//
+// Oxford's spine: deep blue, parchment page, a serif with character.
+// Confetti's manners: hard offset shadows, color-cycled accents, a logo that
+// misbehaves on hover.
+//
+// The rule this file follows: structure is always Oxford blue, and color is
+// only ever allowed in on *accents* — underlines, chips, shadows, ticks.
+// Nothing load-bearing is coral.
+// -----------------------------------------------------------------------------
+
+// Neutrals — parchment warmed slightly toward the confetti cream.
+$white:    #ffffff !default;
+$paper:    #fdfaf3 !default;   // page background
+$gray-100: #f6f1e6 !default;
+$gray-200: #e9e1d2 !default;
+$gray-300: #d6cbb6 !default;
+$gray-400: #b4a68c !default;
+$gray-500: #8b7f68 !default;
+$gray-600: #665d4d !default;
+$gray-700: #464036 !default;
+$gray-800: #2b2721 !default;
+$gray-900: #14213a !default;   // ink — blue-black, splitting Oxford navy and confetti indigo
+$black:    #14213a !default;
+
+$ink: $gray-900 !default;
+
+// The Oxford spine -------------------------------------------------------------
+$oxford-blue:      #002147 !default;
+$oxford-blue-mid:  #10396b !default;
+$oxford-blue-soft: #2a5c96 !default;
+$oxford-blue-pale: #dce7f3 !default;
+
+// The confetti accents, warmed to sit against parchment rather than cream ------
+$lamp:    #e0a526 !default;   // mustard — the bridge color, in both parents
+$coral:   #e8506b !default;   // muted a step from confetti's #ff4d6d
+$punt:    #d4770f !default;   // tangerine pulled toward Oxford's punt-varnish
+$ivy:     #2f8f6f !default;   // mint pulled toward quad ivy
+$thames:  #3f8fc4 !default;   // sky pulled toward river teal
+
+// Tints
+$lamp-pale:   #fdf0d3 !default;
+$coral-pale:  #fce0e5 !default;
+$ivy-pale:    #ddf0e8 !default;
+
+$blue:   $oxford-blue !default;
+$indigo: $oxford-blue-mid !default;
+$purple: #4a2d6b !default;
+$pink:   $coral !default;
+$red:    $coral !default;
+$orange: $punt !default;
+$yellow: $lamp !default;
+$green:  $ivy !default;
+$teal:   $ivy !default;
+$cyan:   $thames !default;
+
+$primary:   $oxford-blue !default;
+$secondary: $gray-600 !default;
+$success:   $ivy !default;
+$info:      $thames !default;
+$warning:   $lamp !default;
+$danger:    $coral !default;
+$light:     $gray-100 !default;
+$dark:      $oxford-blue !default;
+
+// Typography -------------------------------------------------------------------
+// Fraunces carries over from Oxford — a serif with genuine wonk to it, so it
+// reads academic without reading stuffy. Space Grotesk carries over from
+// confetti for body and UI. The pairing is the whole thesis of this file.
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap');
+
+$font-family-serif: "Fraunces", "Iowan Old Style", Georgia, serif !default;
+$font-family-sans-serif: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !default;
+$font-family-monospace: "Space Mono", "SF Mono", Menlo, Consolas, monospace !default;
+
+$font-family-base: $font-family-sans-serif !default;
+$headings-font-family: $font-family-serif !default;
+$headings-font-weight: 700 !default;
+$headings-color: $oxford-blue !default;
+$headings-line-height: 1.12 !default;
+
+$body-bg: $paper !default;
+$body-color: $gray-800 !default;
+
+// Links
+$link-color: $oxford-blue-mid !default;
+$link-decoration: none !default;
+$link-hover-color: $lamp !default;
+$link-hover-decoration: none !default;
+
+// Navbar
+$navbar-bg: $oxford-blue !default;
+$navbar-fg: $gray-100 !default;
+$navbar-hl: $lamp !default;
+
+// Footer
+$footer-bg: $oxford-blue !default;
+$footer-fg: $gray-300 !default;
+
+// Code
+$code-bg: $oxford-blue-pale !default;
+$code-color: $oxford-blue !default;
+$code-block-bg: #0f2138 !default;
+
+// TOC
+$toc-color: $oxford-blue !default;
+$toc-font-size: 0.9em !default;
+
+$btn-code-copy-color-active: $lamp !default;
+
+// Between Oxford's 0.35rem and confetti's 0.5rem
+$border-radius: 0.45rem !default;
+$border-radius-lg: 0.75rem !default;
+
+
+/*-- scss:mixins --*/
+
+// Confetti's hard shadow, but in Oxford blue at reduced offset — present enough
+// to feel tactile, not so much that it reads as a sticker.
+@mixin soft-hard-shadow($color: $oxford-blue, $x: 4px, $y: 4px, $alpha: 0.85) {
+  box-shadow: #{$x} #{$y} 0 0 rgba($color, $alpha);
+}
+
+@mixin lift-press($color: $oxford-blue, $x: 4px, $y: 4px) {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    transform: translate(-2px, -2px);
+    box-shadow: #{$x + 2} #{$y + 2} 0 0 rgba($color, 0.9);
+  }
+}
+
+// Oxford's sweeping underline.
+@mixin sweep-underline($color: $coral, $thickness: 2px) {
+  background-image: linear-gradient($color, $color);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% $thickness;
+  transition: background-size 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus-visible {
+    background-size: 100% $thickness;
+  }
+}
+
+
+/*-- scss:rules --*/
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  // Confetti's dot grid, at about a third the strength.
+  background-image: radial-gradient(rgba($oxford-blue, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+// Headings ---------------------------------------------------------------------
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  letter-spacing: -0.02em;
+}
+
+// The title stays Oxford blue and solid — no animated gradient. Confetti's
+// drift was the one effect that couldn't survive the blend; it fought the serif.
+.quarto-title-block .quarto-title .title {
+  font-weight: 700;
+  color: $oxford-blue;
+}
+
+.quarto-title-block .subtitle {
+  font-family: $font-family-sans-serif;
+  font-weight: 500;
+  color: $gray-600;
+}
+
+// Section headings: Oxford's ruled line, plus confetti's colored tick — and the
+// tick cycles color down the page.
+h2, .h2 {
+  margin-top: 2.1rem;
+  padding-bottom: 0.32em;
+  border-bottom: 1px solid $gray-200;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 2.6rem;
+    height: 4px;
+    border-radius: 99px;
+    background: $lamp;
+  }
+
+  &:nth-of-type(4n + 2)::after { background: $coral; }
+  &:nth-of-type(4n + 3)::after { background: $ivy; }
+  &:nth-of-type(4n + 4)::after { background: $punt; }
+}
+
+h3, .h3 {
+  color: $oxford-blue-mid;
+}
+
+// Body links ---------------------------------------------------------------------
+// Oxford's sweep, in confetti's coral. Not the word-swallowing version — that
+// was too much next to a serif.
+
+main a:not(.btn):not(.nav-link):not(.anchorjs-link):not(.about-link),
+.about-links a:not(.btn):not(.about-link) {
+  color: $link-color;
+  font-weight: 600;
+  @include sweep-underline($lamp, 2px);
+
+  &:hover,
+  &:focus-visible {
+    color: $link-hover-color;
+  }
+}
+
+// Navbar -------------------------------------------------------------------------
+
+.navbar {
+  border-bottom: 3px solid $lamp;
+  box-shadow: 0 2px 10px rgba($oxford-blue, 0.15);
+}
+
+.navbar-brand img,
+.navbar-logo {
+  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+// Split the difference: a half-turn with a bounce, not a full lap.
+.navbar-brand:hover img,
+.navbar-brand:hover .navbar-logo {
+  transform: rotate(180deg) scale(1.14);
+}
+
+.navbar .nav-link {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 0.005em;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.22rem;
+    height: 3px;
+    border-radius: 99px;
+    background: $lamp;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.24s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  &:hover::after,
+  &.active::after {
+    transform: scaleX(1);
+  }
+}
+
+// Confetti's per-item colors, on a quieter set.
+.navbar-nav .nav-item {
+  &:nth-child(5n + 1) .nav-link::after { background: $lamp; }
+  &:nth-child(5n + 2) .nav-link::after { background: $coral; }
+  &:nth-child(5n + 3) .nav-link::after { background: $ivy; }
+  &:nth-child(5n + 4) .nav-link::after { background: $punt; }
+  &:nth-child(5n + 5) .nav-link::after { background: $thames; }
+}
+
+// Footer ---------------------------------------------------------------------------
+
+.nav-footer {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border: 0 !important;
+  border-top: 3px solid $lamp !important;
+  min-height: 3em;
+  font-size: 0.9em;
+
+  a {
+    color: $gray-100;
+    font-weight: 600;
+    @include sweep-underline($lamp, 1px);
+  }
+
+  .faux-block {
+    display: block;
+    padding-bottom: 0.4em;
+  }
+
+  // Quarto absolutely-positions .nav-footer-center, which stops it being a
+  // flex item. Undo that.
+  .nav-footer-center {
+    text-align: center;
+    position: inherit;
+    margin-top: 0;
+
+    @media (max-width: map-get($grid-breakpoints, md)) {
+      margin-top: 0.5em;
+      margin-bottom: 1.5em;
+    }
+  }
+
+  .nav-footer-left,
+  .nav-footer-right,
+  .nav-footer-center {
+    text-align: center;
+    width: 100%;
+    min-height: 2em;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    .nav-footer-left  { text-align: left; }
+    .nav-footer-right { text-align: right; }
+
+    .nav-footer-left,
+    .nav-footer-right,
+    .nav-footer-center {
+      flex: 1 1 33%;
+    }
+  }
+}
+
+// Hero / about block --------------------------------------------------------------
+
+#hero-heading,
+.quarto-about-trestles {
+  .about-image,
+  img.about-image {
+    border: 3px solid $oxford-blue;
+    @include soft-hard-shadow($lamp, 7px, 7px, 1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    &:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 11px 11px 0 0 $coral;
+    }
+  }
+}
+
+// Social links: sticker pills, but outlined in Oxford blue.
+.about-links .about-link {
+  border: 2px solid $oxford-blue !important;
+  border-radius: 99px;
+  padding: 0.38rem 0.95rem;
+  color: $oxford-blue !important;
+  background: $white;
+  font-weight: 600;
+  background-image: none;
+  @include soft-hard-shadow($oxford-blue, 3px, 3px, 1);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+
+  &:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 0 $oxford-blue;
+  }
+
+  &:nth-child(3n + 1):hover { background: $lamp-pale; }
+  &:nth-child(3n + 2):hover { background: $ivy-pale; }
+  &:nth-child(3n + 3):hover { background: $coral-pale; }
+
+  .bi::before {
+    vertical-align: -0.15em;
+  }
+}
+
+// Cards & listings -------------------------------------------------------------------
+
+.card,
+.quarto-grid-item {
+  border: 2px solid $oxford-blue;
+  border-radius: $border-radius-lg;
+  background: $white;
+  @include soft-hard-shadow($oxford-blue, 5px, 5px, 0.9);
+  @include lift-press($oxford-blue, 5px, 5px);
+}
+
+// Listing chips: confetti's cycling tints, Oxford's typography.
+.quarto-category,
+.listing-category {
+  border: 1.5px solid $oxford-blue !important;
+  border-radius: 99px !important;
+  color: $oxford-blue !important;
+  font-weight: 600;
+  font-size: 0.76em;
+  text-transform: none;
+  transition: transform 0.16s ease;
+
+  &:nth-of-type(4n + 1) { background: $lamp-pale !important; }
+  &:nth-of-type(4n + 2) { background: $ivy-pale !important; }
+  &:nth-of-type(4n + 3) { background: $coral-pale !important; }
+  &:nth-of-type(4n + 4) { background: $oxford-blue-pale !important; }
+
+  &:hover {
+    transform: translateY(-2px) rotate(-1.5deg);
+  }
+}
+
+// Buttons ---------------------------------------------------------------------------
+
+.btn-primary,
+.btn-secondary {
+  border: 2px solid $oxford-blue;
+  border-radius: 99px;
+  font-weight: 600;
+  @include soft-hard-shadow($oxford-blue, 3px, 3px, 1);
+  @include lift-press($oxford-blue, 3px, 3px);
+}
+
+.btn-primary {
+  background: $oxford-blue;
+  color: $paper;
+
+  &:hover, &:focus-visible {
+    background: $oxford-blue-mid;
+    border-color: $oxford-blue;
+    color: $paper;
+  }
+}
+
+// Blockquotes -------------------------------------------------------------------------
+// Oxford's italic serif pull-quote, on confetti's tinted panel.
+
+blockquote {
+  position: relative;
+  margin: 1.9rem 0;
+  padding: 1rem 1.25rem;
+  border: 2px solid $oxford-blue;
+  border-left-width: 8px;
+  border-left-color: $lamp;
+  border-radius: $border-radius-lg;
+  background: $lamp-pale;
+  color: $gray-700;
+  font-family: $font-family-serif;
+  font-style: italic;
+
+  p:last-child { margin-bottom: 0; }
+}
+
+// Code ----------------------------------------------------------------------------------
+
+code:not(.sourceCode) {
+  padding: 0.13em 0.38em;
+  border-radius: 5px;
+  font-size: 0.86em;
+  font-weight: 700;
+}
+
+div.sourceCode {
+  border: 2px solid $oxford-blue;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+  @include soft-hard-shadow($oxford-blue, 4px, 4px, 0.85);
+}
+
+// Tables ------------------------------------------------------------------------------------
+
+table:not(.dataTable) {
+  border: 2px solid $oxford-blue;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+
+  th {
+    background: $oxford-blue;
+    color: $paper;
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+    border-bottom: 2px solid $oxford-blue;
+  }
+
+  tbody tr:nth-child(even) {
+    background: rgba($lamp, 0.1);
+  }
+
+  tbody tr:hover {
+    background: $oxford-blue-pale;
+  }
+}
+
+// TOC ------------------------------------------------------------------------------------------
+
+#TOC,
+.sidebar nav[role="doc-toc"] {
+  a {
+    color: $gray-600;
+    border-left: 3px solid transparent;
+    transition: color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+
+    &:hover {
+      color: $oxford-blue;
+      border-left-color: $gray-300;
+      transform: translateX(2px);
+    }
+
+    &.active {
+      color: $oxford-blue;
+      font-weight: 700;
+      border-left-color: $lamp;
+    }
+  }
+}
+
+// Margin notes (the site uses reference-location: margin) -----------------------------------------
+
+.column-margin {
+  font-size: 0.82em;
+  color: $gray-600;
+  font-family: $font-family-sans-serif;
+}
+
+// Utility classes you can drop into any .qmd ------------------------------------------------------
+
+// Highlighter swipe: <span class="hl">like this</span>
+.hl {
+  background: linear-gradient(180deg, transparent 56%, rgba($lamp, 0.6) 56%);
+  padding: 0 0.11em;
+}
+
+// Sticker badge: <span class="badge-pop">new</span>
+.badge-pop {
+  display: inline-block;
+  padding: 0.15em 0.55em;
+  border: 2px solid $oxford-blue;
+  border-radius: 99px;
+  background: $coral;
+  color: $white;
+  font-family: $font-family-sans-serif;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  vertical-align: 0.2em;
+  transform: rotate(-2deg);
+  @include soft-hard-shadow($oxford-blue, 2px, 2px, 1);
+}
+
+// Callout band: wrap a section in ::: {.band} ... :::
+.band {
+  border: 2px solid $oxford-blue;
+  border-radius: $border-radius-lg;
+  background: $oxford-blue-pale;
+  padding: 1.5rem 1.75rem;
+  margin: 2rem 0;
+  @include soft-hard-shadow($oxford-blue, 5px, 5px, 0.9);
+}
+
+// Wiggle on hover: <span class="wiggle">🐢</span>
+.wiggle {
+  display: inline-block;
+
+  &:hover {
+    animation: wiggle 0.5s ease-in-out;
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25%      { transform: rotate(-9deg) scale(1.08); }
+  75%      { transform: rotate(9deg) scale(1.08); }
+}
+
+// Accent rule: <hr class="rainbow">
+hr.rainbow {
+  height: 5px;
+  border: 0;
+  border-radius: 99px;
+  opacity: 1;
+  background: linear-gradient(90deg, $oxford-blue, $thames, $ivy, $lamp, $punt, $coral);
+}
+
+::selection {
+  background: rgba($lamp, 0.5);
+  color: $oxford-blue;
+}
+
+:focus-visible {
+  outline: 3px solid $lamp;
+  outline-offset: 2px;
+}

@@ -1,0 +1,437 @@
+/*-- scss:defaults --*/
+
+// -----------------------------------------------------------------------------
+// Oxford Confetti — Dark
+//
+// The night version of oxford-confetti.scss. Layered on the `darkly` Bootswatch
+// base (which handles the hundred small dark-surface defaults), this file
+// re-imposes the brand: a deep Oxford-navy page, warm off-white text, and the
+// mustard / coral / ivy accents — which actually pop harder on dark than light.
+//
+// Shared with the light theme: html/publications.scss, which is CSS-variable
+// driven and adapts automatically to the colours set below.
+// -----------------------------------------------------------------------------
+
+// Neutrals — deep navy through warm parchment-white
+$navy-900: #0a1120 !default;   // navbar / footer
+$navy-850: #0f1729 !default;   // page background
+$navy-800: #142038 !default;
+$navy-700: #17223c !default;   // cards / surfaces
+$navy-600: #223052 !default;
+$navy-500: #2c3d63 !default;   // borders
+$ink-100:  #e7e3d8 !default;   // body text (warm off-white)
+$ink-300:  #b9bfcc !default;   // muted text
+$ink-500:  #8a93a6 !default;   // more muted
+
+// Accents — brightened a touch so they read on a dark ground
+$lamp:    #ecb63f !default;   // mustard — the hero accent
+$coral:   #f27089 !default;
+$punt:    #e6923a !default;
+$ivy:     #45c396 !default;
+$sky:     #6ea8e0 !default;   // structural blue (links, primary)
+
+// Tints (low-alpha panels)
+$lamp-pale:  rgba($lamp, 0.12) !default;
+$sky-pale:   rgba($sky, 0.14) !default;
+
+$white:    #ffffff !default;
+$black:    #05080f !default;
+
+$blue:   $sky !default;
+$indigo: #8a7be8 !default;
+$purple: #8a7be8 !default;
+$pink:   $coral !default;
+$red:    $coral !default;
+$orange: $punt !default;
+$yellow: $lamp !default;
+$green:  $ivy !default;
+$teal:   $ivy !default;
+$cyan:   $sky !default;
+
+$primary:   $sky !default;
+$secondary: $ink-300 !default;
+$success:   $ivy !default;
+$info:      $sky !default;
+$warning:   $lamp !default;
+$danger:    $coral !default;
+$light:     $navy-700 !default;
+$dark:      $navy-900 !default;
+
+// Typography — identical to the light theme
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap');
+
+$font-family-serif: "Fraunces", "Iowan Old Style", Georgia, serif !default;
+$font-family-sans-serif: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !default;
+$font-family-monospace: "Space Mono", "SF Mono", Menlo, Consolas, monospace !default;
+
+$font-family-base: $font-family-sans-serif !default;
+$headings-font-family: $font-family-serif !default;
+$headings-font-weight: 700 !default;
+$headings-color: #f1eee4 !default;
+$headings-line-height: 1.12 !default;
+
+$body-bg: $navy-850 !default;
+$body-color: $ink-100 !default;
+
+// Links
+$link-color: #82b4ee !default;
+$link-decoration: none !default;
+$link-hover-color: $lamp !default;
+
+// Bootstrap surface variables
+$border-color: $navy-500 !default;
+$card-bg: $navy-700 !default;
+$card-border-color: $navy-500 !default;
+
+// Navbar / footer
+$navbar-bg: $navy-900 !default;
+$navbar-fg: $ink-100 !default;
+$navbar-hl: $lamp !default;
+
+$footer-bg: $navy-900 !default;
+$footer-fg: $ink-300 !default;
+
+// Code
+$code-bg: $sky-pale !default;
+$code-color: #9fc6f2 !default;
+$code-block-bg: #0b1322 !default;
+
+// Muted text vars (Bootstrap 5.3 uses these for secondary/tertiary text)
+$secondary-color: $ink-300 !default;
+$tertiary-color: $ink-500 !default;
+
+$toc-color: $ink-100 !default;
+$toc-font-size: 0.9em !default;
+
+$btn-code-copy-color-active: $lamp !default;
+
+$border-radius: 0.45rem !default;
+$border-radius-lg: 0.75rem !default;
+
+
+/*-- scss:rules --*/
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  // Faint dot grid, dimmer than the light theme
+  background-image: radial-gradient(rgba($ink-100, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  letter-spacing: -0.02em;
+}
+
+.quarto-title-block .quarto-title .title {
+  font-weight: 700;
+  color: #f1eee4;
+}
+
+.quarto-title-block .subtitle {
+  font-family: $font-family-sans-serif;
+  font-weight: 500;
+  color: $ink-300;
+}
+
+// Ruled section headings with a colour-cycling tick
+h2, .h2 {
+  margin-top: 2.1rem;
+  padding-bottom: 0.32em;
+  border-bottom: 1px solid $navy-600;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 2.6rem;
+    height: 4px;
+    border-radius: 99px;
+    background: $lamp;
+  }
+
+  &:nth-of-type(4n + 2)::after { background: $coral; }
+  &:nth-of-type(4n + 3)::after { background: $ivy; }
+  &:nth-of-type(4n + 4)::after { background: $punt; }
+}
+
+h3, .h3 { color: #cfe0f5; }
+
+// Body links: mustard sweep-underline, mustard hover
+main a:not(.btn):not(.nav-link):not(.anchorjs-link):not(.about-link),
+.about-links a:not(.btn):not(.about-link) {
+  color: $link-color;
+  font-weight: 600;
+  background-image: linear-gradient($lamp, $lamp);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.28s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: $lamp;
+    background-size: 100% 2px;
+  }
+}
+
+// Navbar
+.navbar {
+  border-bottom: 3px solid $lamp;
+  box-shadow: 0 2px 12px rgba($black, 0.5);
+}
+
+.navbar-brand img,
+.navbar-logo {
+  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.navbar-brand:hover img,
+.navbar-brand:hover .navbar-logo {
+  transform: rotate(180deg) scale(1.14);
+}
+
+.navbar .nav-link {
+  position: relative;
+  font-weight: 600;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.22rem;
+    height: 3px;
+    border-radius: 99px;
+    background: $lamp;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.24s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  &:hover::after,
+  &.active::after { transform: scaleX(1); }
+}
+
+.navbar-nav .nav-item {
+  &:nth-child(5n + 1) .nav-link::after { background: $lamp; }
+  &:nth-child(5n + 2) .nav-link::after { background: $coral; }
+  &:nth-child(5n + 3) .nav-link::after { background: $ivy; }
+  &:nth-child(5n + 4) .nav-link::after { background: $punt; }
+  &:nth-child(5n + 5) .nav-link::after { background: $sky; }
+}
+
+// Footer
+.nav-footer {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border: 0 !important;
+  border-top: 3px solid $lamp !important;
+  min-height: 3em;
+  font-size: 0.9em;
+
+  a {
+    color: $ink-100;
+    &:hover { color: $lamp; }
+  }
+
+  .nav-footer-center { position: inherit; }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    .nav-footer-left  { text-align: left; }
+    .nav-footer-right { text-align: right; }
+    .nav-footer-left,
+    .nav-footer-right,
+    .nav-footer-center { flex: 1 1 33%; }
+  }
+}
+
+// Hero image
+#hero-heading,
+.quarto-about-trestles {
+  .about-image,
+  img.about-image {
+    border: 3px solid $navy-500;
+    box-shadow: 7px 7px 0 0 rgba($lamp, 0.9);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    &:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 11px 11px 0 0 $coral;
+    }
+  }
+}
+
+// Social sticker pills under the hero
+.about-links .about-link {
+  border: 2px solid $navy-500 !important;
+  border-radius: 99px;
+  padding: 0.38rem 0.95rem;
+  color: $ink-100 !important;
+  background: $navy-700;
+  font-weight: 600;
+  background-image: none;
+  box-shadow: 3px 3px 0 0 rgba($black, 0.6);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, color 0.18s ease;
+
+  &:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 0 $lamp;
+    color: #fff !important;
+    border-color: $lamp !important;
+  }
+}
+
+// Cards
+.card,
+.quarto-grid-item {
+  border: 2px solid $navy-500;
+  border-radius: $border-radius-lg;
+  background: $navy-700;
+  box-shadow: 5px 5px 0 0 rgba($black, 0.55);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0 0 rgba($sky, 0.55);
+  }
+}
+
+// Blockquote — tinted dark panel, mustard bar, italic serif
+blockquote {
+  position: relative;
+  margin: 1.9rem 0;
+  padding: 1rem 1.25rem;
+  border: 2px solid $navy-500;
+  border-left-width: 8px;
+  border-left-color: $lamp;
+  border-radius: $border-radius-lg;
+  background: $lamp-pale;
+  color: $ink-100;
+  font-family: $font-family-serif;
+  font-style: italic;
+
+  p:last-child { margin-bottom: 0; }
+}
+
+// Inline code
+code:not(.sourceCode) {
+  padding: 0.13em 0.38em;
+  border-radius: 5px;
+  font-size: 0.86em;
+  font-weight: 700;
+}
+
+div.sourceCode {
+  border: 2px solid $navy-500;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+}
+
+// Tables
+table:not(.dataTable) {
+  border: 2px solid $navy-500;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+
+  th {
+    background: $navy-600;
+    color: #f1eee4;
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+    border-bottom: 2px solid $navy-500;
+  }
+
+  tbody tr:nth-child(even) { background: rgba($lamp, 0.06); }
+  tbody tr:hover { background: $sky-pale; }
+}
+
+// TOC
+#TOC,
+.sidebar nav[role="doc-toc"] {
+  a {
+    color: $ink-300;
+    border-left: 3px solid transparent;
+    transition: color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+
+    &:hover {
+      color: #f1eee4;
+      border-left-color: $navy-500;
+      transform: translateX(2px);
+    }
+
+    &.active {
+      color: #f1eee4;
+      font-weight: 700;
+      border-left-color: $lamp;
+    }
+  }
+}
+
+.column-margin {
+  font-size: 0.82em;
+  color: $ink-300;
+  font-family: $font-family-sans-serif;
+}
+
+// Utility classes (parity with the light theme)
+.hl {
+  background: linear-gradient(180deg, transparent 56%, rgba($lamp, 0.35) 56%);
+  padding: 0 0.11em;
+}
+
+.badge-pop {
+  display: inline-block;
+  padding: 0.15em 0.55em;
+  border: 2px solid $navy-500;
+  border-radius: 99px;
+  background: $coral;
+  color: #1a1006;
+  font-family: $font-family-sans-serif;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  vertical-align: 0.2em;
+  transform: rotate(-2deg);
+}
+
+.band {
+  border: 2px solid $navy-500;
+  border-radius: $border-radius-lg;
+  background: $sky-pale;
+  padding: 1.5rem 1.75rem;
+  margin: 2rem 0;
+}
+
+hr.rainbow {
+  height: 5px;
+  border: 0;
+  border-radius: 99px;
+  opacity: 1;
+  background: linear-gradient(90deg, $sky, $ivy, $lamp, $punt, $coral);
+}
+
+::selection {
+  background: rgba($lamp, 0.4);
+  color: #f1eee4;
+}
+
+:focus-visible {
+  outline: 3px solid $lamp;
+  outline-offset: 2px;
+}

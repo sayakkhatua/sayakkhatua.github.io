@@ -1,167 +1,137 @@
 ---
 title: ""
 pagetitle: "Sayak Khatua | Research"
-toc: true 
+toc: true
 link-external-newwindow: true
 ---
 
-## Job market paper
+## Working Papers
 
-**The Cost of Policy Failure: Evidence from India's Right to Education Act**</br>
+:::: {.papers}
 
-[Preprint](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7029015&__cf_chl_f_tk=kEqdsEqXQ8_x65VY1nSsCDubB0W1s9GBuU1t613uVKo-1782888387-1.0.1.1-sDMkElKFDC7hA1LndW5Lvkw3Jm9YONAPsZ_QKQAJgno)
+::: {.paper}
+[The Cost of Policy Failure: Evidence from India's Right to Education Act]{.paper-title}
+[[Economics of Education Review]{.venue} [Under review]{.status}]{.meta}
 
-<details>
+[ [Preprint](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7029015) ]{.paper-links}
 
-<summary>Abstract</summary>
+<details class="abstract"><summary>Abstract</summary>
 
 This paper studies the effect of the non-implementation of education reforms on enrollment levels at the elementary school level in India. The paper exploits a unique natural experiment in which the Right of Children to Free and Compulsory Education (RTE) Act of 2009 was implemented in India, except for the state (now Union Territory(UT)) of Jammu & Kashmir (J&K). Using a synthetic control approach, I estimate the causal impact of the non-implementation of the RTE act on enrollment levels in elementary schools in J&K. Using household surveys and administrative data from the Ministry of Education, I find that, on average, nearly 300,000 ($16.8%$ more than pre-RTE enrollments) additional elementary-aged children could have enrolled annually if the act had been rolled out in J&K. I find that the effects are more pronounced in the upper primary level compared to the primary level. Given the high and well-documented returns to schooling in India, these enrollment losses represent economically meaningful forgone gains in human capital and lifetime earnings.
 
 </details>
+:::
 
-Status: *Under review at Economics of Education Review*
+::: {.paper}
+[Private Credit and Property Prices: New Insights into this Nexus]{.paper-title}
+[with [Cesar Rodriguez](https://sites.google.com/site/cesarruy)]{.authors}
+[[Journal of Real Estate Finance and Economics]{.venue} [Revise & Resubmit]{.status}]{.meta}
 
-## Working Papers
-
-**Private credit and Property prices: New insights into this nexus**</br> *with* <a href="https://sites.google.com/site/cesarruy"> Cesar Rodriguez </a>
-
-<details>
-
-<summary>Abstract</summary>
+<details class="abstract"><summary>Abstract</summary>
 
 The relationship between the dynamics of property prices and private credit has long been a focal point for economists and policymakers, particularly given its role in financial stability. Understanding this relationship is especially crucial for developing economies, where financial markets are often less mature and more vulnerable to external shocks. This paper examines this relationship using quarterly data from 27 countries spanning 1982 to 2021. Through an instrumental variables approach that addresses endogeneity concerns, we identify three key findings. First, property price growth consistently drives private credit growth across both developed and developing economies, with a one percentage point increase in property prices associated with a 0.35 percentage point rise in private credit growth. Second, conventional macroeconomic factors such as interest rates, inflation, and GDP growth affect credit dynamics differently across development levels. Third, external factors, particularly trade openness and commodity price fluctuations, play an especially significant role in shaping credit dynamics in developing countries. Additionally, our analysis suggests that the property price-credit nexus has evolved, with notable shifts occurring around major economic events. Our results are robust to various sensitivity checks and alternative specifications and methodologies. These findings have important implications for the design of macroprudential policies, especially in developing economies where institutional capacities may differ from more developed markets.
 
 </details>
+:::
 
-Status: *R&R at Journal of Real Estate Finance and Economics*
+::: {.paper}
+[Do Compulsory Schooling Laws Matter? Evidence from Peru]{.paper-title}
+[[Draft in progress]{.status}]{.meta}
 
-**Do compulsory schooling laws matter? Evidence from Peru**
-
-<details>
-
-<summary>Abstract</summary>
+<details class="abstract"><summary>Abstract</summary>
 
 This paper estimates the effects of Peru's 1993 compulsory schooling reform, which extended mandatory education from 6 to 11 years, on educational attainment, labor market outcomes, and welfare. Using eighteen rounds of Peru's national household survey (ENAHO, 2001–2018) and a cohort-comparison design, I find that the reform increased years of schooling by 0.30–0.32 years and monthly earnings by 16.2–17.4\% for individuals aged 25–35. Because the reform operated through multiple channels beyond years of schooling, including the formalization of employment, exit from agriculture, rural-to-urban migration, and increased tertiary attainment, I argue that reduced-form estimation is more appropriate than standard instrumental variables approaches. The reform's effects were largest among individuals from the lowest socioeconomic backgrounds, conflict-affected regions, and areas with below-median baseline education. The reform reduced poverty by 9.1 percentage points and extreme poverty by 3.7 percentage points. These findings suggest that compulsory schooling reforms generate the largest returns when complemented by broader institutional transformations such as economic liberalization, post-conflict reconstruction, and higher education expansion that create demand for the skills such reforms supply.
 
 </details>
+:::
 
-Status: *Draft being updated currently*
+::: {.paper}
+[Does School Quality Reduce Child Labor? Evidence from a Rural Electrification Program]{.paper-title}
+[with Bruna Alvarez, Patrick Emerson, and Andre Souza]{.authors}
+[[Draft in progress]{.status}]{.meta}
 
-**Does School Quality Reduce Child Labor? Evidence from a Rural Electrification Program**</br> *with* Bruna Alvarez, Patrick Emerson, and Andre Souza
+<details class="abstract"><summary>Abstract</summary>
 
-<details>
-
-<summary>Abstract</summary>
-
-This paper investigates the causal impact of an increase in school quality on the prevalence of child labor in affected communities in Brazil. Using school electrification as a proxy for school quality, the variation in the timing of electrification is used as an instrument that is plausibly exogenous to the unexplained child labor choice. An increase in school quality in the form of electrification is found to have a depressing effect of between 6.5 and 9 percentage points on child labor prevalence within the same community over a ten year period. These results suggest that improvements in the quality of schools might be an effective tool to reduce child labor overall. 
-
-</details>
-
-Status: *Draft being updated currently*
-
-## Work-in-progress
-
-**Improving school management in a low-income country: Experimental evidence from India** </br> *with* [Todd Pugatch](https://sites.google.com/site/toddpugatch/) , [Ketki Sheth](http://ketkisheth.weebly.com), [Emmanuel Rukundo](https://sites.google.com/view/nshakira-rukundo/home)
-
-<details>
-
-<summary>Project Summary</summary>
-
-This project examines a critical yet understudied mechanism of the educational production function - how investments in school management capacity translate into student learning outcomes and holistic skill development. The study is still in progress but nearing its completion,with the endline data collection currently underway.
+This paper investigates the causal impact of an increase in school quality on the prevalence of child labor in affected communities in Brazil. Using school electrification as a proxy for school quality, the variation in the timing of electrification is used as an instrument that is plausibly exogenous to the unexplained child labor choice. An increase in school quality in the form of electrification is found to have a depressing effect of between 6.5 and 9 percentage points on child labor prevalence within the same community over a ten year period. These results suggest that improvements in the quality of schools might be an effective tool to reduce child labor overall.
 
 </details>
+:::
 
-Status: *Data Analysis*
+::::
 
-**Learning or Earning: How Compulsory Schooling Shaped Child Labor**
-<details>
+## Work in Progress
 
-<summary>Abstract</summary>
+:::: {.papers}
 
-... Coming soon
+::: {.paper}
+[Improving School Management in a Low-Income Country: Experimental Evidence from India]{.paper-title}
+[with [Todd Pugatch](https://sites.google.com/site/toddpugatch/), [Ketki Sheth](http://ketkisheth.weebly.com), and [Emmanuel Rukundo](https://sites.google.com/view/nshakira-rukundo/home)]{.authors}
+[[Data analysis]{.status}]{.meta}
 
-</details>
+<details class="abstract"><summary>Project summary</summary>
 
-Status: *Data analysis*
-
-**Education in the shadow of civil conflict: Evidence from India** </br> *with* [Ratul Das Chaudhury](https://sites.google.com/view/ratul-das-chaudhury)
-
-<details>
-
-<summary>Abstract</summary>
-
-... Coming soon
+This project examines a critical yet understudied mechanism of the educational production function — how investments in school management capacity translate into student learning outcomes and holistic skill development. The study is still in progress but nearing its completion, with the endline data collection currently underway.
 
 </details>
+:::
 
-Status: *Data analysis*
+::: {.paper}
+[Learning or Earning: How Mandatory Education Shapes Child Labor in India]{.paper-title}
+[[Data analysis]{.status}]{.meta}
+:::
 
-**Navigating Margins: Gender, Identity, and Developmental Discourse among Ethnic Minorities** </br> *with* [Malvya Chintakindi](https://malvya.github.io)
+::: {.paper}
+[The Inconvenient Coup: When Political Instability Meets Environmental Crisis]{.paper-title}
+[[Data analysis]{.status}]{.meta}
+:::
 
-<details>
+::: {.paper}
+[Education in the Shadow of Civil Conflict: Evidence from India]{.paper-title}
+[with [Ratul Das Chaudhury](https://sites.google.com/view/ratul-das-chaudhury)]{.authors}
+[[Data analysis]{.status}]{.meta}
+:::
 
-<summary>Abstract</summary>
+::: {.paper}
+[Navigating Margins: Gender, Identity, and Developmental Discourse among Ethnic Minorities]{.paper-title}
+[with [Malvya Chintakindi](https://malvya.github.io)]{.authors}
+[[Data analysis]{.status}]{.meta}
+:::
 
-... Coming soon
+::: {.paper}
+[Threads of Survival: Kinship, Gender, and Intersectional Dynamics in Urban Slums]{.paper-title}
+[with [Malvya Chintakindi](https://malvya.github.io)]{.authors}
+[[Data analysis]{.status}]{.meta}
+:::
 
-</details>
+::: {.paper}
+[The Great (Research) Divide: The Long-Term Dynamics of Coauthorship Networks in International Development]{.paper-title}
+[[Gathering data]{.status}]{.meta}
+:::
 
-Status: *Data analysis*
-
-**Threads of Survival: Kinship, Gender, and Intersectional Dynamics in Urban Slums** </br> *with* [Malvya Chintakindi](https://malvya.github.io)
-
-<details>
-
-<summary>Abstract</summary>
-
-... Coming soon
-
-</details>
-
-Status: *Data analysis*
-
-**The Great (research) Divide: The long term dynamics of Coauthorship Networks in International Development**
-
-<details>
-
-<summary>Abstract</summary>
-
-... Coming soon
-
-</details>
-
-Status: *Gathering data*
+::::
 
 ## Dormant Papers
 
-**The Use of Behavioural-science Informed Interventions to Promote Latrine Use in Rural India: A Synthesis of Findings** </br> *with* Charlotte Lane and Bethany Caruso
+:::: {.papers}
 
-<a href="https://www.doi.org/10.31222/osf.io/g7cmd"> Preprint </a> <a href="https://doi.org/10.7910/DVN/IDJ8FJ"> Data and Code </a>\
+::: {.paper}
+[The Use of Behavioural-Science Informed Interventions to Promote Latrine Use in Rural India: A Synthesis of Findings]{.paper-title}
+[with Charlotte Lane and Bethany Caruso]{.authors}
 
-**Making data accessible: lessons learned from computational reproducibility of impact evaluations** </br> *with* Neeta Goel and Marie Gaarder
+[ [Preprint](https://www.doi.org/10.31222/osf.io/g7cmd) [Data & Code](https://doi.org/10.7910/DVN/IDJ8FJ) ]{.paper-links}
+:::
 
-<a href="https://www.doi.org/10.31219/osf.io/4jvq2"> Preprint </a> <a href="https://doi.org/10.7910/DVN/FPNITS"> Data and Code </a>\
+::: {.paper}
+[Making Data Accessible: Lessons Learned from Computational Reproducibility of Impact Evaluations]{.paper-title}
+[with Neeta Goel and Marie Gaarder]{.authors}
+
+[ [Preprint](https://www.doi.org/10.31219/osf.io/4jvq2) [Data & Code](https://doi.org/10.7910/DVN/FPNITS) ]{.paper-links}
+:::
+
+::::
 
 <!-- **Connecting Communities, Reducing Conflict: Evidence from India's Rural Road Program** -->
-
-<!-- <details> -->
-
-<!-- <summary>Abstract</summary> -->
-
-<!-- ... Coming soon -->
-
-<!-- </details> -->
-
 <!-- Status: *Data Analysis* -->
 
 <!-- **When Waters Recede: Impact of Extreme Weather Events on Child Labor** -->
-
-<!-- <details> -->
-
-<!-- <summary>Abstract</summary> -->
-
-<!-- ... Coming soon -->
-
-<!-- </details> -->
-
 <!-- Status: *Data cleaning* -->

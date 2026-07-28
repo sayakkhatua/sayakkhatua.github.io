@@ -8,6 +8,14 @@ website:
   repo-url: https://github.com/sayakkhatua/sayakkhatua.github.io
   page-navigation: true
   #back-to-top-navigation: true
+
+  # Social share cards (Open Graph + Twitter/X). These control the preview
+  # image, title, and blurb shown when the site is shared in Slack, on X,
+  # LinkedIn, etc. `image` and `description` are the site-wide defaults.
+  image: assets/img/sayak.png
+  description: "Sayak Khatua — economist and incoming Postdoctoral Research Fellow at the Centre for the Study of African Economies, University of Oxford. Research on the economics of education, child labor, climate change, program evaluation, and research transparency."
+  open-graph: true
+  twitter-card: true
   
   # start of the navigation bar at the top of the website
   navbar:
@@ -19,6 +27,7 @@ website:
       - text: Home
         aria-label: "Home"
         href: "index.qmd"
+      # About page is built but intentionally kept out of the navbar for now.
       #- text: About
       #  aria-label: "About"
       #  href: "about.qmd"
@@ -41,18 +50,17 @@ website:
 #    type: textbox
   page-footer:
     border: true
-    left: "&#169; 2025 Sayak Khatua"
-    # your social media handles
-    # center: "slow and steady wins the race"
-#      - icon: folder-symlink
-#        href: https://www.marvinschmitt.com/blog/website-tutorial-quarto/
-#     - icon: twitter
-#        href: https://twitter.com/MarvinSchmittML
-#      - icon: linkedin
-#        href: https://www.linkedin.com/in/marvin-schmitt-a85b321a2/
-#      - icon: envelope
-#        aria-label: email
-#        href: "mailto:khatuas@oregonstate.edu" 
+    left: "&#169; 2026 Sayak Khatua"
+    center:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/sayak-khatua/
+        aria-label: LinkedIn
+      - icon: github
+        href: https://github.com/sayakkhatua
+        aria-label: GitHub
+      - icon: envelope
+        href: "mailto:skhatua.research@gmail.com"
+        aria-label: Email
     right: "Made with [Quarto](https://quarto.org)"
 
 project:
@@ -75,9 +83,15 @@ format:
     max-width: 1600px
     page-layout: full
     smooth-scroll: true
-    theme: 
-      - lumen
-      - html/styles4.scss
+    theme:
+      light:
+        - cosmo
+        - html/oxford-confetti.scss
+        - html/publications.scss
+      dark:
+        - darkly
+        - html/oxford-confetti-dark.scss
+        - html/publications.scss
     toc: false
     code-link: true
     anchor-sections: true
