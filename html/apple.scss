@@ -1,0 +1,542 @@
+/*-- scss:defaults --*/
+
+// -----------------------------------------------------------------------------
+// Cupertino v2 — an Apple-design theme for sayakkhatua.github.io
+//
+// Rebuilt from the `apple-design` skill (Apple's WWDC design talks, translated
+// to the web). A static Quarto site has no drags, sheets, or velocity handoff,
+// so the gesture/spring/momentum machinery (§2–§10) is out of scope — that is
+// inherently JS. What IS expressible in a theme, and what this file commits to:
+//
+//   §1  Response      — feedback on press, instant (100ms), not on release
+//   §4  Behavior      — spring-approximating easing; overshoot ONLY for momentum
+//   §7  Spatial       — anchored transform-origins, mirrored (symmetric) easing
+//   §11 Smoothness     — animate transform/opacity only; will-change hints
+//   §12 Materials      — translucent chrome, soft scroll-edge, vibrancy text
+//   §14 Reduced-*      — motion, transparency AND contrast, all three
+//   §15 Typography     — system font, optical sizing, size-specific tracking
+//   §16 Foundations    — restraint, hierarchy, craft
+// -----------------------------------------------------------------------------
+
+// Neutrals — Apple's actual system greys
+$white:      #ffffff !default;
+$near-white: #fbfbfd !default;
+$gray-050:   #f5f5f7 !default;   // the signature section grey
+$gray-100:   #f5f5f7 !default;
+$gray-150:   #e8e8ed !default;
+$gray-200:   #e8e8ed !default;
+$gray-300:   #d2d2d7 !default;   // hairline / border
+$gray-400:   #c7c7cc !default;
+$gray-500:   #a1a1a6 !default;
+$gray-600:   #86868b !default;   // caption grey
+$gray-700:   #6e6e73 !default;   // secondary text
+$gray-800:   #424245 !default;
+$gray-900:   #1d1d1f !default;   // Apple "near-black" text
+$black:      #000000 !default;
+
+// The one accent
+$apple-blue:       #0071e3 !default;   // buttons
+$apple-blue-hover: #0077ed !default;
+$apple-link:       #0066cc !default;   // text links
+$apple-orange:     #f56300 !default;
+
+$blue:   $apple-blue !default;
+$indigo: #5e5ce6 !default;
+$purple: #5e5ce6 !default;
+$pink:   #ff2d55 !default;
+$red:    #ff3b30 !default;
+$orange: $apple-orange !default;
+$yellow: #ffcc00 !default;
+$green:  #34c759 !default;
+$teal:   #64d2ff !default;
+$cyan:   #5ac8fa !default;
+
+$primary:   $apple-blue !default;
+$secondary: $gray-600 !default;
+$success:   $green !default;
+$info:      $cyan !default;
+$warning:   $yellow !default;
+$danger:    $red !default;
+$light:     $gray-050 !default;
+$dark:      $gray-900 !default;
+
+// Typography (§15) -------------------------------------------------------------
+// "Default to the platform's system font before a custom face; it already ships
+// optical sizing, tracking tables, and legibility tuning." So — no web font.
+// On Apple hardware system-ui resolves to SF Pro with its full optical machinery.
+$font-family-sans-serif: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-monospace: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace !default;
+
+$font-family-base: $font-family-sans-serif !default;
+$headings-font-family: $font-family-sans-serif !default;
+$headings-font-weight: 600 !default;
+$headings-color: $gray-900 !default;
+$headings-line-height: 1.1 !default;   // tight leading on large text (§15)
+
+$body-bg: $white !default;
+$body-color: $gray-900 !default;
+$font-weight-base: 400 !default;
+$line-height-base: 1.47 !default;      // looser leading on body copy (§15)
+
+// Links — Apple links are blue and only underline on hover
+$link-color: $apple-link !default;
+$link-decoration: none !default;
+$link-hover-color: $apple-link !default;
+$link-hover-decoration: underline !default;
+
+// Navbar
+$navbar-bg: rgba($white, 0.72) !default;
+$navbar-fg: $gray-900 !default;
+$navbar-hl: $gray-900 !default;
+
+// Footer
+$footer-bg: $gray-050 !default;
+$footer-fg: $gray-600 !default;
+
+// Code
+$code-bg: $gray-050 !default;
+$code-color: #d6336c !default;
+$code-block-bg: $gray-050 !default;
+
+// TOC
+$toc-color: $gray-900 !default;
+$toc-font-size: 0.82em !default;
+
+$btn-code-copy-color-active: $apple-blue !default;
+
+// Corners — Apple rounds everything, generously
+$border-radius:    0.75rem !default;
+$border-radius-sm: 0.5rem !default;
+$border-radius-lg: 1.125rem !default;   // 18px — Apple's card radius
+$border-color: $gray-300 !default;
+
+// Motion tokens (§4) — CSS can't do true velocity-aware springs, but these
+// cubic-béziers approximate Apple's two designer parameters (damping, response).
+// Default is CRITICALLY DAMPED (damping 1.0) — no overshoot. Overshoot is
+// reserved for momentum-driven gestures, of which a static page has none, so it
+// is defined but deliberately almost unused.
+$ease-standard: cubic-bezier(0.28, 0.11, 0.32, 1) !default;   // damping ~1.0
+$ease-decel:    cubic-bezier(0.16, 1, 0.3, 1) !default;       // emphasised settle
+$ease-spring:   cubic-bezier(0.34, 1.26, 0.64, 1) !default;   // damping ~0.8 (momentum only)
+$dur-press: 100ms !default;   // response for a press — must feel instant (§1)
+$dur-hover: 220ms !default;
+$dur-move:  400ms !default;   // response ~0.4s for a reposition (§4 table)
+
+
+/*-- scss:rules --*/
+
+// §11 Frame-level smoothness: display-synced, compositor-friendly base.
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;         // §15 — let the type respond to size
+  letter-spacing: -0.003em;          // body tracked a hair tight, near 0 (§15)
+}
+
+// §15 Typography — tracking is SIZE-SPECIFIC, never one value. Large text gets
+// negative tracking (it reads too loose as it grows); small text gets a touch
+// positive. Leading tightens as size grows. Hierarchy = weight + size + leading.
+
+h1, .h1 { letter-spacing: -0.03em;  line-height: 1.08; font-weight: 700; }
+h2, .h2 { letter-spacing: -0.022em; line-height: 1.12; font-weight: 600; }
+h3, .h3 { letter-spacing: -0.017em; line-height: 1.2;  font-weight: 600; }
+h4, .h4 { letter-spacing: -0.012em; line-height: 1.3;  font-weight: 600; }
+h5, .h5, h6, .h6 { letter-spacing: -0.006em; font-weight: 600; }
+
+.quarto-title-block .quarto-title .title {
+  font-weight: 700;
+  font-size: clamp(2.2rem, 5vw, 3.3rem);   // §15 scales with viewport (Dynamic-Type-friendly)
+  letter-spacing: -0.035em;                // most negative on the biggest text
+  line-height: 1.05;
+  color: $gray-900;
+}
+
+.quarto-title-block .subtitle {
+  font-weight: 400;
+  color: $gray-700;
+  letter-spacing: -0.008em;
+}
+
+// Small text wants slightly POSITIVE tracking for legibility (§15)
+small, .small, figcaption, .figure-caption {
+  letter-spacing: 0.008em;
+}
+
+// Links ------------------------------------------------------------------------
+
+main a:not(.btn):not(.nav-link):not(.anchorjs-link) {
+  color: $apple-link;
+  transition: color $dur-hover $ease-standard;
+
+  &:hover { text-decoration: underline; }
+  // §1 Response: feedback lives on the press, and it's instant.
+  &:active { color: darken($apple-link, 8%); }
+}
+
+// §12 Materials & depth — the navbar is a translucent floating layer, not an
+// opaque strip. Content scrolls underneath the blur.
+
+.navbar {
+  background: rgba($white, 0.72) !important;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  min-height: 44px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  // §12 Scroll edge, not a hard divider: a soft, low-contrast edge where content
+  // meets the floating chrome — plus a bright inner top edge (light catching the
+  // material). The fully dynamic "only where overlapping" version needs JS.
+  border-bottom: none;
+  box-shadow:
+    inset 0 1px 0 rgba($white, 0.5),
+    0 1px 0 rgba($black, 0.05),
+    0 8px 20px -12px rgba($black, 0.12);
+}
+
+.navbar-brand img,
+.navbar-logo {
+  transition: transform $dur-move $ease-standard;
+  will-change: transform;             // §11 hint where motion is imminent
+}
+.navbar-brand:active img,
+.navbar-brand:active .navbar-logo { transform: scale(0.94); transition: transform $dur-press ease-out; }
+
+// §12 Vibrancy: text over a translucent surface must not be flat grey — use
+// higher contrast + a hair more weight/tracking so it stays legible as the
+// background shifts underneath.
+.navbar .nav-link {
+  color: rgba($gray-900, 0.86) !important;
+  font-size: 0.85rem;
+  font-weight: 450;
+  letter-spacing: -0.006em;
+  transition: color $dur-hover $ease-standard;
+
+  &:hover,
+  &.active { color: $gray-900 !important; }
+}
+
+// §7 Spatial consistency: dropdowns emerge from their trigger, not their centre.
+.navbar .dropdown-menu {
+  transform-origin: top center;
+  border: none;
+  border-radius: $border-radius;
+  box-shadow: 0 8px 30px rgba($black, 0.14);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  background: rgba($white, 0.82);
+}
+
+// Buttons — the blue pill. §1: press scales DOWN instantly; hover only shifts
+// colour (no scale-up — there is no gesture momentum to justify overshoot, §4).
+
+.btn {
+  border-radius: 980px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  padding: 0.5rem 1.15rem;
+  transition: background-color $dur-hover $ease-standard,
+              transform $dur-press ease-out,
+              box-shadow $dur-hover $ease-standard;
+  will-change: transform;
+
+  &:active { transform: scale(0.97); }   // §1 exact pattern
+}
+
+.btn-primary {
+  background: $apple-blue;
+  border-color: $apple-blue;
+  color: $white;
+
+  &:hover,
+  &:focus-visible {
+    background: $apple-blue-hover;
+    border-color: $apple-blue-hover;
+  }
+}
+
+.btn-outline-primary,
+.btn-secondary { border-radius: 980px; }
+
+// Cards — soft, rounded, whisper-quiet shadow. Lift is critically damped (§4):
+// enter and exit share the same curve/duration, so the motion is mirrored (§7).
+
+.card,
+.quarto-grid-item {
+  border: none;
+  border-radius: $border-radius-lg;
+  background: $gray-050;
+  box-shadow: none;
+  overflow: hidden;
+  transition: transform $dur-move $ease-standard, box-shadow $dur-move $ease-standard;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 40px rgba($black, 0.1);
+  }
+  &:active { transform: translateY(-1px); transition: transform $dur-press ease-out; }
+}
+
+// Category / tag chips
+.quarto-category,
+.listing-category {
+  background: $white !important;
+  border: 1px solid $gray-300 !important;
+  border-radius: 980px !important;
+  color: $gray-700 !important;
+  font-size: 0.75em;
+  font-weight: 500;
+  letter-spacing: 0.006em;             // §15 small text, slight positive
+  text-transform: none;
+  transition: background $dur-hover $ease-standard, color $dur-hover $ease-standard;
+
+  &:hover {
+    background: $gray-900 !important;
+    border-color: $gray-900 !important;
+    color: $white !important;
+  }
+}
+
+// Blockquote — restrained, a hairline rule
+blockquote {
+  margin: 1.75rem 0;
+  padding: 0.2rem 0 0.2rem 1.4rem;
+  border-left: 3px solid $gray-300;
+  color: $gray-700;
+
+  p:last-child { margin-bottom: 0; }
+}
+
+// Code
+code:not(.sourceCode) {
+  padding: 0.14em 0.4em;
+  border-radius: 6px;
+  font-size: 0.86em;
+}
+
+div.sourceCode {
+  border: 1px solid $gray-200;
+  border-radius: $border-radius;
+  overflow: hidden;
+}
+
+// Tables — hairlines only, no heavy fills
+table:not(.dataTable) {
+  border-collapse: separate;
+  border-spacing: 0;
+
+  th {
+    background: transparent;
+    color: $gray-900;
+    font-weight: 600;
+    border-bottom: 1px solid $gray-300;
+  }
+  td { border-bottom: 1px solid $gray-200; }
+  tbody tr { transition: background $dur-hover $ease-standard; }
+  tbody tr:hover { background: $gray-050; }
+}
+
+// TOC
+#TOC,
+.sidebar nav[role="doc-toc"] {
+  a {
+    color: $gray-600;
+    border-left: 2px solid transparent;
+    transition: color $dur-hover $ease-standard, border-color $dur-hover $ease-standard;
+
+    &:hover { color: $gray-900; }
+    &.active { color: $apple-blue; font-weight: 500; border-left-color: $apple-blue; }
+  }
+}
+
+// §12 Sidenotes / margin notes sit over plain background — vibrancy-style:
+// readable secondary, not washed-out grey.
+.column-margin {
+  color: $gray-700;
+  font-size: 0.82em;
+  letter-spacing: 0.004em;
+}
+
+// Footer
+.nav-footer {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background: $gray-050;
+  border: 0 !important;
+  border-top: 1px solid $gray-300 !important;
+  min-height: 3em;
+  font-size: 0.8rem;
+  color: $gray-600;
+
+  a {
+    color: $gray-700;
+    transition: color $dur-hover $ease-standard;
+    &:hover { color: $apple-blue; text-decoration: underline; }
+  }
+
+  .faux-block { display: block; padding-bottom: 0.4em; }
+
+  // Quarto absolutely-positions .nav-footer-center, which stops it being a flex
+  // item. Undo that.
+  .nav-footer-center {
+    text-align: center;
+    position: inherit;
+    margin-top: 0;
+
+    @media (max-width: map-get($grid-breakpoints, md)) {
+      margin-top: 0.5em;
+      margin-bottom: 1.5em;
+    }
+  }
+
+  .nav-footer-left,
+  .nav-footer-right,
+  .nav-footer-center {
+    text-align: center;
+    width: 100%;
+    min-height: 2em;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    .nav-footer-left  { text-align: left; }
+    .nav-footer-right { text-align: right; }
+    .nav-footer-left,
+    .nav-footer-right,
+    .nav-footer-center { flex: 1 1 33%; }
+  }
+}
+
+// Utility classes you can drop into any .qmd ------------------------------------
+
+// Eyebrow: a small coloured label above a headline — <span class="eyebrow">New</span>
+.eyebrow {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  color: $apple-orange;
+  margin-bottom: 0.35rem;
+}
+
+// Chevron link: <a class="chevron" href="…">Learn more</a>
+// §8 Hint in the direction of travel — the chevron nudges toward the outcome.
+a.chevron {
+  color: $apple-link;
+
+  &::after {
+    content: "\203A";
+    margin-left: 0.25em;
+    display: inline-block;
+    transition: transform $dur-hover $ease-standard;
+  }
+  &:hover { text-decoration: none; &::after { transform: translateX(3px); } }
+  &:active::after { transform: translateX(1px); transition: transform $dur-press ease-out; }
+}
+
+// Blue pill CTA: <a class="pill" href="…">Read the paper</a>
+a.pill {
+  display: inline-block;
+  padding: 0.55rem 1.35rem;
+  border-radius: 980px;
+  background: $apple-blue;
+  color: $white;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  will-change: transform;
+  transition: background $dur-hover $ease-standard, transform $dur-press ease-out;
+
+  &:hover { background: $apple-blue-hover; color: $white; text-decoration: none; }
+  &:active { transform: scale(0.97); }   // §1
+}
+
+// Oversized hero headline: <p class="headline">…</p>
+.headline {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;               // §15 most negative on the largest text
+  line-height: 1.03;
+  color: $gray-900;
+}
+
+// §12 Translucent material panel: wrap a section in ::: {.glass} ... :::
+.glass {
+  background: rgba($white, 0.6);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border: 1px solid rgba($white, 0.5);   // bright edge = light on the material
+  border-radius: $border-radius-lg;
+  box-shadow: 0 12px 40px rgba($black, 0.1);
+  padding: 2rem;
+}
+
+// Solid grey band: wrap a section in ::: {.gray-section} ... :::
+.gray-section {
+  background: $gray-050;
+  border-radius: $border-radius-lg;
+  padding: 2.5rem 2rem;
+  margin: 2.5rem 0;
+}
+
+// Selection & focus
+::selection { background: rgba($apple-blue, 0.2); }
+
+:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba($apple-blue, 0.4);
+  border-radius: 4px;
+}
+
+// -----------------------------------------------------------------------------
+// §14 Accessibility — respond to all THREE independent signals, not just motion.
+// -----------------------------------------------------------------------------
+
+// Reduced motion: keep opacity/colour cross-fades (they aid comprehension), drop
+// transforms, scale and overshoot. Not "no feedback" — a gentler equivalent.
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+  .btn, a.pill, .card, .quarto-grid-item,
+  .navbar-brand img, .navbar-logo, a.chevron::after {
+    transition: opacity 200ms ease, background-color 200ms ease, color 200ms ease !important;
+  }
+  .btn:active, a.pill:active, .card:hover, .card:active,
+  .navbar-brand:active img, a.chevron:hover::after {
+    transform: none !important;
+  }
+}
+
+// Reduced transparency: make translucent chrome solid/frostier — raise opacity,
+// drop the blur.
+@media (prefers-reduced-transparency: reduce) {
+  .navbar {
+    background: $white !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    border-bottom: 1px solid $gray-300 !important;
+    box-shadow: none;
+  }
+  .navbar .dropdown-menu,
+  .glass {
+    background: $white !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+}
+
+// Increased contrast: near-solid backgrounds with defined, contrasting borders.
+@media (prefers-contrast: more) {
+  body { color: #000; }
+  main a:not(.btn):not(.nav-link) { text-decoration: underline; }
+  .card, .quarto-grid-item { border: 1px solid $gray-500; }
+  .btn-primary { border-color: #00417a; }
+  .quarto-category, .listing-category { border-color: $gray-700 !important; color: $gray-900 !important; }
+  .navbar { border-bottom: 1px solid $gray-500 !important; }
+}

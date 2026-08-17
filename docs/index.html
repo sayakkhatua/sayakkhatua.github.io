@@ -60,6 +60,60 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<!-- SEO / entity signals for the home page (injected via include-in-header). -->
+
+<!-- Plain meta description — Google uses this for the search snippet. -->
+<meta name="description" content="Sayak Khatua is an economist and Postdoctoral Research Fellow at the Centre for the Study of African Economies, University of Oxford. His research covers the economics of education, child labor, climate change, program evaluation, and research transparency.">
+<meta name="author" content="Sayak Khatua">
+
+<!-- Canonical home URL (dedupes / vs /index.html). -->
+<link rel="canonical" href="https://sayakkhatua.github.io/">
+
+<!--
+  Google Search Console verification.
+  1. Go to https://search.google.com/search-console , add the property
+     https://sayakkhatua.github.io/ , and choose the "HTML tag" method.
+  2. Paste the content value it gives you below and uncomment the line.
+-->
+<!-- <meta name="google-site-verification" content="PASTE_YOUR_CODE_HERE"> -->
+
+<!-- Structured data: tells Google this page is the person "Sayak Khatua",
+     and links (sameAs) your other verified profiles so it connects them as
+     one entity. This is the strongest on-page signal for a name search. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sayak Khatua",
+  "url": "https://sayakkhatua.github.io/",
+  "image": "https://sayakkhatua.github.io/assets/img/sayak.png",
+  "jobTitle": "Postdoctoral Research Fellow",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Centre for the Study of African Economies, University of Oxford",
+    "url": "https://www.csae.ox.ac.uk/"
+  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Oregon State University" },
+    { "@type": "CollegeOrUniversity", "name": "Portland State University" },
+    { "@type": "CollegeOrUniversity", "name": "University of Calcutta" }
+  ],
+  "knowsAbout": [
+    "Economics of Education",
+    "Child Labor",
+    "Program Evaluation",
+    "Development Economics",
+    "Climate Change",
+    "Research Transparency"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/sayak-khatua/",
+    "https://github.com/sayakkhatua",
+    "https://scholar.google.com/citations?user=YH81ufycAAAAJ",
+    "https://orcid.org/0000-0003-3432-3150"
+  ]
+}
+</script>
 
 
 <meta property="og:title" content="Sayak Khatua | Economist">

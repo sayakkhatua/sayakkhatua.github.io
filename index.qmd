@@ -3,6 +3,7 @@ title: "Sayak Khatua"
 pagetitle: "Sayak Khatua | Economist"
 subtitle: "Postdoctoral Research Fellow, University of Oxford"
 image: assets/img/sayak.png
+include-in-header: html/head-home.html
     
 about:
   id: hero-heading
